@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=3 uid="uid://doliiodbs6m53"]
+
+[ext_resource type="Script" path="res://objects/characters/player/player.gd" id="1_dyoa4"]
+[ext_resource type="Texture2D" uid="uid://cgc37schjxhvt" path="res://assets/game/characters/gnome_char_sprites.png" id="1_x5wtt"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_unm0c"]
+atlas = ExtResource("1_x5wtt")
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_g6vp6"]
+radius = 36.0
+height = 112.0
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_dyoa4")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = SubResource("AtlasTexture_unm0c")
+hframes = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-32, 89)
+shape = SubResource("CapsuleShape2D_g6vp6")

@@ -1,0 +1,58 @@
+[gd_scene load_steps=7 format=3 uid="uid://4irhli1wu67k"]
+
+[ext_resource type="Texture2D" uid="uid://bonc5y3ajkxo3" path="res://assets/ui/farm_gui.png" id="1_3cfev"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_75utu"]
+atlas = ExtResource("1_3cfev")
+region = Rect2(768, 2560, 256, 256)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_26kml"]
+texture = SubResource("AtlasTexture_75utu")
+region_rect = Rect2(0, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kdn78"]
+atlas = ExtResource("1_3cfev")
+region = Rect2(0, 1798, 1462, 514)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_r3ucx"]
+texture = SubResource("AtlasTexture_kdn78")
+
+[sub_resource type="Theme" id="Theme_e2gg3"]
+MarginContainer/constants/margin_bottom = 40
+MarginContainer/constants/margin_left = 40
+MarginContainer/constants/margin_right = 40
+MarginContainer/constants/margin_top = 40
+ToolButton/base_type = &"Button"
+ToolButton/styles/normal = SubResource("StyleBoxTexture_26kml")
+ToolPanel/base_type = &"PanelContainer"
+ToolPanel/styles/panel = SubResource("StyleBoxTexture_r3ucx")
+
+[node name="ToolsPanel" type="PanelContainer"]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -190.0
+offset_top = -80.0
+offset_right = 190.0
+grow_horizontal = 2
+grow_vertical = 0
+theme = SubResource("Theme_e2gg3")
+theme_type_variation = &"ToolPanel"
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+theme = SubResource("Theme_e2gg3")
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="MarginContainer/HBoxContainer"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+theme_type_variation = &"ToolButton"
