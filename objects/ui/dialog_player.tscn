@@ -1,0 +1,40 @@
+[gd_scene load_steps=4 format=3 uid="uid://cesx46evp6dlr"]
+
+[ext_resource type="Texture2D" uid="uid://bonc5y3ajkxo3" path="res://assets/sprites/ui/farm_gui.png" id="1_f7o5f"]
+[ext_resource type="Script" path="res://objects/ui/dialog_player.gd" id="1_p1l3l"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hygyp"]
+atlas = ExtResource("1_f7o5f")
+region = Rect2(769, 767, 768, 257)
+
+[node name="DialogPlayer" type="CanvasLayer"]
+process_mode = 4
+script = ExtResource("1_p1l3l")
+
+[node name="Background" type="TextureRect" parent="."]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -384.0
+offset_top = -257.0
+offset_right = 384.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = SubResource("AtlasTexture_hygyp")
+
+[node name="TextLabel" type="Label" parent="."]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -314.0
+offset_top = -215.0
+offset_right = 317.0
+offset_bottom = -35.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 30
+autowrap_mode = 3
