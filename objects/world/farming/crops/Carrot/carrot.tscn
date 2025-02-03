@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://xywy4c5vdqok"]
+
+[ext_resource type="PackedScene" uid="uid://d3b08m6ftnms4" path="res://objects/world/farming/crops/crop_base.tscn" id="1_rfr34"]
+[ext_resource type="Texture2D" uid="uid://boxgkbe005sah" path="res://assets/Art/Crops/carrotGrow.png" id="2_po0c0"]
+
+[node name="CropBase" instance=ExtResource("1_rfr34")]
+
+[node name="Sprite" parent="." index="0"]
+scale = Vector2(8, 8)
+texture = ExtResource("2_po0c0")

@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://d3b08m6ftnms4"]
+
+[ext_resource type="Script" path="res://objects/world/farming/crops/CropBase.gd" id="1_sw2xu"]
+
+[node name="CropBase" type="Node2D"]
+script = ExtResource("1_sw2xu")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+offset = Vector2(0, -16)
+hframes = 4

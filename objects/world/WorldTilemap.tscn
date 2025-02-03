@@ -1,0 +1,37 @@
+[gd_scene load_steps=8 format=3 uid="uid://ddo3flouxsoyd"]
+
+[ext_resource type="Script" path="res://objects/world/farming/farming_processor.gd" id="1_3c8rq"]
+[ext_resource type="PackedScene" uid="uid://xywy4c5vdqok" path="res://objects/world/farming/crops/Carrot/carrot.tscn" id="2_snjfe"]
+[ext_resource type="Texture2D" uid="uid://bkrtpc4qlse5m" path="res://assets/Art/Crops/soilCircles.png" id="2_swf54"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_f1fom"]
+texture = ExtResource("2_swf54")
+texture_region_size = Vector2i(512, 512)
+0:0/0 = 0
+1:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_oap87"]
+tile_size = Vector2i(512, 512)
+sources/0 = SubResource("TileSetAtlasSource_f1fom")
+
+[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_bccil"]
+resource_name = "Crops"
+scenes/1/scene = ExtResource("2_snjfe")
+
+[sub_resource type="TileSet" id="TileSet_qny5p"]
+tile_size = Vector2i(512, 512)
+sources/1 = SubResource("TileSetScenesCollectionSource_bccil")
+
+[node name="WorldTilemap" type="Node2D"]
+scale = Vector2(0.125, 0.125)
+
+[node name="FarmingProcessor" type="Node2D" parent="."]
+script = ExtResource("1_3c8rq")
+
+[node name="SoilLayer" type="TileMapLayer" parent="FarmingProcessor"]
+tile_map_data = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+tile_set = SubResource("TileSet_oap87")
+
+[node name="Croplayer" type="TileMapLayer" parent="FarmingProcessor"]
+tile_map_data = PackedByteArray(0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0)
+tile_set = SubResource("TileSet_qny5p")

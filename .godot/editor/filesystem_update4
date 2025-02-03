@@ -1,0 +1,6 @@
+res://objects/world/WorldTilemap.tscn
+res://objects/world/farming/crops/CropBase.gd
+res://objects/world/farming/farming_processor.gd
+res://objects/world/farming/crops/crop_base.tscn
+res://objects/world/farming/crops/Carrot/carrot.tscn
+res://objects/world/world.tscn

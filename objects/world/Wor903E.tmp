@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=3 uid="uid://ddo3flouxsoyd"]
+
+[ext_resource type="Script" path="res://objects/world/farming/farming_processor.gd" id="1_3c8rq"]
+
+[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_bccil"]
+resource_name = "Crops"
+
+[sub_resource type="TileSet" id="TileSet_qny5p"]
+sources/1 = SubResource("TileSetScenesCollectionSource_bccil")
+
+[sub_resource type="TileSet" id="TileSet_oap87"]
+
+[node name="WorldTilemap" type="Node2D"]
+
+[node name="FarmingProcessor" type="Node2D" parent="."]
+script = ExtResource("1_3c8rq")
+
+[node name="Croplayer" type="TileMapLayer" parent="FarmingProcessor"]
+tile_set = SubResource("TileSet_qny5p")
+
+[node name="TileLayer" type="TileMapLayer" parent="FarmingProcessor"]
+tile_set = SubResource("TileSet_oap87")
