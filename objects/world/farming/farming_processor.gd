@@ -18,3 +18,8 @@ func _unhandled_input(_event):
 		if croplayer.get_used_cells().has(pos) or !soil_layer.get_used_cells().has(pos):
 			return
 		croplayer.set_cell(pos , 1, Vector2i(0, 0), 1)
+
+func _process(delta):
+	for c in croplayer.get_children():
+		if c.GrowTime > 0:
+			c.GrowTime -= delta

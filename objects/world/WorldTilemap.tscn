@@ -29,9 +29,7 @@ scale = Vector2(0.125, 0.125)
 script = ExtResource("1_3c8rq")
 
 [node name="SoilLayer" type="TileMapLayer" parent="FarmingProcessor"]
-tile_map_data = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 tile_set = SubResource("TileSet_oap87")
 
 [node name="Croplayer" type="TileMapLayer" parent="FarmingProcessor"]
-tile_map_data = PackedByteArray(0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0)
 tile_set = SubResource("TileSet_qny5p")
