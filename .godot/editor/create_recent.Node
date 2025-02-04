@@ -1,13 +1,13 @@
+TextureRect
+Panel
+GridContainer
 CollisionShape2D
 Area2D
 Label
-Panel
 CenterContainer
 PanelContainer
-TextureRect
 Sprite2D
 CanvasLayer
-GridContainer
 MarginContainer
 HBoxContainer
 NinePatchRect

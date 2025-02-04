@@ -18,6 +18,7 @@ config/icon="res://icon.svg"
 
 GameInputEvent="*res://autoloads/game_input_event.gd"
 SignalBus="*res://autoloads/signal_bus.gd"
+PlayerData="*res://autoloads/PlayerData.gd"
 
 [display]
 
@@ -80,3 +81,5 @@ inventory={
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"

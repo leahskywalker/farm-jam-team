@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://boxgkbe005sah"
-path="res://.godot/imported/carrot_grow.png-cb399e9b66d8f3f0279fd42fb8353ab7.ctex"
+uid="uid://dovy5ots6w8g1"
+path="res://.godot/imported/bookINVENTORY.png-fa3396fd89cf20bf8c06e253d077c5e0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Art/Crops/carrot_grow.png"
-dest_files=["res://.godot/imported/carrot_grow.png-cb399e9b66d8f3f0279fd42fb8353ab7.ctex"]
+source_file="res://assets/ui/bookINVENTORY.png"
+dest_files=["res://.godot/imported/bookINVENTORY.png-fa3396fd89cf20bf8c06e253d077c5e0.ctex"]
 
 [params]
 

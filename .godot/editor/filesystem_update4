@@ -1,15 +1,16 @@
-res://objects/world/farming/crops/Carrot/carrot.tscn
+res://objects/world/dialog_area.tscn
 res://objects/ui/inventory/player_inv.tres
-res://objects/world/farming/crops/CropBase.gd
 res://objects/ui/inventory/inventory items/carrot_item.tres
+res://autoloads/PlayerData.gd
 res://objects/world/world.tscn
 res://objects/characters/player/player.tscn
 res://test scenes/test_scene_player_movement.tscn
 res://objects/ui/tools_panel.tscn
-res://objects/world/dialog_area.tscn
 res://objects/ui/dialog_player.tscn
 res://objects/ui/inventory/inv_ui.tscn
 res://objects/ui/inventory/inv_ui_slot.tscn
-res://objects/ui/inventory/inv_ui.gd
-res://objects/ui/inventory/inventory.gd
-res://objects/ui/inventory/inv_ui_slot.gd
+res://objects/world/farming/crops/Carrot/carrot.tscn
+res://objects/ui/inventory/inventory_display.gd
+res://objects/ui/inventory/inventory display/inventory_display.gd
+res://objects/ui/inventory/inventory display/InventoryDisplay.tscn
+res://objects/ui/inventory/inventory display/InventorySlot.tscn
