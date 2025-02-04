@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=3 uid="uid://bqxdgnwl8wt43"]
+
+[ext_resource type="PackedScene" uid="uid://doliiodbs6m53" path="res://objects/characters/player/player.tscn" id="1_hsg2q"]
+
+[node name="TestScenePlayerMovement" type="Node2D"]
+
+[node name="TextureRect" type="ColorRect" parent="."]
+offset_right = 1920.0
+offset_bottom = 1080.0
+color = Color(0.435294, 0.760784, 0.462745, 1)
+
+[node name="TextureRect2" type="ColorRect" parent="."]
+offset_left = 689.0
+offset_top = 392.0
+offset_right = 789.0
+offset_bottom = 492.0
+color = Color(0.377709, 0.731091, 0.809171, 1)
+
+[node name="Player" parent="." instance=ExtResource("1_hsg2q")]
+position = Vector2(950, 560)

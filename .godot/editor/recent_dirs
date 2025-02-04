@@ -1,2 +1,6 @@
-res://assets/Art/Crops
-res://objects/world/farming/crops/Carrot
+res://objects/ui/inventory
+res://objects/ui
+res://assets/json
+res://objects/world
+res://autoloads
+res://objects

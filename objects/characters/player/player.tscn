@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://doliiodbs6m53"]
+[gd_scene load_steps=8 format=3 uid="uid://doliiodbs6m53"]
 
 [ext_resource type="Script" path="res://objects/characters/player/player.gd" id="1_dyoa4"]
-[ext_resource type="Texture2D" uid="uid://cgc37schjxhvt" path="res://assets/sprites/game/characters/gnome_char_sprites.png" id="1_x5wtt"]
+[ext_resource type="Texture2D" uid="uid://cgc37schjxhvt" path="res://assets/game/characters/gnome_char_sprites.png" id="1_x5wtt"]
+[ext_resource type="Resource" uid="uid://b15sh3n1gq2o1" path="res://objects/ui/inventory/player_inv.tres" id="2_3oagr"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_unm0c"]
 atlas = ExtResource("1_x5wtt")
@@ -13,8 +14,12 @@ height = 112.0
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_umh3m"]
 size = Vector2(520, 512)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4hh8e"]
+size = Vector2(521, 511)
+
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_dyoa4")
+inv = ExtResource("2_3oagr")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = SubResource("AtlasTexture_unm0c")
@@ -31,3 +36,12 @@ collision_mask = 0
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DialogInteractionArea"]
 position = Vector2(-14, -3)
 shape = SubResource("RectangleShape2D_umh3m")
+
+[node name="ItemCollectionArea" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ItemCollectionArea"]
+position = Vector2(-15.5, -3.5)
+shape = SubResource("RectangleShape2D_4hh8e")
+debug_color = Color(3.32102e-06, 0.625769, 0.517224, 0.42)

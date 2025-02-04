@@ -3,6 +3,11 @@ class_name Crop
 
 @onready var sprite = $Sprite
 
+# Inventory Resource Type
+@export var item: InvItem
+var player_in_area = false
+var player = null
+
 ##Type of Crop
 @export var type: StringName = &""
 
@@ -20,3 +25,16 @@ class_name Crop
 
 ##Time planted
 @export var PlantTime: float = 0.0
+
+# Inventory Item Resource Collection
+func _on_collectable_area_body_entered(body) -> void:
+	if body.has_method("player"):
+		player_in_area = true
+		player = body
+
+func _on_collectable_area_body_exited(body) -> void:
+	if body.has_method("player"):
+		player_in_area = false
+
+func get_item():
+	player.collect(item)

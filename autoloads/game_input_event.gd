@@ -1,4 +1,4 @@
-#GameInputEvent.gd
+# GameInputEvent.gd
 extends Node
 
 static func movement_input() -> Vector2:

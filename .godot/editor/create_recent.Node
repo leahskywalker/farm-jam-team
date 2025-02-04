@@ -1,3 +1,14 @@
+CollisionShape2D
+Area2D
+Label
+Panel
+CenterContainer
+PanelContainer
+TextureRect
 Sprite2D
-Node2D
-TileMapLayer
+CanvasLayer
+GridContainer
+MarginContainer
+HBoxContainer
+NinePatchRect
+Control

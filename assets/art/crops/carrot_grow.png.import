@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bkrtpc4qlse5m"
-path="res://.godot/imported/soilCircles.png-696efc3c69cc2eba1ea24fcae557afd6.ctex"
+uid="uid://boxgkbe005sah"
+path="res://.godot/imported/carrot_grow.png-0f7b788cd5ae3ff231a48a6d4a291392.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Art/Crops/soilCircles.png"
-dest_files=["res://.godot/imported/soilCircles.png-696efc3c69cc2eba1ea24fcae557afd6.ctex"]
+source_file="res://assets/art/crops/carrot_grow.png"
+dest_files=["res://.godot/imported/carrot_grow.png-0f7b788cd5ae3ff231a48a6d4a291392.ctex"]
 
 [params]
 

@@ -1,0 +1,230 @@
+[gd_scene load_steps=16 format=3 uid="uid://l6pjf2oo8wrm"]
+
+[ext_resource type="Texture2D" uid="uid://cr4ahoqradtvs" path="res://assets/sprites/ui/farm_gui_v2.png" id="1_2joy4"]
+[ext_resource type="Texture2D" uid="uid://bonc5y3ajkxo3" path="res://assets/ui/farm_gui.png" id="1_3sce0"]
+[ext_resource type="Script" path="res://objects/ui/inventory/inv_ui.gd" id="3_q4ni2"]
+[ext_resource type="PackedScene" uid="uid://bupgu0yvwd7y6" path="res://objects/ui/inventory/inv_ui_slot.tscn" id="4_l4n4t"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j16vl"]
+atlas = ExtResource("1_2joy4")
+region = Rect2(2432, 59, 1280, 965)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_aeq8k"]
+texture = SubResource("AtlasTexture_j16vl")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qqnfa"]
+atlas = ExtResource("1_2joy4")
+region = Rect2(81, 36, 768, 768)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_g4wnm"]
+texture = SubResource("AtlasTexture_qqnfa")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_75utu"]
+atlas = ExtResource("1_3sce0")
+region = Rect2(768, 2560, 256, 256)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_26kml"]
+texture = SubResource("AtlasTexture_75utu")
+region_rect = Rect2(0, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kdn78"]
+atlas = ExtResource("1_3sce0")
+region = Rect2(0, 1798, 1462, 514)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_r3ucx"]
+texture = SubResource("AtlasTexture_kdn78")
+
+[sub_resource type="Theme" id="Theme_00y2j"]
+InvLabel/base_type = &"PanelContainer"
+InvLabel/styles/panel = SubResource("StyleBoxTexture_aeq8k")
+InvPanel/base_type = &"PanelContainer"
+InvPanel/styles/panel = SubResource("StyleBoxTexture_g4wnm")
+MarginContainer/constants/margin_bottom = 40
+MarginContainer/constants/margin_left = 40
+MarginContainer/constants/margin_right = 40
+MarginContainer/constants/margin_top = 40
+ToolButton/base_type = &"Button"
+ToolButton/styles/normal = SubResource("StyleBoxTexture_26kml")
+ToolPanel/base_type = &"PanelContainer"
+ToolPanel/styles/panel = SubResource("StyleBoxTexture_r3ucx")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aon0s"]
+atlas = ExtResource("1_2joy4")
+region = Rect2(2178, 1840, 1601, 1184)
+
+[sub_resource type="Theme" id="Theme_x6wkr"]
+MarginContainer/constants/margin_bottom = 20
+MarginContainer/constants/margin_left = 20
+MarginContainer/constants/margin_right = 20
+MarginContainer/constants/margin_top = 20
+ToolButton/base_type = &"Button"
+ToolButton/styles/normal = SubResource("StyleBoxTexture_26kml")
+ToolPanel/base_type = &"PanelContainer"
+ToolPanel/styles/panel = SubResource("StyleBoxTexture_r3ucx")
+
+[node name="InvUI" type="NinePatchRect"]
+custom_minimum_size = Vector2(1824, 1026)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -912.0
+offset_top = -513.0
+offset_right = 912.0
+offset_bottom = 513.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_00y2j")
+texture = SubResource("AtlasTexture_aon0s")
+script = ExtResource("3_q4ni2")
+
+[node name="InvLabel" type="PanelContainer" parent="."]
+layout_mode = 0
+offset_left = 973.0
+offset_top = 71.0
+offset_right = 1679.0
+offset_bottom = 217.0
+theme_type_variation = &"InvLabel"
+
+[node name="MarginContainer" type="MarginContainer" parent="InvLabel"]
+layout_mode = 2
+theme_override_constants/margin_left = 70
+theme_override_constants/margin_top = 0
+theme_override_constants/margin_right = 0
+theme_override_constants/margin_bottom = 0
+
+[node name="Label" type="Label" parent="InvLabel/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+text = "Inventory"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="InvPanel" type="PanelContainer" parent="."]
+layout_mode = 2
+offset_left = 1015.0
+offset_top = 260.0
+offset_right = 1645.0
+offset_bottom = 915.0
+theme_type_variation = &"InvPanel"
+
+[node name="MarginContainer" type="MarginContainer" parent="InvPanel"]
+layout_mode = 2
+theme = SubResource("Theme_x6wkr")
+
+[node name="GridContainer" type="GridContainer" parent="InvPanel/MarginContainer"]
+layout_mode = 2
+theme_override_constants/h_separation = 10
+theme_override_constants/v_separation = 15
+columns = 6
+
+[node name="InvUISlot1" parent="InvPanel/MarginContainer/GridContainer" instance=ExtResource("4_l4n4t")]
+layout_mode = 2
+
+[node name="InvUISlot2" parent="InvPanel/MarginContainer/GridContainer" instance=ExtResource("4_l4n4t")]
+layout_mode = 2
+
+[node name="InvUISlot3" parent="InvPanel/MarginContainer/GridContainer" instance=ExtResource("4_l4n4t")]
+layout_mode = 2
+
+[node name="InvUISlot4" parent="InvPanel/MarginContainer/GridContainer" instance=ExtResource("4_l4n4t")]
+layout_mode = 2
+
+[node name="InvUISlot5" parent="InvPanel/MarginContainer/GridContainer" instance=ExtResource("4_l4n4t")]
+layout_mode = 2
+
+[node name="InvUISlot6" parent="InvPanel/MarginContainer/GridContainer" instance=ExtResource("4_l4n4t")]
+layout_mode = 2
+
+[node name="InvUISlot7" parent="InvPanel/MarginContainer/GridContainer" instance=ExtResource("4_l4n4t")]
+layout_mode = 2
+
+[node name="InvUISlot8" parent="InvPanel/MarginContainer/GridContainer" instance=ExtResource("4_l4n4t")]
+layout_mode = 2
+
+[node name="InvUISlot9" parent="InvPanel/MarginContainer/GridContainer" instance=ExtResource("4_l4n4t")]
+layout_mode = 2
+
+[node name="InvUISlot10" parent="InvPanel/MarginContainer/GridContainer" instance=ExtResource("4_l4n4t")]
+layout_mode = 2
+
+[node name="InvUISlot11" parent="InvPanel/MarginContainer/GridContainer" instance=ExtResource("4_l4n4t")]
+layout_mode = 2
+
+[node name="InvUISlot12" parent="InvPanel/MarginContainer/GridContainer" instance=ExtResource("4_l4n4t")]
+layout_mode = 2
+
+[node name="InvUISlot13" parent="InvPanel/MarginContainer/GridContainer" instance=ExtResource("4_l4n4t")]
+layout_mode = 2
+
+[node name="InvUISlot14" parent="InvPanel/MarginContainer/GridContainer" instance=ExtResource("4_l4n4t")]
+layout_mode = 2
+
+[node name="InvUISlot15" parent="InvPanel/MarginContainer/GridContainer" instance=ExtResource("4_l4n4t")]
+layout_mode = 2
+
+[node name="InvUISlot16" parent="InvPanel/MarginContainer/GridContainer" instance=ExtResource("4_l4n4t")]
+layout_mode = 2
+
+[node name="InvUISlot17" parent="InvPanel/MarginContainer/GridContainer" instance=ExtResource("4_l4n4t")]
+layout_mode = 2
+
+[node name="InvUISlot18" parent="InvPanel/MarginContainer/GridContainer" instance=ExtResource("4_l4n4t")]
+layout_mode = 2
+
+[node name="InvUISlot19" parent="InvPanel/MarginContainer/GridContainer" instance=ExtResource("4_l4n4t")]
+layout_mode = 2
+
+[node name="InvUISlot20" parent="InvPanel/MarginContainer/GridContainer" instance=ExtResource("4_l4n4t")]
+layout_mode = 2
+
+[node name="InvUISlot21" parent="InvPanel/MarginContainer/GridContainer" instance=ExtResource("4_l4n4t")]
+layout_mode = 2
+
+[node name="InvUISlot22" parent="InvPanel/MarginContainer/GridContainer" instance=ExtResource("4_l4n4t")]
+layout_mode = 2
+
+[node name="InvUISlot23" parent="InvPanel/MarginContainer/GridContainer" instance=ExtResource("4_l4n4t")]
+layout_mode = 2
+
+[node name="InvUISlot24" parent="InvPanel/MarginContainer/GridContainer" instance=ExtResource("4_l4n4t")]
+layout_mode = 2
+
+[node name="InvUISlot25" parent="InvPanel/MarginContainer/GridContainer" instance=ExtResource("4_l4n4t")]
+layout_mode = 2
+
+[node name="InvUISlot26" parent="InvPanel/MarginContainer/GridContainer" instance=ExtResource("4_l4n4t")]
+layout_mode = 2
+
+[node name="InvUISlot27" parent="InvPanel/MarginContainer/GridContainer" instance=ExtResource("4_l4n4t")]
+layout_mode = 2
+
+[node name="InvUISlot28" parent="InvPanel/MarginContainer/GridContainer" instance=ExtResource("4_l4n4t")]
+layout_mode = 2
+
+[node name="InvUISlot29" parent="InvPanel/MarginContainer/GridContainer" instance=ExtResource("4_l4n4t")]
+layout_mode = 2
+
+[node name="InvUISlot30" parent="InvPanel/MarginContainer/GridContainer" instance=ExtResource("4_l4n4t")]
+layout_mode = 2
+
+[node name="InvUISlot31" parent="InvPanel/MarginContainer/GridContainer" instance=ExtResource("4_l4n4t")]
+layout_mode = 2
+
+[node name="InvUISlot32" parent="InvPanel/MarginContainer/GridContainer" instance=ExtResource("4_l4n4t")]
+layout_mode = 2
+
+[node name="InvUISlot33" parent="InvPanel/MarginContainer/GridContainer" instance=ExtResource("4_l4n4t")]
+layout_mode = 2
+
+[node name="InvUISlot34" parent="InvPanel/MarginContainer/GridContainer" instance=ExtResource("4_l4n4t")]
+layout_mode = 2
+
+[node name="InvUISlot35" parent="InvPanel/MarginContainer/GridContainer" instance=ExtResource("4_l4n4t")]
+layout_mode = 2
+
+[node name="InvUISlot36" parent="InvPanel/MarginContainer/GridContainer" instance=ExtResource("4_l4n4t")]
+layout_mode = 2

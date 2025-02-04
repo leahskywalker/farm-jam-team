@@ -1,4 +1,4 @@
-#DialogPlayer.gd
+# DialogPlayer.gd
 extends CanvasLayer
 
 @export_file("*json") var scene_text_file: String

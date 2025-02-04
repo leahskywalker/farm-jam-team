@@ -1,10 +1,26 @@
-[gd_scene load_steps=3 format=3 uid="uid://xywy4c5vdqok"]
+[gd_scene load_steps=5 format=3 uid="uid://xywy4c5vdqok"]
 
 [ext_resource type="PackedScene" uid="uid://d3b08m6ftnms4" path="res://objects/world/farming/crops/crop_base.tscn" id="1_rfr34"]
-[ext_resource type="Texture2D" uid="uid://boxgkbe005sah" path="res://assets/Art/Crops/carrotGrow.png" id="2_po0c0"]
+[ext_resource type="Texture2D" uid="uid://boxgkbe005sah" path="res://assets/art/crops/carrot_grow.png" id="2_po0c0"]
+[ext_resource type="Resource" uid="uid://co43elik1y3ya" path="res://objects/ui/inventory/inventory items/carrot_item.tres" id="2_v6sj5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_scrx7"]
+size = Vector2(800, 714)
 
 [node name="CropBase" instance=ExtResource("1_rfr34")]
+item = ExtResource("2_v6sj5")
 
 [node name="Sprite" parent="." index="0"]
 scale = Vector2(8, 8)
 texture = ExtResource("2_po0c0")
+
+[node name="CollectableArea" type="Area2D" parent="." index="1"]
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CollectableArea" index="0"]
+position = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_scrx7")
+
+[connection signal="body_entered" from="CollectableArea" to="." method="_on_collectable_area_body_entered"]
+[connection signal="body_exited" from="CollectableArea" to="." method="_on_collectable_area_body_exited"]

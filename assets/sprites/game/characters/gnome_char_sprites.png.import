@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b8en51cmqlw4i"
-path="res://.godot/imported/tools.PNG-082be24b2ff64d7acce992706bc0db72.ctex"
+uid="uid://cgc37schjxhvt"
+path="res://.godot/imported/gnome_char_sprites.png-64d7bae04991ccb6f8a7b0759d64e0c1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/art/tools/tools.PNG"
-dest_files=["res://.godot/imported/tools.PNG-082be24b2ff64d7acce992706bc0db72.ctex"]
+source_file="res://assets/sprites/game/characters/gnome_char_sprites.png"
+dest_files=["res://.godot/imported/gnome_char_sprites.png-64d7bae04991ccb6f8a7b0759d64e0c1.ctex"]
 
 [params]
 

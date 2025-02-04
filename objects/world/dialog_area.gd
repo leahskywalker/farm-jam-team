@@ -1,4 +1,4 @@
-#DialogArea.gd
+# DialogArea.gd
 extends Area2D
 
 @export var text_key: String = ""
