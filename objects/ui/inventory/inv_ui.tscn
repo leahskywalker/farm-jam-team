@@ -1,9 +1,12 @@
-[gd_scene load_steps=16 format=3 uid="uid://l6pjf2oo8wrm"]
+[gd_scene load_steps=19 format=3 uid="uid://l6pjf2oo8wrm"]
 
 [ext_resource type="Texture2D" uid="uid://cr4ahoqradtvs" path="res://assets/sprites/ui/farm_gui_v2.png" id="1_2joy4"]
 [ext_resource type="Texture2D" uid="uid://bonc5y3ajkxo3" path="res://assets/ui/farm_gui.png" id="1_3sce0"]
+[ext_resource type="Texture2D" uid="uid://vsckr0tnt1c1" path="res://assets/ui/farm_gui_v3.png" id="3_lvd47"]
 [ext_resource type="Script" path="res://objects/ui/inventory/inv_ui.gd" id="3_q4ni2"]
+[ext_resource type="Texture2D" uid="uid://dovy5ots6w8g1" path="res://assets/ui/bookINVENTORY.png" id="3_rol1k"]
 [ext_resource type="PackedScene" uid="uid://bupgu0yvwd7y6" path="res://objects/ui/inventory/inv_ui_slot.tscn" id="4_l4n4t"]
+[ext_resource type="FontFile" uid="uid://cy65xxytadbsa" path="res://assets/fonts/Dudu_Calligraphy.ttf" id="5_n1spt"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_j16vl"]
 atlas = ExtResource("1_2joy4")
@@ -28,13 +31,15 @@ texture = SubResource("AtlasTexture_75utu")
 region_rect = Rect2(0, 0, 256, 256)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_kdn78"]
-atlas = ExtResource("1_3sce0")
-region = Rect2(0, 1798, 1462, 514)
+atlas = ExtResource("3_lvd47")
+region = Rect2(17, 2624, 1446, 384)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_r3ucx"]
 texture = SubResource("AtlasTexture_kdn78")
 
 [sub_resource type="Theme" id="Theme_00y2j"]
+CustomFont/base_type = &"Label"
+CustomFont/fonts/font = null
 InvLabel/base_type = &"PanelContainer"
 InvLabel/styles/panel = SubResource("StyleBoxTexture_aeq8k")
 InvPanel/base_type = &"PanelContainer"
@@ -49,8 +54,8 @@ ToolPanel/base_type = &"PanelContainer"
 ToolPanel/styles/panel = SubResource("StyleBoxTexture_r3ucx")
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_aon0s"]
-atlas = ExtResource("1_2joy4")
-region = Rect2(2178, 1840, 1601, 1184)
+atlas = ExtResource("3_rol1k")
+region = Rect2(15, 37, 1931, 1092)
 
 [sub_resource type="Theme" id="Theme_x6wkr"]
 MarginContainer/constants/margin_bottom = 20
@@ -98,7 +103,8 @@ theme_override_constants/margin_bottom = 0
 layout_mode = 2
 size_flags_horizontal = 4
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 50
+theme_override_fonts/font = ExtResource("5_n1spt")
+theme_override_font_sizes/font_size = 100
 text = "Inventory"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -117,7 +123,9 @@ theme = SubResource("Theme_x6wkr")
 
 [node name="GridContainer" type="GridContainer" parent="InvPanel/MarginContainer"]
 layout_mode = 2
-theme_override_constants/h_separation = 10
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/h_separation = 5
 theme_override_constants/v_separation = 15
 columns = 6
 

@@ -1,11 +1,11 @@
-[gd_scene load_steps=14 format=3 uid="uid://bupgu0yvwd7y6"]
+[gd_scene load_steps=14 format=3 uid="uid://csre8b0glfnb"]
 
-[ext_resource type="Texture2D" uid="uid://cr4ahoqradtvs" path="res://assets/sprites/ui/farm_gui_v2.png" id="1_c002g"]
-[ext_resource type="Texture2D" uid="uid://bonc5y3ajkxo3" path="res://assets/ui/farm_gui.png" id="2_jc08h"]
-[ext_resource type="Script" path="res://objects/ui/inventory/inv_ui_slot.gd" id="3_befwj"]
+[ext_resource type="Script" path="res://objects/ui/inventory/inv_ui_slot.gd" id="1_7pi0i"]
+[ext_resource type="Texture2D" uid="uid://cr4ahoqradtvs" path="res://assets/sprites/ui/farm_gui_v2.png" id="1_dc6f3"]
+[ext_resource type="Texture2D" uid="uid://bonc5y3ajkxo3" path="res://assets/ui/farm_gui.png" id="2_seaqu"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_gh2g3"]
-atlas = ExtResource("1_c002g")
+atlas = ExtResource("1_dc6f3")
 region = Rect2(81, 36, 768, 768)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_hvuir"]
@@ -22,7 +22,7 @@ region = Rect2(1792, 2048, 256, 256)
 texture = SubResource("AtlasTexture_atlho")
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_3w8d7"]
-atlas = ExtResource("2_jc08h")
+atlas = ExtResource("2_seaqu")
 region = Rect2(768, 2560, 256, 256)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1ek8n"]
@@ -30,13 +30,13 @@ texture = SubResource("AtlasTexture_3w8d7")
 region_rect = Rect2(0, 0, 256, 256)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_d6kqr"]
-atlas = ExtResource("2_jc08h")
+atlas = ExtResource("2_seaqu")
 region = Rect2(0, 1798, 1462, 514)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ds3nw"]
 texture = SubResource("AtlasTexture_d6kqr")
 
-[sub_resource type="Theme" id="Theme_w6xnr"]
+[sub_resource type="Theme" id="Theme_52j8v"]
 InvPanel/base_type = &"PanelContainer"
 InvPanel/styles/panel = SubResource("StyleBoxTexture_hvuir")
 InvUISlot/base_type = &"Panel"
@@ -50,13 +50,18 @@ ToolButton/styles/normal = SubResource("StyleBoxTexture_1ek8n")
 ToolPanel/base_type = &"PanelContainer"
 ToolPanel/styles/panel = SubResource("StyleBoxTexture_ds3nw")
 
-[node name="InvUISlot" type="Panel"]
-custom_minimum_size = Vector2(90, 90)
-offset_right = 100.0
-offset_bottom = 100.0
-theme = SubResource("Theme_w6xnr")
+[node name="HotbarUISlot" type="Panel"]
+custom_minimum_size = Vector2(100, 100)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1820.0
+offset_bottom = -980.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_52j8v")
 theme_type_variation = &"InvUISlot"
-script = ExtResource("3_befwj")
+script = ExtResource("1_7pi0i")
 
 [node name="PanelContainer" type="PanelContainer" parent="."]
 self_modulate = Color(1, 1, 1, 0)
