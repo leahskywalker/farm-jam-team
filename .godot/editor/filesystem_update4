@@ -1,15 +1,14 @@
-res://objects/ui/inventory/inv_ui_slot.tscn
-res://objects/ui/inventory/player_inv.tres
-res://objects/ui/inventory/inv_ui_slot.gdshader
-res://objects/ui/inventory/inventory items/carrot_item.tres
 res://objects/ui/inventory/inv_ui.tscn
-res://objects/ui/tools_panel.tscn
-res://objects/ui/hotbar_ui_slot.tscn
+res://objects/ui/inventory/player_inv.tres
+res://objects/ui/inventory/inventory items/carrot_item.tres
 res://objects/world/world.tscn
 res://objects/characters/player/player.tscn
 res://test scenes/test_scene_player_movement.tscn
+res://objects/ui/tools_panel.tscn
 res://objects/world/dialog_area.tscn
 res://objects/ui/dialog_player.tscn
+res://objects/ui/inventory/inv_ui_slot.tscn
 res://objects/world/farming/crops/Carrot/carrot.tscn
 res://objects/ui/inventory/inventory display/InventoryDisplay.tscn
 res://objects/ui/inventory/inventory display/InventorySlot.tscn
+res://objects/ui/hotbar_ui_slot.tscn

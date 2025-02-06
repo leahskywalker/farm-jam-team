@@ -16,7 +16,7 @@ region = Rect2(2432, 59, 1280, 965)
 texture = SubResource("AtlasTexture_j16vl")
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qqnfa"]
-atlas = ExtResource("1_2joy4")
+atlas = ExtResource("3_lvd47")
 region = Rect2(81, 36, 768, 768)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_g4wnm"]
