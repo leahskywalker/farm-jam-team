@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bj5loa0queiqy"
-path="res://.godot/imported/farmProps_0000_bushBERRYno.png-747aad8e384d2de3a2a4f05a77973718.ctex"
+path="res://.godot/imported/farmProps_0000_bushBERRYno.png-848d2057e7120dfd9f811a15c445501d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Art/Environment/farmProps_0000_bushBERRYno.png"
-dest_files=["res://.godot/imported/farmProps_0000_bushBERRYno.png-747aad8e384d2de3a2a4f05a77973718.ctex"]
+source_file="res://assets/art/Environment/farmProps_0000_bushBERRYno.png"
+dest_files=["res://.godot/imported/farmProps_0000_bushBERRYno.png-848d2057e7120dfd9f811a15c445501d.ctex"]
 
 [params]
 

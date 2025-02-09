@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cmmg4me82e5ta"
-path="res://.godot/imported/sacrificeGROUND.PNG-ffdc5b1bfd58ba92fda2aa3a1a21b4df.ctex"
+path="res://.godot/imported/sacrificeGROUND.PNG-740d679261eb3570c6b8800a3111e662.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Art/Environment/sacrificeGROUND.PNG"
-dest_files=["res://.godot/imported/sacrificeGROUND.PNG-ffdc5b1bfd58ba92fda2aa3a1a21b4df.ctex"]
+source_file="res://assets/art/Environment/sacrificeGROUND.PNG"
+dest_files=["res://.godot/imported/sacrificeGROUND.PNG-740d679261eb3570c6b8800a3111e662.ctex"]
 
 [params]
 

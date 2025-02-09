@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://r2fi8byr8yg"
-path="res://.godot/imported/farmProps_0010_treeDEAD1.png-7ab6c561f5e148b35d9ea1faaa2bbb1c.ctex"
+path="res://.godot/imported/farmProps_0010_treeDEAD1.png-3b73810f59523433130cb99a91ef38e0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Art/Environment/farmProps_0010_treeDEAD1.png"
-dest_files=["res://.godot/imported/farmProps_0010_treeDEAD1.png-7ab6c561f5e148b35d9ea1faaa2bbb1c.ctex"]
+source_file="res://assets/art/Environment/farmProps_0010_treeDEAD1.png"
+dest_files=["res://.godot/imported/farmProps_0010_treeDEAD1.png-3b73810f59523433130cb99a91ef38e0.ctex"]
 
 [params]
 

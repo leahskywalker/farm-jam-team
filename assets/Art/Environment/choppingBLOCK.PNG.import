@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://0qa4yw78cgds"
-path="res://.godot/imported/choppingBLOCK.PNG-c264d735220655ad1722c36f99733593.ctex"
+path="res://.godot/imported/choppingBLOCK.PNG-4e8c70aff3f75f5a05e65a98f871b982.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Art/Environment/choppingBLOCK.PNG"
-dest_files=["res://.godot/imported/choppingBLOCK.PNG-c264d735220655ad1722c36f99733593.ctex"]
+source_file="res://assets/art/Environment/choppingBLOCK.PNG"
+dest_files=["res://.godot/imported/choppingBLOCK.PNG-4e8c70aff3f75f5a05e65a98f871b982.ctex"]
 
 [params]
 

@@ -10,12 +10,28 @@
 		{
 			"uuid": "a69852f4-8934-43b1-823a-d737edf15ded",
 			"title": "Todo",
-			"tasks": []
+			"tasks": [
+				"a3b39f96-7285-4e71-b328-8c9f83edc9a4",
+				"894d68cb-b931-4b72-92c2-15765a6c7174",
+				"9b2fd458-ecac-4538-9ad3-c9334906bd79",
+				"4113376f-8294-47b1-a3a4-4f7c6f697d7c",
+				"09e7b442-e2f6-46f8-863a-5acbf68807a0",
+				"d36fb8b9-1f17-4a92-b489-3e2537d80f8b",
+				"1164ca2e-1723-4e30-83df-9fcce1fbb6d6",
+				"1c22d172-772e-43af-8e74-eaf9f9abc359",
+				"298308ba-beb9-47c8-a834-5a9ebed66f61",
+				"d19a4282-9294-4109-babd-88bc3943d5ce",
+				"ec99013f-0250-4538-b914-810cf127d690",
+				"04ae122a-7f33-48b6-a235-d7307ab0739f"
+			]
 		},
 		{
 			"uuid": "1938e1b9-ccb8-4041-8915-1303d8ced00f",
 			"title": "Doing",
-			"tasks": []
+			"tasks": [
+				"2ef4f841-86e6-4e4e-a111-9e8470d3461d",
+				"bdaff2c8-ef8c-4c89-a7ab-2ca0ce74fb52"
+			]
 		},
 		{
 			"uuid": "7e738cf0-839d-4097-9bc6-8d131e7d667c",
@@ -23,7 +39,250 @@
 			"tasks": []
 		}
 	],
-	"tasks": [],
+	"tasks": [
+		{
+			"uuid": "2ef4f841-86e6-4e4e-a111-9e8470d3461d",
+			"title": "Crop Cycle",
+			"description": "",
+			"category": "19eaf778-114a-496b-b52f-61bb101016da",
+			"steps": [
+				{
+					"details": "Plant",
+					"done": true
+				},
+				{
+					"details": "Grow",
+					"done": true
+				},
+				{
+					"details": "Harvest",
+					"done": false
+				}
+			]
+		},
+		{
+			"uuid": "a3b39f96-7285-4e71-b328-8c9f83edc9a4",
+			"title": "Time Cycle",
+			"description": "",
+			"category": "19eaf778-114a-496b-b52f-61bb101016da",
+			"steps": [
+				{
+					"details": "Day",
+					"done": false
+				},
+				{
+					"details": "Night",
+					"done": false
+				},
+				{
+					"details": "Tie-Ins with Crops",
+					"done": false
+				}
+			]
+		},
+		{
+			"uuid": "d36fb8b9-1f17-4a92-b489-3e2537d80f8b",
+			"title": "Quests (Pre-Req: NPCs)",
+			"description": "",
+			"category": "19eaf778-114a-496b-b52f-61bb101016da",
+			"steps": [
+				{
+					"details": "Quest Rewards",
+					"done": false
+				}
+			]
+		},
+		{
+			"uuid": "894d68cb-b931-4b72-92c2-15765a6c7174",
+			"title": "Grid Based Garden",
+			"description": "",
+			"category": "19eaf778-114a-496b-b52f-61bb101016da",
+			"steps": []
+		},
+		{
+			"uuid": "4113376f-8294-47b1-a3a4-4f7c6f697d7c",
+			"title": "Light System",
+			"description": "",
+			"category": "19eaf778-114a-496b-b52f-61bb101016da",
+			"steps": [
+				{
+					"details": "Death in Darkness",
+					"done": false
+				},
+				{
+					"details": "Light Sources: Torches & Lamps",
+					"done": false
+				},
+				{
+					"details": "Source Placement",
+					"done": false
+				}
+			]
+		},
+		{
+			"uuid": "9b2fd458-ecac-4538-9ad3-c9334906bd79",
+			"title": "Garden Expansion",
+			"description": "",
+			"category": "19eaf778-114a-496b-b52f-61bb101016da",
+			"steps": [
+				{
+					"details": "Buy Property",
+					"done": false
+				}
+			]
+		},
+		{
+			"uuid": "1164ca2e-1723-4e30-83df-9fcce1fbb6d6",
+			"title": "Dialogue",
+			"description": "",
+			"category": "19eaf778-114a-496b-b52f-61bb101016da",
+			"steps": [
+				{
+					"details": "NPCs",
+					"done": false
+				},
+				{
+					"details": "Questlines (Pre-Req Basic Quests)",
+					"done": false
+				}
+			]
+		},
+		{
+			"uuid": "1c22d172-772e-43af-8e74-eaf9f9abc359",
+			"title": "Crafting (Pre-Req: Inventory)",
+			"description": "",
+			"category": "19eaf778-114a-496b-b52f-61bb101016da",
+			"steps": [
+				{
+					"details": "Cooking",
+					"done": false
+				}
+			]
+		},
+		{
+			"uuid": "bdaff2c8-ef8c-4c89-a7ab-2ca0ce74fb52",
+			"title": "Inventory",
+			"description": "",
+			"category": "19eaf778-114a-496b-b52f-61bb101016da",
+			"steps": [
+				{
+					"details": "Tabs",
+					"done": false
+				},
+				{
+					"details": "Stacks",
+					"done": true
+				},
+				{
+					"details": "Drag 'N Drop",
+					"done": false
+				},
+				{
+					"details": "Split Stack",
+					"done": false
+				},
+				{
+					"details": "Tooltips",
+					"done": false
+				},
+				{
+					"details": "Trash Can",
+					"done": false
+				}
+			]
+		},
+		{
+			"uuid": "298308ba-beb9-47c8-a834-5a9ebed66f61",
+			"title": "Storage (Pre-Req: Inventory)",
+			"description": "",
+			"category": "19eaf778-114a-496b-b52f-61bb101016da",
+			"steps": []
+		},
+		{
+			"uuid": "d19a4282-9294-4109-babd-88bc3943d5ce",
+			"title": "Tools (Pre-Req: Inventory (Optional Dependency Recommended))",
+			"description": "",
+			"category": "19eaf778-114a-496b-b52f-61bb101016da",
+			"steps": [
+				{
+					"details": "Hoe",
+					"done": false
+				},
+				{
+					"details": "HammerAxe",
+					"done": false
+				},
+				{
+					"details": "Watering Can",
+					"done": false
+				}
+			]
+		},
+		{
+			"uuid": "ec99013f-0250-4538-b914-810cf127d690",
+			"title": "Main Menu",
+			"description": "",
+			"category": "19eaf778-114a-496b-b52f-61bb101016da",
+			"steps": [
+				{
+					"details": "New Game",
+					"done": false
+				},
+				{
+					"details": "Load Save",
+					"done": false
+				},
+				{
+					"details": "Settings: Volume & Display",
+					"done": false
+				},
+				{
+					"details": "Quit",
+					"done": false
+				},
+				{
+					"details": "Audio Manager",
+					"done": false
+				}
+			]
+		},
+		{
+			"uuid": "04ae122a-7f33-48b6-a235-d7307ab0739f",
+			"title": "World Scenes",
+			"description": "",
+			"category": "19eaf778-114a-496b-b52f-61bb101016da",
+			"steps": [
+				{
+					"details": "Farm Land - Exterior",
+					"done": false
+				},
+				{
+					"details": "Farm House - Interior",
+					"done": false
+				},
+				{
+					"details": "Traveling Cart Area - Exterior",
+					"done": false
+				},
+				{
+					"details": "Sacrifice Zone - Exterior",
+					"done": false
+				}
+			]
+		},
+		{
+			"uuid": "09e7b442-e2f6-46f8-863a-5acbf68807a0",
+			"title": "NPCs",
+			"description": "",
+			"category": "19eaf778-114a-496b-b52f-61bb101016da",
+			"steps": [
+				{
+					"details": "Traveling Merchant",
+					"done": false
+				}
+			]
+		}
+	],
 	"layout": {
 		"columns": [
 			[

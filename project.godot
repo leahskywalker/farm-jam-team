@@ -33,6 +33,7 @@ enabled=PackedStringArray("res://addons/kanban_tasks/plugin.cfg")
 [file_customization]
 
 folder_colors={
+"res://addons/": "teal",
 "res://assets/": "red",
 "res://autoloads/": "yellow",
 "res://objects/": "purple",

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bqv5sib60oal3"
-path="res://.godot/imported/farmProps_0002_barrelCLOSED.png-0ba9def1d81b1996c9eabe77a0c211da.ctex"
+path="res://.godot/imported/farmProps_0002_barrelCLOSED.png-33adbded63fb8e0448b1dd67609a005d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Art/Environment/farmProps_0002_barrelCLOSED.png"
-dest_files=["res://.godot/imported/farmProps_0002_barrelCLOSED.png-0ba9def1d81b1996c9eabe77a0c211da.ctex"]
+source_file="res://assets/art/Environment/farmProps_0002_barrelCLOSED.png"
+dest_files=["res://.godot/imported/farmProps_0002_barrelCLOSED.png-33adbded63fb8e0448b1dd67609a005d.ctex"]
 
 [params]
 

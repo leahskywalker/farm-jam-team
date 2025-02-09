@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bixuj8s7ykhrg"
-path="res://.godot/imported/merchantWAGON.PNG-f80b73c95b0365c116d2eb09b76e8dd5.ctex"
+path="res://.godot/imported/merchantWAGON.PNG-59244441d3ef340253cd359a7fb37530.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Art/Environment/merchantWAGON.PNG"
-dest_files=["res://.godot/imported/merchantWAGON.PNG-f80b73c95b0365c116d2eb09b76e8dd5.ctex"]
+source_file="res://assets/art/Environment/merchantWAGON.PNG"
+dest_files=["res://.godot/imported/merchantWAGON.PNG-59244441d3ef340253cd359a7fb37530.ctex"]
 
 [params]
 
