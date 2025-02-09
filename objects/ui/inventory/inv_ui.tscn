@@ -1,15 +1,17 @@
 [gd_scene load_steps=19 format=3 uid="uid://l6pjf2oo8wrm"]
 
-[ext_resource type="Texture2D" uid="uid://cr4ahoqradtvs" path="res://assets/sprites/ui/farm_gui_v2.png" id="1_2joy4"]
-[ext_resource type="Texture2D" uid="uid://bonc5y3ajkxo3" path="res://assets/ui/farm_gui.png" id="1_3sce0"]
-[ext_resource type="Texture2D" uid="uid://vsckr0tnt1c1" path="res://assets/ui/farm_gui_v3.png" id="3_lvd47"]
+[ext_resource type="Texture2D" uid="uid://bonc5y3ajkxo3" path="res://assets/sprites/ui/farm_gui.png" id="1_3sce0"]
+[ext_resource type="Texture2D" uid="uid://vsckr0tnt1c1" path="res://assets/sprites/ui/farm_gui_v3.png" id="3_lvd47"]
 [ext_resource type="Script" path="res://objects/ui/inventory/inv_ui.gd" id="3_q4ni2"]
-[ext_resource type="Texture2D" uid="uid://dovy5ots6w8g1" path="res://assets/ui/bookINVENTORY.png" id="3_rol1k"]
+[ext_resource type="Texture2D" uid="uid://dovy5ots6w8g1" path="res://assets/sprites/ui/bookINVENTORY.png" id="3_rol1k"]
 [ext_resource type="PackedScene" uid="uid://bupgu0yvwd7y6" path="res://objects/ui/inventory/inv_ui_slot.tscn" id="4_l4n4t"]
 [ext_resource type="FontFile" uid="uid://cy65xxytadbsa" path="res://assets/fonts/Dudu_Calligraphy.ttf" id="5_n1spt"]
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_7k6y2"]
+load_path = "res://.godot/imported/farm_gui_v2.png-b36e027ea06bb374954d5820cd20bcec.ctex"
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_j16vl"]
-atlas = ExtResource("1_2joy4")
+atlas = SubResource("CompressedTexture2D_7k6y2")
 region = Rect2(2432, 59, 1280, 965)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_aeq8k"]

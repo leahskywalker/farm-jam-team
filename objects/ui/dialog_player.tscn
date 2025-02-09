@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://cesx46evp6dlr"]
 
-[ext_resource type="Texture2D" uid="uid://bonc5y3ajkxo3" path="res://assets/ui/farm_gui.png" id="1_f7o5f"]
+[ext_resource type="Texture2D" uid="uid://bonc5y3ajkxo3" path="res://assets/sprites/ui/farm_gui.png" id="1_f7o5f"]
 [ext_resource type="Script" path="res://objects/ui/dialog_player.gd" id="1_p1l3l"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_hygyp"]

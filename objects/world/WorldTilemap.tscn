@@ -1,9 +1,9 @@
 [gd_scene load_steps=11 format=3 uid="uid://ddo3flouxsoyd"]
 
 [ext_resource type="Script" path="res://objects/world/farming/farming_processor.gd" id="1_3c8rq"]
-[ext_resource type="Texture2D" uid="uid://dj67c55hxt5d3" path="res://assets/art/Environment/greenGROUND.png" id="2_4wygx"]
+[ext_resource type="Texture2D" uid="uid://dj67c55hxt5d3" path="res://assets/sprites/game/environment/greenGROUND.png" id="2_4wygx"]
 [ext_resource type="PackedScene" uid="uid://xywy4c5vdqok" path="res://objects/world/farming/crops/Carrot/carrot.tscn" id="2_snjfe"]
-[ext_resource type="Texture2D" uid="uid://bkrtpc4qlse5m" path="res://assets/game/characters/soil_circles.png" id="2_swf54"]
+[ext_resource type="Texture2D" uid="uid://bkrtpc4qlse5m" path="res://assets/sprites/game/plants/soil_circles.png" id="2_swf54"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_w4ma4"]
 texture = ExtResource("2_4wygx")

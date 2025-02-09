@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://xywy4c5vdqok"]
 
 [ext_resource type="PackedScene" uid="uid://d3b08m6ftnms4" path="res://objects/world/farming/crops/crop_base.tscn" id="1_rfr34"]
-[ext_resource type="Texture2D" uid="uid://boxgkbe005sah" path="res://assets/art/crops/carrot_grow.png" id="2_po0c0"]
+[ext_resource type="Texture2D" uid="uid://boxgkbe005sah" path="res://assets/sprites/game/plants/carrot_grow.png" id="2_po0c0"]
 [ext_resource type="Resource" uid="uid://co43elik1y3ya" path="res://objects/ui/inventory/inventory items/carrot_item.tres" id="2_v6sj5"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_scrx7"]

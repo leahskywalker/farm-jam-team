@@ -1,11 +1,13 @@
 [gd_scene load_steps=14 format=3 uid="uid://csre8b0glfnb"]
 
 [ext_resource type="Script" path="res://objects/ui/inventory/inv_ui_slot.gd" id="1_7pi0i"]
-[ext_resource type="Texture2D" uid="uid://cr4ahoqradtvs" path="res://assets/sprites/ui/farm_gui_v2.png" id="1_dc6f3"]
-[ext_resource type="Texture2D" uid="uid://bonc5y3ajkxo3" path="res://assets/ui/farm_gui.png" id="2_seaqu"]
+[ext_resource type="Texture2D" uid="uid://bonc5y3ajkxo3" path="res://assets/sprites/ui/farm_gui.png" id="2_seaqu"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_7k6y2"]
+load_path = "res://.godot/imported/farm_gui_v2.png-b36e027ea06bb374954d5820cd20bcec.ctex"
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_gh2g3"]
-atlas = ExtResource("1_dc6f3")
+atlas = SubResource("CompressedTexture2D_7k6y2")
 region = Rect2(81, 36, 768, 768)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_hvuir"]

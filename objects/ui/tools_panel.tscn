@@ -1,20 +1,22 @@
 [gd_scene load_steps=22 format=3 uid="uid://4irhli1wu67k"]
 
-[ext_resource type="Texture2D" uid="uid://bonc5y3ajkxo3" path="res://assets/ui/farm_gui.png" id="1_3cfev"]
-[ext_resource type="Texture2D" uid="uid://cr4ahoqradtvs" path="res://assets/sprites/ui/farm_gui_v2.png" id="1_x6q35"]
-[ext_resource type="Texture2D" uid="uid://c3pqjbvkiwos0" path="res://assets/ui/farmGUIv2.png" id="2_wfpdp"]
-[ext_resource type="Texture2D" uid="uid://vsckr0tnt1c1" path="res://assets/ui/farm_gui_v3.png" id="3_osu0i"]
+[ext_resource type="Texture2D" uid="uid://bonc5y3ajkxo3" path="res://assets/sprites/ui/farm_gui.png" id="1_3cfev"]
+[ext_resource type="Texture2D" uid="uid://c3pqjbvkiwos0" path="res://assets/sprites/ui/farmGUIv2.png" id="2_wfpdp"]
+[ext_resource type="Texture2D" uid="uid://vsckr0tnt1c1" path="res://assets/sprites/ui/farm_gui_v3.png" id="3_osu0i"]
 [ext_resource type="PackedScene" uid="uid://csre8b0glfnb" path="res://objects/ui/hotbar_ui_slot.tscn" id="5_ydryb"]
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_7k6y2"]
+load_path = "res://.godot/imported/farm_gui_v2.png-b36e027ea06bb374954d5820cd20bcec.ctex"
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_j16vl"]
-atlas = ExtResource("1_x6q35")
+atlas = SubResource("CompressedTexture2D_7k6y2")
 region = Rect2(2432, 59, 1280, 965)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_aeq8k"]
 texture = SubResource("AtlasTexture_j16vl")
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qqnfa"]
-atlas = ExtResource("1_x6q35")
+atlas = SubResource("CompressedTexture2D_7k6y2")
 region = Rect2(81, 36, 768, 768)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_g4wnm"]
