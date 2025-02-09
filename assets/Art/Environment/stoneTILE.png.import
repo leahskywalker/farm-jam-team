@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://87v0cnue8cw8"
-path="res://.godot/imported/stoneTILE.png-86e6a46d87ec2c275dc13e85548aa946.ctex"
+path="res://.godot/imported/stoneTILE.png-8ea433d81be8dddf947803f1c774f846.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/art/Environment/stoneTILE.png"
-dest_files=["res://.godot/imported/stoneTILE.png-86e6a46d87ec2c275dc13e85548aa946.ctex"]
+source_file="res://assets/Art/Environment/stoneTILE.png"
+dest_files=["res://.godot/imported/stoneTILE.png-8ea433d81be8dddf947803f1c774f846.ctex"]
 
 [params]
 
