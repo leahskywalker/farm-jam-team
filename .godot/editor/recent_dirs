@@ -1,6 +1,6 @@
-res://assets/Art/Environment
-res://objects/ui
 res://autoloads
+res://objects/world/tilesets
+res://objects/ui
 res://objects/ui/inventory
 res://assets/json
 res://objects/world

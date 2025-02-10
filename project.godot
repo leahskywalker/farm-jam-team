@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 GameInputEvent="*res://autoloads/game_input_event.gd"
 SignalBus="*res://autoloads/signal_bus.gd"
 PlayerData="*res://autoloads/PlayerData.gd"
+DayAndNightCycleManager="*res://autoloads/day_and_night_cycle_manager.gd"
 
 [display]
 

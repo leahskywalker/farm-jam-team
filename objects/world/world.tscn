@@ -15,6 +15,7 @@ size = Vector2(359, 447)
 position = Vector2(290, 741)
 
 [node name="DialogAreaTest" parent="." instance=ExtResource("2_32u2h")]
+visible = false
 position = Vector2(751, 753)
 text_key = "test"
 
@@ -30,9 +31,11 @@ offset_bottom = 87.0
 color = Color(0.435294, 0.760784, 0.462745, 1)
 
 [node name="DialogPlayer" parent="." instance=ExtResource("3_xuv6m")]
+visible = false
 scene_text_file = "res://assets/json/world_dialog.json"
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
+visible = false
 
 [node name="ToolsPanel" parent="CanvasLayer" instance=ExtResource("4_xsw78")]
 

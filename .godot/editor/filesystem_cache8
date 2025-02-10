@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1739135153
+::res://::1739209996
 README.md::TextFile::-1::1738640728::0::1::::<><>::
 ::res://addons/::1739131918
 ::res://addons/kanban_tasks/::1739134604
@@ -81,7 +81,7 @@ world_dialog.json::JSON::-1::1738640970::0::1::::<><>::
 ::res://assets/sprites/game/::1739135153
 ::res://assets/sprites/game/characters/::1739131626
 gnome_char_sprites.png::CompressedTexture2D::5199861354765832865::1738445129::1739131626::1::::<><>::
-::res://assets/sprites/game/environment/::1739135018
+::res://assets/sprites/game/environment/::1739135160
 beeHOUSE.PNG::CompressedTexture2D::6252756754829010712::1738802169::1739135154::1::::<><>::
 birdHOUSE.PNG::CompressedTexture2D::6983899268059924884::1738802169::1739135154::1::::<><>::
 brownGROUND.png::CompressedTexture2D::7759498566216486610::1738802169::1739135160::1::::<><>::
@@ -168,41 +168,42 @@ PlayerData.gd::GDScript::-1::1738700768::0::1::::<>Node<>::
 signal_bus.gd::GDScript::-1::1738640970::0::1::::<>Node<>::
 ::res://objects/::1738640728
 ::res://objects/characters/::1738640728
-::res://objects/characters/player/::1738800558
+::res://objects/characters/player/::1739153268
 player.gd::GDScript::-1::1738640970::0::1::::Player<>CharacterBody2D<>::
-player.tscn::PackedScene::8165114779631823040::1738800558::0::1::::<><>::res://objects/characters/player/player.gd<>uid://cgc37schjxhvt::::res://assets/sprites/game/characters/gnome_char_sprites.png<>uid://b15sh3n1gq2o1::::res://objects/ui/inventory/player_inv.tres
-::res://objects/ui/::1739135125
+player.tscn::PackedScene::8165114779631823040::1739153268::0::1::::<><>::res://objects/characters/player/player.gd<>uid://cgc37schjxhvt::::res://assets/sprites/game/characters/gnome_char_sprites.png<>uid://b15sh3n1gq2o1::::res://objects/ui/inventory/player_inv.tres
+::res://objects/ui/::1739153269
 dialog_player.gd::GDScript::-1::1738640970::0::1::::<>CanvasLayer<>::
-dialog_player.tscn::PackedScene::5092205455746761627::1739135125::0::1::::<><>::uid://bonc5y3ajkxo3::::res://assets/sprites/ui/farm_gui.png<>res://objects/ui/dialog_player.gd
-hotbar_ui_slot.tscn::PackedScene::178577554861491559::1739135125::0::1::::<><>::res://objects/ui/inventory/inv_ui_slot.gd<>uid://bonc5y3ajkxo3::::res://assets/sprites/ui/farm_gui.png
-tools_panel.tscn::PackedScene::2053036768296611846::1739135125::0::1::::<><>::uid://bonc5y3ajkxo3::::res://assets/sprites/ui/farm_gui.png<>uid://c3pqjbvkiwos0::::res://assets/sprites/ui/farmGUIv2.png<>uid://vsckr0tnt1c1::::res://assets/sprites/ui/farm_gui_v3.png<>uid://csre8b0glfnb::::res://objects/ui/hotbar_ui_slot.tscn
-::res://objects/ui/inventory/::1739135125
+dialog_player.tscn::PackedScene::5092205455746761627::1739153268::0::1::::<><>::uid://bonc5y3ajkxo3::::res://assets/sprites/ui/farm_gui.png<>res://objects/ui/dialog_player.gd
+hotbar_ui_slot.tscn::PackedScene::178577554861491559::1739153269::0::1::::<><>::res://objects/ui/inventory/inv_ui_slot.gd<>uid://bonc5y3ajkxo3::::res://assets/sprites/ui/farm_gui.png
+tools_panel.tscn::PackedScene::2053036768296611846::1739153268::0::1::::<><>::uid://bonc5y3ajkxo3::::res://assets/sprites/ui/farm_gui.png<>uid://c3pqjbvkiwos0::::res://assets/sprites/ui/farmGUIv2.png<>uid://vsckr0tnt1c1::::res://assets/sprites/ui/farm_gui_v3.png<>uid://csre8b0glfnb::::res://objects/ui/hotbar_ui_slot.tscn
+::res://objects/ui/inventory/::1739153269
 inventory.gd::GDScript::-1::1738644503::0::1::::Inv<>Resource<>::
 inventory_item.gd::GDScript::-1::1738623566::0::1::::InvItem<>Resource<>::
 inv_slot.gd::GDScript::-1::1738627877::0::1::::InvSlot<>Resource<>::
 inv_ui.gd::GDScript::-1::1738644726::0::1::::<>NinePatchRect<>::
-inv_ui.tscn::PackedScene::837000122413447950::1739135125::0::1::::<><>::uid://bonc5y3ajkxo3::::res://assets/sprites/ui/farm_gui.png<>uid://vsckr0tnt1c1::::res://assets/sprites/ui/farm_gui_v3.png<>res://objects/ui/inventory/inv_ui.gd<>uid://dovy5ots6w8g1::::res://assets/sprites/ui/bookINVENTORY.png<>uid://bupgu0yvwd7y6::::res://objects/ui/inventory/inv_ui_slot.tscn<>uid://cy65xxytadbsa::::res://assets/fonts/Dudu_Calligraphy.ttf
+inv_ui.tscn::PackedScene::837000122413447950::1739153268::0::1::::<><>::uid://bonc5y3ajkxo3::::res://assets/sprites/ui/farm_gui.png<>uid://vsckr0tnt1c1::::res://assets/sprites/ui/farm_gui_v3.png<>res://objects/ui/inventory/inv_ui.gd<>uid://dovy5ots6w8g1::::res://assets/sprites/ui/bookINVENTORY.png<>uid://bupgu0yvwd7y6::::res://objects/ui/inventory/inv_ui_slot.tscn<>uid://cy65xxytadbsa::::res://assets/fonts/Dudu_Calligraphy.ttf
 inv_ui_slot.gd::GDScript::-1::1738645077::0::1::::<>Panel<>::
-inv_ui_slot.tscn::PackedScene::3821564591742100711::1739135125::0::1::::<><>::uid://vsckr0tnt1c1::::res://assets/sprites/ui/farm_gui_v3.png<>uid://bonc5y3ajkxo3::::res://assets/sprites/ui/farm_gui.png<>res://objects/ui/inventory/inv_ui_slot.gd
-player_inv.tres::Resource/Inv::4274368849257128002::1739132261::0::1::::<><>::res://objects/ui/inventory/inv_slot.gd<>res://objects/ui/inventory/inventory.gd
-::res://objects/ui/inventory/inventory display/::1738800558
-InventoryDisplay.tscn::PackedScene::2948402606968947266::1738800558::0::1::::<><>::res://objects/ui/inventory/inventory display/inventory_display.gd
-InventorySlot.tscn::PackedScene::5180602941358913865::1738800558::0::1::::<><>::
+inv_ui_slot.tscn::PackedScene::3821564591742100711::1739153268::0::1::::<><>::uid://vsckr0tnt1c1::::res://assets/sprites/ui/farm_gui_v3.png<>uid://bonc5y3ajkxo3::::res://assets/sprites/ui/farm_gui.png<>res://objects/ui/inventory/inv_ui_slot.gd
+player_inv.tres::Resource/Inv::4274368849257128002::1739153268::0::1::::<><>::res://objects/ui/inventory/inv_slot.gd<>res://objects/ui/inventory/inventory.gd
+::res://objects/ui/inventory/inventory display/::1739153269
+InventoryDisplay.tscn::PackedScene::2948402606968947266::1739153269::0::1::::<><>::res://objects/ui/inventory/inventory display/inventory_display.gd
+InventorySlot.tscn::PackedScene::5180602941358913865::1739153269::0::1::::<><>::
 inventory_display.gd::GDScript::-1::1738700768::0::1::::<>Control<>::
-::res://objects/ui/inventory/inventory items/::1739132261
-carrot_item.tres::Resource/InvItem::5817059942764831936::1739132261::0::1::::<><>::res://objects/ui/inventory/inventory_item.gd<>uid://pnu68knud3e1::::res://assets/sprites/game/plants/crops.PNG
-::res://objects/world/::1739135153
+::res://objects/ui/inventory/inventory items/::1739153268
+carrot_item.tres::Resource/InvItem::5817059942764831936::1739153268::0::1::::<><>::res://objects/ui/inventory/inventory_item.gd<>uid://pnu68knud3e1::::res://assets/sprites/game/plants/crops.PNG
+::res://objects/world/::1739153745
 dialog_area.gd::GDScript::-1::1738640970::0::1::::<>Area2D<>::
-dialog_area.tscn::PackedScene::3438897809450496999::1738800558::0::1::::<><>::res://objects/world/dialog_area.gd
-world.tscn::PackedScene::7075754289968794105::1739130638::0::1::::<><>::uid://doliiodbs6m53::::res://objects/characters/player/player.tscn<>uid://bo83e6benc7yx::::res://objects/world/dialog_area.tscn<>uid://cesx46evp6dlr::::res://objects/ui/dialog_player.tscn<>uid://4irhli1wu67k::::res://objects/ui/tools_panel.tscn<>uid://l6pjf2oo8wrm::::res://objects/ui/inventory/inv_ui.tscn
-WorldTilemap.tscn::PackedScene::7400439475641504747::1739135153::0::1::::<><>::res://objects/world/farming/farming_processor.gd<>uid://dj67c55hxt5d3::::res://assets/sprites/game/environment/greenGROUND.png<>uid://xywy4c5vdqok::::res://objects/world/farming/crops/Carrot/carrot.tscn<>uid://bkrtpc4qlse5m::::res://assets/sprites/game/plants/soil_circles.png
+dialog_area.tscn::PackedScene::3438897809450496999::1739153268::0::1::::<><>::res://objects/world/dialog_area.gd
+world.tscn::PackedScene::7075754289968794105::1739153268::0::1::::<><>::uid://doliiodbs6m53::::res://objects/characters/player/player.tscn<>uid://bo83e6benc7yx::::res://objects/world/dialog_area.tscn<>uid://cesx46evp6dlr::::res://objects/ui/dialog_player.tscn<>uid://4irhli1wu67k::::res://objects/ui/tools_panel.tscn<>uid://l6pjf2oo8wrm::::res://objects/ui/inventory/inv_ui.tscn
+WorldTilemap.tscn::PackedScene::7400439475641504747::1739153745::0::1::::<><>::res://objects/world/farming/farming_processor.gd<>uid://dj67c55hxt5d3::::res://assets/sprites/game/environment/greenGROUND.png<>uid://xywy4c5vdqok::::res://objects/world/farming/crops/Carrot/carrot.tscn<>uid://bkrtpc4qlse5m::::res://assets/sprites/game/plants/soil_circles.png
 ::res://objects/world/farming/::1738640728
 farming_processor.gd::GDScript::-1::1738640728::0::1::::<>Node2D<>::
 ::res://objects/world/farming/crops/::1738643659
 CropBase.gd::GDScript::-1::1738643659::0::1::::Crop<>Node2D<>::
 crop_base.tscn::PackedScene::9128191585138524457::1738640728::0::1::::<><>::res://objects/world/farming/crops/CropBase.gd
-::res://objects/world/farming/crops/Carrot/::1739135145
-carrot.tscn::PackedScene::1665268630324784846::1739135145::0::1::::<><>::uid://d3b08m6ftnms4::::res://objects/world/farming/crops/crop_base.tscn<>uid://boxgkbe005sah::::res://assets/sprites/game/plants/carrot_grow.png<>uid://co43elik1y3ya::::res://objects/ui/inventory/inventory items/carrot_item.tres
-::res://objects/world/tilesets/::1738802437
-::res://test scenes/::1738800558
-test_scene_player_movement.tscn::PackedScene::3557116453320748258::1738800558::0::1::::<><>::uid://doliiodbs6m53::::res://objects/characters/player/player.tscn
+::res://objects/world/farming/crops/Carrot/::1739153269
+carrot.tscn::PackedScene::1665268630324784846::1739153269::0::1::::<><>::uid://d3b08m6ftnms4::::res://objects/world/farming/crops/crop_base.tscn<>uid://boxgkbe005sah::::res://assets/sprites/game/plants/carrot_grow.png<>uid://co43elik1y3ya::::res://objects/ui/inventory/inventory items/carrot_item.tres
+::res://objects/world/tilesets/::1739153925
+world_tileset.tres::TileSet::5447225354887797361::1739153925::0::1::::<><>::uid://dj67c55hxt5d3::::res://assets/sprites/game/environment/greenGROUND.png
+::res://test scenes/::1739159212
+test_scene_player_movement.tscn::PackedScene::3557116453320748258::1739159212::0::1::::<><>::uid://cjuxagv22qq78::::res://objects/world/tilesets/world_tileset.tres<>uid://doliiodbs6m53::::res://objects/characters/player/player.tscn
