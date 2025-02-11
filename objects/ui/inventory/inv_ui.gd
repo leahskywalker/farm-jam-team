@@ -1,13 +1,14 @@
 # InvUI.gd
 extends NinePatchRect
 
-@onready var inv: Inv = preload("res://objects/ui/inventory/player_inv.tres")
+@onready var inv
 @onready var slots: Array = $InvPanel/MarginContainer/GridContainer.get_children()
 
 
 var is_open = false
 
 func _ready():
+	inv = PlayerData.Inventory
 	inv.update.connect(update_slots)
 	update_slots()
 	close()

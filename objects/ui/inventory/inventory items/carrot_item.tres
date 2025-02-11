@@ -10,4 +10,5 @@ region = Rect2(29, 6, 206, 197)
 [resource]
 script = ExtResource("1_8wdec")
 name = "carrot"
+type = 0
 texture = SubResource("AtlasTexture_0p3px")
