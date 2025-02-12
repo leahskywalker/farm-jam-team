@@ -3,7 +3,7 @@ extends Node
 var Inventory: Inv = Inv.new()
 var holding_item = null
 
-const InventorySize: int = 32
+const InventorySize: int = 36
 
 #Add additional player data here
 

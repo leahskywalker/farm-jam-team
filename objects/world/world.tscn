@@ -39,4 +39,3 @@ scene_text_file = "res://assets/json/world_dialog.json"
 [node name="ToolsPanel" parent="GUI" instance=ExtResource("4_xsw78")]
 
 [node name="InvUI" parent="GUI" instance=ExtResource("4_yktht")]
-visible = false

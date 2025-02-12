@@ -20,10 +20,6 @@ func _ready():
 func update_slots():
 	for i in range(min(inv.slots.size(), slots.size())):
 		slots[i].update(inv.slots[i])
-		if PlayerData.holding_item != null and inv.slots[i].item == PlayerData.holding_item:
-			slots[i].modulate = Color(1, 1, 1, 1)  # Highlight selected slot
-		else:
-			slots[i].modulate = Color(1, 1, 1, 0.5)  # Dim other slots
 
 func _process(delta):
 	if Input.is_action_just_pressed("inventory"):

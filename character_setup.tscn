@@ -167,7 +167,6 @@ position = Vector2(80.9131, 11.6214)
 [node name="knuckles" type="Sprite2D" parent="body/handF/wrist"]
 z_index = 15
 position = Vector2(58.2814, -20.0994)
-scale = Vector2(1, 1)
 texture = ExtResource("18_4awdh")
 
 [node name="shovel" type="Sprite2D" parent="body/handF/wrist"]
@@ -181,7 +180,6 @@ offset = Vector2(13.825, -75.495)
 [node name="thumb" type="Sprite2D" parent="body/handF/wrist"]
 z_index = 13
 position = Vector2(76.8262, -57.8727)
-scale = Vector2(1, 1)
 texture = ExtResource("19_s27nr")
 
 [node name="waterCan" type="Sprite2D" parent="body/handF/wrist"]

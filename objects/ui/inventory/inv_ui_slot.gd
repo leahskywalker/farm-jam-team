@@ -1,6 +1,6 @@
 # InvUISlot.gd
 class_name UISlot
-extends Panel
+extends Button
 
 @onready var item_visual: TextureRect = $PanelContainer/ItemDisplay
 @onready var amount_text: Label = $PanelContainer/Label

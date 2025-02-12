@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://bupgu0yvwd7y6"]
+[gd_scene load_steps=23 format=3 uid="uid://bupgu0yvwd7y6"]
 
 [ext_resource type="Texture2D" uid="uid://vsckr0tnt1c1" path="res://assets/sprites/ui/farm_gui_v3.png" id="2_8u1ig"]
 [ext_resource type="Texture2D" uid="uid://bonc5y3ajkxo3" path="res://assets/sprites/ui/farm_gui.png" id="2_jc08h"]
@@ -13,12 +13,42 @@ region = Rect2(81, 36, 768, 768)
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_hvuir"]
 texture = SubResource("AtlasTexture_gh2g3")
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_atlho"]
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_kx35a"]
+load_path = "res://.godot/imported/farm_gui_v3.png-6befa75d6729bbbdb89f77f81bfa12a7.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f11l0"]
+atlas = SubResource("CompressedTexture2D_kx35a")
+region = Rect2(1792, 2592, 256, 256)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ga6io"]
+texture = SubResource("AtlasTexture_f11l0")
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_2tqpm"]
+load_path = "res://.godot/imported/farm_gui_v3.png-6befa75d6729bbbdb89f77f81bfa12a7.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2awkh"]
+atlas = SubResource("CompressedTexture2D_2tqpm")
+region = Rect2(1009, 1777, 535, 539)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_uqymv"]
+texture = SubResource("AtlasTexture_2awkh")
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_1h4wk"]
+load_path = "res://.godot/imported/farm_gui_v3.png-6befa75d6729bbbdb89f77f81bfa12a7.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_58jdo"]
+atlas = SubResource("CompressedTexture2D_1h4wk")
+region = Rect2(1792, 2320, 256, 256)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_gaxga"]
+texture = SubResource("AtlasTexture_58jdo")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tykjq"]
 atlas = ExtResource("2_8u1ig")
 region = Rect2(1792, 2048, 256, 256)
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_8u0ia"]
-texture = SubResource("AtlasTexture_atlho")
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_hhkcf"]
+texture = SubResource("AtlasTexture_tykjq")
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_3w8d7"]
 atlas = ExtResource("2_jc08h")
@@ -38,8 +68,11 @@ texture = SubResource("AtlasTexture_d6kqr")
 [sub_resource type="Theme" id="Theme_w6xnr"]
 InvPanel/base_type = &"PanelContainer"
 InvPanel/styles/panel = SubResource("StyleBoxTexture_hvuir")
-InvUISlot/base_type = &"Panel"
-InvUISlot/styles/panel = SubResource("StyleBoxTexture_8u0ia")
+InvUISlot/base_type = &"Button"
+InvUISlot/styles/disabled = SubResource("StyleBoxTexture_ga6io")
+InvUISlot/styles/focus = SubResource("StyleBoxTexture_uqymv")
+InvUISlot/styles/hover = SubResource("StyleBoxTexture_gaxga")
+InvUISlot/styles/normal = SubResource("StyleBoxTexture_hhkcf")
 MarginContainer/constants/margin_bottom = 40
 MarginContainer/constants/margin_left = 40
 MarginContainer/constants/margin_right = 40
@@ -49,7 +82,7 @@ ToolButton/styles/normal = SubResource("StyleBoxTexture_1ek8n")
 ToolPanel/base_type = &"PanelContainer"
 ToolPanel/styles/panel = SubResource("StyleBoxTexture_ds3nw")
 
-[node name="InvUISlot" type="Panel"]
+[node name="InvUISlot" type="Button"]
 custom_minimum_size = Vector2(90, 90)
 offset_right = 100.0
 offset_bottom = 100.0

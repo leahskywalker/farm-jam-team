@@ -43,7 +43,3 @@ func _input(event: InputEvent):
 func update_selected_slot(selected_slot_index: int) -> void:
 	for n in range(slotcount):
 		var slot = slots.get(n+1)
-		if n == selected_slot_index:
-			slot.modulate = Color(1, 1, 1, 1)  # Highlight the selected slot
-		else:
-			slot.modulate = Color(1, 1, 1, 0.5)  # Dim other slots
