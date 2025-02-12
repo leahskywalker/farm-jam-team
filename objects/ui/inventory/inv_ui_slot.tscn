@@ -5,7 +5,6 @@
 [ext_resource type="Script" path="res://objects/ui/inventory/inv_ui_slot.gd" id="3_befwj"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_7k6y2"]
-load_path = "res://.godot/imported/farm_gui_v2.png-b36e027ea06bb374954d5820cd20bcec.ctex"
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_gh2g3"]
 atlas = SubResource("CompressedTexture2D_7k6y2")

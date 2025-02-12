@@ -8,7 +8,6 @@
 [ext_resource type="FontFile" uid="uid://cy65xxytadbsa" path="res://assets/fonts/Dudu_Calligraphy.ttf" id="5_n1spt"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_7k6y2"]
-load_path = "res://.godot/imported/farm_gui_v2.png-b36e027ea06bb374954d5820cd20bcec.ctex"
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_j16vl"]
 atlas = SubResource("CompressedTexture2D_7k6y2")
