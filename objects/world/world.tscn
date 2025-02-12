@@ -34,9 +34,9 @@ color = Color(0.435294, 0.760784, 0.462745, 1)
 visible = false
 scene_text_file = "res://assets/json/world_dialog.json"
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
+[node name="GUI" type="CanvasLayer" parent="."]
+
+[node name="ToolsPanel" parent="GUI" instance=ExtResource("4_xsw78")]
+
+[node name="InvUI" parent="GUI" instance=ExtResource("4_yktht")]
 visible = false
-
-[node name="ToolsPanel" parent="CanvasLayer" instance=ExtResource("4_xsw78")]
-
-[node name="InvUI" parent="CanvasLayer" instance=ExtResource("4_yktht")]

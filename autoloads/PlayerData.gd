@@ -1,6 +1,7 @@
 extends Node
 
 var Inventory: Inv = Inv.new()
+var holding_item = null
 
 const InventorySize: int = 32
 

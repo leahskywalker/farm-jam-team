@@ -12,10 +12,18 @@ func _ready():
 	inv.update.connect(update_slots)
 	update_slots()
 	close()
+	
+	# Connect the gui_input signal for each slot
+	for slot in slots:
+		slot.connect("gui_input", Callable(self, "_on_slot_gui_input"))
 
 func update_slots():
 	for i in range(min(inv.slots.size(), slots.size())):
 		slots[i].update(inv.slots[i])
+		if PlayerData.holding_item != null and inv.slots[i].item == PlayerData.holding_item:
+			slots[i].modulate = Color(1, 1, 1, 1)  # Highlight selected slot
+		else:
+			slots[i].modulate = Color(1, 1, 1, 0.5)  # Dim other slots
 
 func _process(delta):
 	if Input.is_action_just_pressed("inventory"):
@@ -31,3 +39,16 @@ func open():
 func close():
 	visible = false
 	is_open = false
+
+func _input(event: InputEvent):
+	if event is InputEventMouseButton and event.pressed:
+		if event.button_index == MOUSE_BUTTON_LEFT:
+			# Check if the click is within the bounds of any slot
+			for i in range(slots.size()):
+				var slot = slots[i]
+				if slot.get_global_rect().has_point(event.global_position):
+					# Update the selected item in PlayerData
+					PlayerData.holding_item = inv.slots[i].item
+					print("Selected item in inventory: ", PlayerData.holding_item.name if PlayerData.holding_item else "null")
+					update_slots()  # Refresh the inventory UI to highlight the selected slot
+					break  # Stop checking after the first matching slot
