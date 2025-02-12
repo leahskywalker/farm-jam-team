@@ -12,7 +12,8 @@ size = Vector2(359, 447)
 [node name="World" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource("1_6lwm7")]
-position = Vector2(290, 741)
+position = Vector2(413, 985)
+scale = Vector2(0.5, 0.5)
 
 [node name="DialogAreaTest" parent="." instance=ExtResource("2_32u2h")]
 visible = false
@@ -35,6 +36,7 @@ visible = false
 scene_text_file = "res://assets/json/world_dialog.json"
 
 [node name="GUI" type="CanvasLayer" parent="."]
+visible = false
 
 [node name="ToolsPanel" parent="GUI" instance=ExtResource("4_xsw78")]
 

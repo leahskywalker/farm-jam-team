@@ -1,32 +1,27 @@
-[gd_scene load_steps=8 format=3 uid="uid://doliiodbs6m53"]
+[gd_scene load_steps=7 format=3 uid="uid://doliiodbs6m53"]
 
 [ext_resource type="Script" path="res://objects/characters/player/player.gd" id="1_dyoa4"]
-[ext_resource type="Texture2D" uid="uid://cgc37schjxhvt" path="res://assets/sprites/game/characters/gnome_char_sprites.png" id="1_x5wtt"]
 [ext_resource type="Resource" uid="uid://b15sh3n1gq2o1" path="res://objects/ui/inventory/player_inv.tres" id="2_3oagr"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_unm0c"]
-atlas = ExtResource("1_x5wtt")
+[ext_resource type="PackedScene" uid="uid://c8hygc8618jne" path="res://character_setup.tscn" id="3_1e2t2"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_g6vp6"]
-radius = 36.0
-height = 112.0
+radius = 244.0
+height = 956.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_umh3m"]
-size = Vector2(520, 512)
+size = Vector2(1012, 1115)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4hh8e"]
-size = Vector2(521, 511)
+size = Vector2(1013, 1116.5)
 
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_dyoa4")
 inv = ExtResource("2_3oagr")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-texture = SubResource("AtlasTexture_unm0c")
-hframes = 4
+[node name="CharacterSETUP" parent="." instance=ExtResource("3_1e2t2")]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-32, 89)
+position = Vector2(1, -478)
 shape = SubResource("CapsuleShape2D_g6vp6")
 
 [node name="DialogInteractionArea" type="Area2D" parent="."]
@@ -34,7 +29,7 @@ collision_layer = 2
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DialogInteractionArea"]
-position = Vector2(-14, -3)
+position = Vector2(22, -560.5)
 shape = SubResource("RectangleShape2D_umh3m")
 
 [node name="ItemCollectionArea" type="Area2D" parent="."]
@@ -42,6 +37,6 @@ collision_layer = 0
 collision_mask = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ItemCollectionArea"]
-position = Vector2(-15.5, -3.5)
+position = Vector2(25, -560)
 shape = SubResource("RectangleShape2D_4hh8e")
 debug_color = Color(3.32102e-06, 0.625769, 0.517224, 0.42)
