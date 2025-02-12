@@ -4,7 +4,6 @@
 [ext_resource type="Texture2D" uid="uid://bonc5y3ajkxo3" path="res://assets/sprites/ui/farm_gui.png" id="2_seaqu"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_7k6y2"]
-load_path = "res://.godot/imported/farm_gui_v2.png-b36e027ea06bb374954d5820cd20bcec.ctex"
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_gh2g3"]
 atlas = SubResource("CompressedTexture2D_7k6y2")
@@ -14,7 +13,6 @@ region = Rect2(81, 36, 768, 768)
 texture = SubResource("AtlasTexture_gh2g3")
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_x1gv2"]
-load_path = "res://.godot/imported/farm_gui_v3.png-cda7f34545b7643c6a61f9f8007f5509.ctex"
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_atlho"]
 atlas = SubResource("CompressedTexture2D_x1gv2")
