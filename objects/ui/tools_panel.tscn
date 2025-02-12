@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://4irhli1wu67k"]
+[gd_scene load_steps=24 format=3 uid="uid://4irhli1wu67k"]
 
 [ext_resource type="Texture2D" uid="uid://bonc5y3ajkxo3" path="res://assets/sprites/ui/farm_gui.png" id="1_3cfev"]
 [ext_resource type="Texture2D" uid="uid://c3pqjbvkiwos0" path="res://assets/sprites/ui/farmGUIv2.png" id="2_wfpdp"]
@@ -21,6 +21,9 @@ region = Rect2(81, 36, 768, 768)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_g4wnm"]
 texture = SubResource("AtlasTexture_qqnfa")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_okgdb"]
+bg_color = Color(1, 1, 1, 0.372549)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_75utu"]
 atlas = ExtResource("1_3cfev")
@@ -49,6 +52,7 @@ MarginContainer/constants/margin_left = 40
 MarginContainer/constants/margin_right = 40
 MarginContainer/constants/margin_top = 40
 ToolButton/base_type = &"Button"
+ToolButton/styles/hover = SubResource("StyleBoxFlat_okgdb")
 ToolButton/styles/normal = SubResource("StyleBoxTexture_26kml")
 ToolPanel/base_type = &"PanelContainer"
 ToolPanel/styles/panel = SubResource("StyleBoxTexture_r3ucx")
@@ -137,6 +141,8 @@ layout_mode = 2
 
 [node name="HotbarUISlot3" parent="PanelContainer/MarginContainer/HotbarSlots" instance=ExtResource("5_ydryb")]
 layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
 
 [node name="HotbarUISlot4" parent="PanelContainer/MarginContainer/HotbarSlots" instance=ExtResource("5_ydryb")]
 layout_mode = 2

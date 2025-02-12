@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://csre8b0glfnb"]
+[gd_scene load_steps=22 format=3 uid="uid://csre8b0glfnb"]
 
 [ext_resource type="Texture2D" uid="uid://vsckr0tnt1c1" path="res://assets/sprites/ui/farm_gui_v3.png" id="1_0qgkq"]
 [ext_resource type="Script" path="res://objects/ui/inventory/inv_ui_slot.gd" id="1_7pi0i"]
@@ -44,6 +44,9 @@ region = Rect2(1792, 2048, 256, 256)
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_o5fs8"]
 texture = SubResource("AtlasTexture_5pmt7")
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ni5rw"]
+bg_color = Color(1, 1, 1, 0.403922)
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_3w8d7"]
 atlas = ExtResource("2_seaqu")
 region = Rect2(768, 2560, 256, 256)
@@ -72,6 +75,7 @@ MarginContainer/constants/margin_left = 40
 MarginContainer/constants/margin_right = 40
 MarginContainer/constants/margin_top = 40
 ToolButton/base_type = &"Button"
+ToolButton/styles/hover = SubResource("StyleBoxFlat_ni5rw")
 ToolButton/styles/normal = SubResource("StyleBoxTexture_1ek8n")
 ToolPanel/base_type = &"PanelContainer"
 ToolPanel/styles/panel = SubResource("StyleBoxTexture_ds3nw")
@@ -101,6 +105,7 @@ offset_right = -8.0
 offset_bottom = -8.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 
 [node name="ItemDisplay" type="TextureRect" parent="PanelContainer"]
 layout_mode = 2

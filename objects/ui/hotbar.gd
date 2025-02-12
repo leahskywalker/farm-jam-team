@@ -18,7 +18,7 @@ func _ready():
 	update()
 	# Connect the gui_input signal for each slot
 	for slot in slots.values():
-		slot.connect("gui_input", Callable(self, "on_slot_gui_input"))
+		slot.gui_input.connect(_input)
 
 func update() -> void:
 	for n in range(slotcount):
@@ -33,7 +33,7 @@ func _input(event: InputEvent):
 			# Check if the click is within the bounds of any slot
 			for i in range(1, slotcount + 1):
 				var slot = slots.get(i)
-				if slot.get_global_rect().has_point(event.global_position):
+				if slot._has_point(event.global_position):
 					# Update the selected item in PlayerData
 					PlayerData.holding_item = PlayerData.Inventory.slots[i - 1].item
 					update_selected_slot(i - 1)
