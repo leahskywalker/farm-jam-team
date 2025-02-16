@@ -1,7 +1,6 @@
-[gd_scene load_steps=7 format=3 uid="uid://doliiodbs6m53"]
+[gd_scene load_steps=6 format=3 uid="uid://doliiodbs6m53"]
 
 [ext_resource type="Script" path="res://objects/characters/player/player.gd" id="1_dyoa4"]
-[ext_resource type="Resource" uid="uid://b15sh3n1gq2o1" path="res://objects/ui/inventory/player_inv.tres" id="2_3oagr"]
 [ext_resource type="PackedScene" uid="uid://c8hygc8618jne" path="res://character_setup.tscn" id="3_1e2t2"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_g6vp6"]
@@ -16,7 +15,6 @@ size = Vector2(1013, 1116.5)
 
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_dyoa4")
-inv = ExtResource("2_3oagr")
 
 [node name="CharacterSETUP" parent="." instance=ExtResource("3_1e2t2")]
 

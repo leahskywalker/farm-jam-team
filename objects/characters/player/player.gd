@@ -6,14 +6,13 @@ extends CharacterBody2D
 @onready var spritenode = $CharacterSETUP
 
 @export var speed: float = 200
-@export var inv: Inv
 
 func _physics_process(_delta: float) -> void:
-	var direction = GameInputEvent.movement_input()
+	var direction = Input.get_vector("walk_left","walk_right","walk_up","walk_down")
 	
 	if direction.x < 0:
 		spritenode.scale.x = -1
-	elif direction > 0:
+	elif direction.x > 0:
 		spritenode.scale.x = 1
 	
 	if direction != Vector2.ZERO:
@@ -24,6 +23,13 @@ func _physics_process(_delta: float) -> void:
 		velocity = Vector2.ZERO
 	
 	move_and_slide()
+	
+	if Input.is_action_just_pressed("interact"):
+		if PlayerData.holding_item.type == 1:
+			match PlayerData.holding_item.name:
+				"Hoe":
+					animplayer.play("hoe")
+	
 
-func collect(item):
-	inv.insert(item)
+func collect(item: InvItem):
+	PlayerData.Inventory.insert(item)
