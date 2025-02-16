@@ -9,6 +9,9 @@ extends CharacterBody2D
 
 var using_item: bool = false
 
+func _ready():
+	PlayerData.PlayerNode = self
+
 func _physics_process(_delta: float) -> void:
 	var direction = Input.get_vector("walk_left","walk_right","walk_up","walk_down")
 	

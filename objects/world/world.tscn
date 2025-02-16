@@ -1,10 +1,11 @@
-[gd_scene load_steps=7 format=3 uid="uid://c72sv0eaa42iv"]
+[gd_scene load_steps=8 format=3 uid="uid://c72sv0eaa42iv"]
 
 [ext_resource type="PackedScene" uid="uid://doliiodbs6m53" path="res://objects/characters/player/player.tscn" id="1_6lwm7"]
 [ext_resource type="PackedScene" uid="uid://bo83e6benc7yx" path="res://objects/world/dialog_area.tscn" id="2_32u2h"]
 [ext_resource type="PackedScene" uid="uid://cesx46evp6dlr" path="res://objects/ui/dialog_player.tscn" id="3_xuv6m"]
 [ext_resource type="PackedScene" uid="uid://4irhli1wu67k" path="res://objects/ui/tools_panel.tscn" id="4_xsw78"]
 [ext_resource type="PackedScene" uid="uid://l6pjf2oo8wrm" path="res://objects/ui/inventory/inv_ui.tscn" id="4_yktht"]
+[ext_resource type="PackedScene" uid="uid://ddo3flouxsoyd" path="res://objects/world/WorldTilemap.tscn" id="6_jrlj2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vvl1j"]
 size = Vector2(359, 447)
@@ -41,3 +42,5 @@ scene_text_file = "res://assets/json/world_dialog.json"
 
 [node name="InvUI" parent="GUI" instance=ExtResource("4_yktht")]
 visible = false
+
+[node name="WorldTilemap" parent="." instance=ExtResource("6_jrlj2")]

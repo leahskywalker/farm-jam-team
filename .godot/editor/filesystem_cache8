@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1739728635
+::res://::1739730919
 character_setup.tscn::PackedScene::7104991931779310506::1739728634::0::1::::<><>::uid://bbtpexw27hdti::::res://assets/sprites/game/characters/shirts.png<>uid://dnoywl86nyq5s::::res://assets/sprites/game/characters/butt.png<>uid://d3r7uf8d00p2q::::res://assets/sprites/game/characters/belt.png<>uid://nvb08oeumena::::res://assets/sprites/game/characters/legF.png<>uid://b0icfy05fp8nn::::res://assets/sprites/game/characters/legB.png<>uid://du4v4nbu7ilmg::::res://assets/sprites/game/characters/basedHEAD.png<>uid://cyf4wsfeonyd2::::res://assets/sprites/game/characters/mouths.png<>uid://6r3o5a7ttau3::::res://assets/sprites/game/characters/mouthHair.png<>uid://dm843o100mua6::::res://assets/sprites/game/characters/eyes.png<>uid://clnru15xu7866::::res://assets/sprites/game/characters/hair.png<>uid://ck2cv4os3d5ly::::res://assets/sprites/game/characters/palm.png<>uid://b11jdda4j0yho::::res://assets/sprites/game/tools/toolAX.png<>uid://c6sqjf2stmtx3::::res://assets/sprites/game/tools/toolHOE.png<>uid://djyjnueurkdtw::::res://assets/sprites/game/tools/toolSHOVEL.png<>uid://dmomofpkp2wpv::::res://assets/sprites/game/tools/tool_0002_hammer.png<>uid://cwobyue24435o::::res://assets/sprites/game/tools/toolPICK.png<>uid://dxsl31et52fn1::::res://assets/sprites/game/characters/handFINGERS.png<>uid://coug41xpvnu47::::res://assets/sprites/game/characters/knuckles.png<>uid://cdkgb5km17nqg::::res://assets/sprites/game/tools/fertilizerBag.png<>uid://1hmpqqompweo::::res://assets/sprites/game/tools/toolSAW.png<>uid://dob8b2eulb81::::res://assets/sprites/game/characters/thumb.png<>uid://bcu78b4i1jhg0::::res://assets/sprites/game/tools/toolWATERCAN.png
 exterior_world.tscn::PackedScene::3792602681843955733::1739728635::0::1::::<><>::uid://csmvrb3sx5sye::::res://assets/sprites/game/environment/newTiles.png<>uid://bxb7u3l4xvapp::::res://assets/sprites/game/environment/farmProps_0003_barrel1.png<>uid://bqv5sib60oal3::::res://assets/sprites/game/environment/farmProps_0002_barrelCLOSED.png<>uid://bixuj8s7ykhrg::::res://assets/sprites/game/environment/merchantWAGON.PNG<>uid://cvc48wxlcgo05::::res://assets/sprites/game/environment/beeHOUSE.PNG<>uid://cilmcg0kb1muo::::res://assets/sprites/game/environment/homeHOUSE.PNG<>uid://c6rb2hqf463uu::::res://assets/sprites/game/environment/birdHOUSE.PNG<>uid://dkffkg3ad3qbh::::res://assets/sprites/game/environment/farmProps_0011_well.png<>uid://0qa4yw78cgds::::res://assets/sprites/game/environment/choppingBLOCK.PNG<>uid://bglmna2y2o4km::::res://assets/sprites/game/environment/farmProps_0008_lampMERCHANT.png<>uid://1husc8j6vb40::::res://assets/sprites/game/plants/appleBERRYshroom.png<>uid://cui2xqucuwxnf::::res://assets/sprites/game/environment/compost.png
 houseINTERIOR.tscn::PackedScene::448212525751630077::1739716641::0::1::::<><>::uid://87v0cnue8cw8::::res://assets/sprites/game/environment/stoneTILE.png<>uid://b3uk6r5fxhsty::::res://assets/sprites/game/environment/intWALLS.png<>uid://cow2p2eoc5rxk::::res://assets/sprites/game/environment/propsINTERIOR.png
@@ -227,9 +227,9 @@ PlayerData.gd::GDScript::-1::1739717903::0::1::::<>Node<>::
 signal_bus.gd::GDScript::-1::1738518083::0::1::::<>Node<>::
 ::res://objects/::1738518083
 ::res://objects/characters/::1738518083
-::res://objects/characters/player/::1739728634
-player.gd::GDScript::-1::1739728446::0::1::::Player<>CharacterBody2D<>::
-player.tscn::PackedScene::8165114779631823040::1739728634::0::1::::<><>::res://objects/characters/player/player.gd<>uid://c8hygc8618jne::::res://character_setup.tscn
+::res://objects/characters/player/::1739729018
+player.gd::GDScript::-1::1739729018::0::1::::Player<>CharacterBody2D<>::
+player.tscn::PackedScene::8165114779631823040::1739729018::0::1::::<><>::res://objects/characters/player/player.gd<>uid://c8hygc8618jne::::res://character_setup.tscn
 ::res://objects/ui/::1739728634
 dialog_player.gd::GDScript::-1::1738695594::0::1::::<>CanvasLayer<>::
 dialog_player.tscn::PackedScene::5092205455746761627::1739382369::0::1::::<><>::uid://bonc5y3ajkxo3::::res://assets/sprites/ui/farm_gui.png<>res://objects/ui/dialog_player.gd
@@ -249,11 +249,11 @@ player_inv.tres::Resource/Inv::4274368849257128002::1739716296::0::1::::<><>::re
 InventoryDisplay.tscn::PackedScene::2948402606968947266::1739382369::0::1::::<><>::res://objects/ui/inventory/inventory display/inventory_display.gd
 InventorySlot.tscn::PackedScene::5180602941358913865::1739382369::0::1::::<><>::
 inventory_display.gd::GDScript::-1::1739299384::0::1::::<>Control<>::
-::res://objects/ui/inventory/inventory items/::1739728874
+::res://objects/ui/inventory/inventory items/::1739729018
+Axe.tres::Resource/InvItem::5587712262702247120::1739728968::0::1::::<><>::res://objects/ui/inventory/inventory_item.gd<>uid://b8en51cmqlw4i::::res://assets/sprites/game/tools/tools.PNG
 carrot_item.tres::Resource/InvItem::5817059942764831936::1739382036::0::1::::<><>::res://objects/ui/inventory/inventory_item.gd<>uid://pnu68knud3e1::::res://assets/sprites/game/plants/crops.PNG
-Hammer.tres::Resource/InvItem::5587712262702247120::1739728861::0::1::::<><>::res://objects/ui/inventory/inventory_item.gd<>uid://b8en51cmqlw4i::::res://assets/sprites/game/tools/tools.PNG
 Hoe.tres::Resource/InvItem::7628647937615663053::1739728634::0::1::::<><>::res://objects/ui/inventory/inventory_item.gd<>uid://b8en51cmqlw4i::::res://assets/sprites/game/tools/tools.PNG
-Pickaxe.tres::Resource/InvItem::3468199850143603318::1739728874::0::1::::<><>::res://objects/ui/inventory/inventory_item.gd<>uid://b8en51cmqlw4i::::res://assets/sprites/game/tools/tools.PNG
+Pickaxe.tres::Resource/InvItem::3468199850143603318::1739729018::0::1::::<><>::res://objects/ui/inventory/inventory_item.gd<>uid://b8en51cmqlw4i::::res://assets/sprites/game/tools/tools.PNG
 ::res://objects/world/::1739728634
 dialog_area.gd::GDScript::-1::1738695594::0::1::::<>Area2D<>::
 dialog_area.tscn::PackedScene::3438897809450496999::1739382368::0::1::::<><>::res://objects/world/dialog_area.gd
