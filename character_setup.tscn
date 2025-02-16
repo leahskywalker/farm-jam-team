@@ -1,4 +1,4 @@
-[gd_scene load_steps=38 format=3 uid="uid://c8hygc8618jne"]
+[gd_scene load_steps=39 format=3 uid="uid://c8hygc8618jne"]
 
 [ext_resource type="Texture2D" uid="uid://bbtpexw27hdti" path="res://assets/sprites/game/characters/shirts.png" id="1_xtril"]
 [ext_resource type="Texture2D" uid="uid://dnoywl86nyq5s" path="res://assets/sprites/game/characters/butt.png" id="2_j2k4e"]
@@ -18,6 +18,7 @@
 [ext_resource type="Texture2D" uid="uid://cwobyue24435o" path="res://assets/sprites/game/tools/toolPICK.png" id="16_sdg5l"]
 [ext_resource type="Texture2D" uid="uid://dxsl31et52fn1" path="res://assets/sprites/game/characters/handFINGERS.png" id="17_ejvdv"]
 [ext_resource type="Texture2D" uid="uid://coug41xpvnu47" path="res://assets/sprites/game/characters/knuckles.png" id="18_4awdh"]
+[ext_resource type="Texture2D" uid="uid://cdkgb5km17nqg" path="res://assets/sprites/game/tools/fertilizerBag.png" id="19_e43yc"]
 [ext_resource type="Texture2D" uid="uid://1hmpqqompweo" path="res://assets/sprites/game/tools/toolSAW.png" id="19_lisfl"]
 [ext_resource type="Texture2D" uid="uid://dob8b2eulb81" path="res://assets/sprites/game/characters/thumb.png" id="19_s27nr"]
 [ext_resource type="Texture2D" uid="uid://bcu78b4i1jhg0" path="res://assets/sprites/game/tools/toolWATERCAN.png" id="20_f57vx"]
@@ -3038,6 +3039,14 @@ z_index = 14
 position = Vector2(58.2814, -20.0994)
 scale = Vector2(2, 2)
 texture = ExtResource("14_flqhe")
+offset = Vector2(13.825, -75.495)
+
+[node name="fertilizer" type="Sprite2D" parent="body/handF/wrist"]
+z_index = 14
+position = Vector2(204.146, -33.2094)
+rotation = -1.40252
+scale = Vector2(0.442662, 0.442662)
+texture = ExtResource("19_e43yc")
 offset = Vector2(13.825, -75.495)
 
 [node name="saw" type="Sprite2D" parent="body/handF/wrist"]

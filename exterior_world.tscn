@@ -314,3 +314,7 @@ texture = SubResource("AtlasTexture_bycji")
 position = Vector2(-0.000488281, 14.2229)
 scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_c2y2o")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(-2664, 4112)
+scale = Vector2(930.194, -330.751)
