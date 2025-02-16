@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cuf4a5kth4ccn"
+path="res://.godot/imported/4-Night.mp3-8d01167278d91acfd3304e02d1206f6c.mp3str"
+
+[deps]
+
+source_file="res://assets/music/Day loop/4-Night.mp3"
+dest_files=["res://.godot/imported/4-Night.mp3-8d01167278d91acfd3304e02d1206f6c.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
