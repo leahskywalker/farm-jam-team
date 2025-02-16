@@ -1,10 +1,10 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1739703847
+::res://::1739714265
 character_setup.tscn::PackedScene::7104991931779310506::1739422376::0::1::::<><>::uid://bbtpexw27hdti::::res://assets/sprites/game/characters/shirts.png<>uid://dnoywl86nyq5s::::res://assets/sprites/game/characters/butt.png<>uid://d3r7uf8d00p2q::::res://assets/sprites/game/characters/belt.png<>uid://nvb08oeumena::::res://assets/sprites/game/characters/legF.png<>uid://b0icfy05fp8nn::::res://assets/sprites/game/characters/legB.png<>uid://du4v4nbu7ilmg::::res://assets/sprites/game/characters/basedHEAD.png<>uid://cyf4wsfeonyd2::::res://assets/sprites/game/characters/mouths.png<>uid://6r3o5a7ttau3::::res://assets/sprites/game/characters/mouthHair.png<>uid://dm843o100mua6::::res://assets/sprites/game/characters/eyes.png<>uid://clnru15xu7866::::res://assets/sprites/game/characters/hair.png<>uid://ck2cv4os3d5ly::::res://assets/sprites/game/characters/palm.png<>uid://b11jdda4j0yho::::res://assets/sprites/game/tools/toolAX.png<>uid://c6sqjf2stmtx3::::res://assets/sprites/game/tools/toolHOE.png<>uid://djyjnueurkdtw::::res://assets/sprites/game/tools/toolSHOVEL.png<>uid://dmomofpkp2wpv::::res://assets/sprites/game/tools/tool_0002_hammer.png<>uid://cwobyue24435o::::res://assets/sprites/game/tools/toolPICK.png<>uid://dxsl31et52fn1::::res://assets/sprites/game/characters/handFINGERS.png<>uid://coug41xpvnu47::::res://assets/sprites/game/characters/knuckles.png<>uid://1hmpqqompweo::::res://assets/sprites/game/tools/toolSAW.png<>uid://dob8b2eulb81::::res://assets/sprites/game/characters/thumb.png<>uid://bcu78b4i1jhg0::::res://assets/sprites/game/tools/toolWATERCAN.png
-exterior_world.tscn::PackedScene::3792602681843955733::1739703501::0::1::::<><>::uid://csmvrb3sx5sye::::res://assets/sprites/game/environment/newTiles.png<>uid://bxb7u3l4xvapp::::res://assets/sprites/game/environment/farmProps_0003_barrel1.png<>uid://bqv5sib60oal3::::res://assets/sprites/game/environment/farmProps_0002_barrelCLOSED.png<>uid://bixuj8s7ykhrg::::res://assets/sprites/game/environment/merchantWAGON.PNG<>uid://cvc48wxlcgo05::::res://assets/sprites/game/environment/beeHOUSE.PNG<>uid://cilmcg0kb1muo::::res://assets/sprites/game/environment/homeHOUSE.PNG<>uid://c6rb2hqf463uu::::res://assets/sprites/game/environment/birdHOUSE.PNG<>uid://dkffkg3ad3qbh::::res://assets/sprites/game/environment/farmProps_0011_well.png
-houseINTERIOR.tscn::PackedScene::448212525751630077::1739702946::0::1::::<><>::uid://87v0cnue8cw8::::res://assets/sprites/game/environment/stoneTILE.png<>uid://b3uk6r5fxhsty::::res://assets/sprites/game/environment/intWALLS.png<>uid://cow2p2eoc5rxk::::res://assets/sprites/game/environment/propsINTERIOR.png
+exterior_world.tscn::PackedScene::3792602681843955733::1739706066::0::1::::<><>::uid://csmvrb3sx5sye::::res://assets/sprites/game/environment/newTiles.png<>uid://bxb7u3l4xvapp::::res://assets/sprites/game/environment/farmProps_0003_barrel1.png<>uid://bqv5sib60oal3::::res://assets/sprites/game/environment/farmProps_0002_barrelCLOSED.png<>uid://bixuj8s7ykhrg::::res://assets/sprites/game/environment/merchantWAGON.PNG<>uid://cvc48wxlcgo05::::res://assets/sprites/game/environment/beeHOUSE.PNG<>uid://cilmcg0kb1muo::::res://assets/sprites/game/environment/homeHOUSE.PNG<>uid://c6rb2hqf463uu::::res://assets/sprites/game/environment/birdHOUSE.PNG<>uid://dkffkg3ad3qbh::::res://assets/sprites/game/environment/farmProps_0011_well.png<>uid://0qa4yw78cgds::::res://assets/sprites/game/environment/choppingBLOCK.PNG<>uid://bglmna2y2o4km::::res://assets/sprites/game/environment/farmProps_0008_lampMERCHANT.png
+houseINTERIOR.tscn::PackedScene::448212525751630077::1739706071::0::1::::<><>::uid://87v0cnue8cw8::::res://assets/sprites/game/environment/stoneTILE.png<>uid://b3uk6r5fxhsty::::res://assets/sprites/game/environment/intWALLS.png<>uid://cow2p2eoc5rxk::::res://assets/sprites/game/environment/propsINTERIOR.png
 README.md::TextFile::-1::1738438512::0::1::::<><>::
-sacrifice.tscn::PackedScene::161844780300612338::1739703847::0::1::::<><>::uid://cmmg4me82e5ta::::res://assets/sprites/game/environment/sacrificeGROUND.PNG
+sacrifice.tscn::PackedScene::161844780300612338::1739706157::0::1::::<><>::uid://cmmg4me82e5ta::::res://assets/sprites/game/environment/sacrificeGROUND.PNG<>uid://2mo3mwhvk7rw::::res://assets/sprites/game/environment/sacrificeTREES.PNG
 ::res://addons/::1739323270
 ::res://addons/kanban_tasks/::1739413830
 icon.svg::CompressedTexture2D::2584192313033160869::1739323270::1739413830::1::::<><>::
@@ -116,7 +116,7 @@ mouths.png::CompressedTexture2D::6469496537070727273::1739233894::1739413830::1:
 palm.png::CompressedTexture2D::5530628484443499678::1739289695::1739413830::1::::<><>::
 shirts.png::CompressedTexture2D::2496751846017934642::1739285098::1739413830::1::::<><>::
 thumb.png::CompressedTexture2D::239587562104534488::1739289704::1739413830::1::::<><>::
-::res://assets/sprites/game/environment/::1739704710
+::res://assets/sprites/game/environment/::1739715898
 beeHOUSE.PNG::CompressedTexture2D::6252756754829010712::1739323270::1739413830::1::::<><>::
 birdHOUSE.PNG::CompressedTexture2D::6983899268059924884::1739323270::1739413830::1::::<><>::
 brownGROUND.png::CompressedTexture2D::7759498566216486610::1739323270::1739413835::1::::<><>::
@@ -139,7 +139,7 @@ greenGROUND.png::CompressedTexture2D::7856905491947986402::1739323270::173941383
 homeHOUSE.PNG::CompressedTexture2D::5357792801503064390::1739323270::1739413832::1::::<><>::
 intWALLS.png::CompressedTexture2D::4393659329677214126::1739323270::1739413831::1::::<><>::
 merchantWAGON.PNG::CompressedTexture2D::2996644295704649908::1739323270::1739413831::1::::<><>::
-newTiles.png::CompressedTexture2D::6062318597891629212::1739703102::1739703105::1::::<><>::
+newTiles.png::CompressedTexture2D::6062318597891629212::1739715899::1739715903::1::::<><>::
 propsEXTERIOR.png::CompressedTexture2D::2381171007130855299::1739670798::1739670800::1::::<><>::
 propsINTERIOR.png::CompressedTexture2D::5802569059570878252::1739332093::1739664429::1::::<><>::
 sacrificeGROUND.PNG::CompressedTexture2D::5640296752066210798::1739704711::1739704714::1::::<><>::
