@@ -266,7 +266,6 @@ texture = ExtResource("8_vpw5f")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="well/StaticBody2D"]
 position = Vector2(0.000244141, 0.000488281)
-scale = Vector2(1, 1)
 shape = SubResource("CapsuleShape2D_rmlur")
 
 [node name="ChoppingBlock" type="Sprite2D" parent="."]
@@ -278,7 +277,6 @@ texture = ExtResource("9_impp3")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ChoppingBlock/StaticBody2D"]
 position = Vector2(0, 224)
-scale = Vector2(1, 1)
 shape = SubResource("CapsuleShape2D_lj562")
 
 [node name="lampMerchant" type="Sprite2D" parent="."]
@@ -312,7 +310,6 @@ texture = SubResource("AtlasTexture_bycji")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/StaticBody2D"]
 position = Vector2(-0.000488281, 14.2229)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_c2y2o")
 
 [node name="Camera2D" type="Camera2D" parent="."]

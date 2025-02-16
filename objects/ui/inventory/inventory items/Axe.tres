@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="InvItem" load_steps=4 format=3 uid="uid://cluy2mdw5jyce"]
+
+[ext_resource type="Script" path="res://objects/ui/inventory/inventory_item.gd" id="1_cujb4"]
+[ext_resource type="Texture2D" uid="uid://b8en51cmqlw4i" path="res://assets/sprites/game/tools/tools.PNG" id="2_6ypnv"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_737qd"]
+atlas = ExtResource("2_6ypnv")
+region = Rect2(640, 592, 130, 381)
+
+[resource]
+script = ExtResource("1_cujb4")
+name = "Axe"
+type = 1
+texture = SubResource("AtlasTexture_737qd")

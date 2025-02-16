@@ -10,5 +10,5 @@ region = Rect2(813, 615, 137, 402)
 [resource]
 script = ExtResource("1_ixk44")
 name = "Hoe"
-type = 0
+type = 1
 texture = SubResource("AtlasTexture_737qd")

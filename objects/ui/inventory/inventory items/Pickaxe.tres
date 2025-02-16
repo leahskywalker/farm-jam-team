@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="InvItem" load_steps=4 format=3 uid="uid://bpoa0lap222xu"]
+
+[ext_resource type="Script" path="res://objects/ui/inventory/inventory_item.gd" id="1_q02e6"]
+[ext_resource type="Texture2D" uid="uid://b8en51cmqlw4i" path="res://assets/sprites/game/tools/tools.PNG" id="2_vcwl5"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_737qd"]
+atlas = ExtResource("2_vcwl5")
+region = Rect2(20, 606, 95, 265)
+
+[resource]
+script = ExtResource("1_q02e6")
+name = "Saw"
+type = 1
+texture = SubResource("AtlasTexture_737qd")
