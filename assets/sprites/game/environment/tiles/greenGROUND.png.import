@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://2mo3mwhvk7rw"
-path="res://.godot/imported/sacrificeTREES.PNG-70472b34e2e266e350122c65231334f4.ctex"
+uid="uid://dj67c55hxt5d3"
+path="res://.godot/imported/greenGROUND.png-c87dd8c2fa454f17e368d414c39dcd9a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/game/environment/sacrificeTREES.PNG"
-dest_files=["res://.godot/imported/sacrificeTREES.PNG-70472b34e2e266e350122c65231334f4.ctex"]
+source_file="res://assets/sprites/game/environment/tiles/greenGROUND.png"
+dest_files=["res://.godot/imported/greenGROUND.png-c87dd8c2fa454f17e368d414c39dcd9a.ctex"]
 
 [params]
 

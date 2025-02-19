@@ -1,7 +1,8 @@
-[gd_scene load_steps=9 format=4 uid="uid://ckntbh0pwofq"]
+[gd_scene load_steps=11 format=4 uid="uid://ckntbh0pwofq"]
 
-[ext_resource type="Texture2D" uid="uid://cmmg4me82e5ta" path="res://assets/sprites/game/environment/sacrificeGROUND.PNG" id="1_76s1n"]
-[ext_resource type="Texture2D" uid="uid://2mo3mwhvk7rw" path="res://assets/sprites/game/environment/sacrificeTREES.PNG" id="2_fy2d6"]
+[ext_resource type="Texture2D" uid="uid://cmmg4me82e5ta" path="res://assets/sprites/game/environment/tiles/sacrificeGROUND.PNG" id="1_76s1n"]
+[ext_resource type="Texture2D" uid="uid://2mo3mwhvk7rw" path="res://assets/sprites/game/environment/tiles/sacrificeTREES.PNG" id="2_fy2d6"]
+[ext_resource type="Texture2D" uid="uid://bjblxnuepoj16" path="res://assets/sprites/game/environment/tiles/sacredTree.png" id="3_3nusg"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ijh2y"]
 texture = ExtResource("1_76s1n")
@@ -7844,6 +7845,10 @@ texture_region_size = Vector2i(256, 256)
 tile_size = Vector2i(256, 256)
 sources/0 = SubResource("TileSetAtlasSource_011f4")
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_dbr1j"]
+radius = 67.9245
+height = 301.887
+
 [node name="sacrificalForest" type="Node2D"]
 
 [node name="ground" type="TileMapLayer" parent="."]
@@ -7861,3 +7866,15 @@ tile_set = SubResource("TileSet_kukgx")
 [node name="SacrificeTrees" type="Sprite2D" parent="."]
 position = Vector2(-256, 8)
 texture = ExtResource("2_fy2d6")
+
+[node name="SacredTree" type="Sprite2D" parent="."]
+position = Vector2(-208, -728)
+scale = Vector2(2.12, 2.12)
+texture = ExtResource("3_3nusg")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="SacredTree"]
+scale = Vector2(1, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SacredTree/StaticBody2D"]
+position = Vector2(7.19754e-06, 79.2452)
+shape = SubResource("CapsuleShape2D_dbr1j")

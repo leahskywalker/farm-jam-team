@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://csmvrb3sx5sye"
-path="res://.godot/imported/newTiles.png-b8aea65f90ed26012e80d3b7437d0667.ctex"
+uid="uid://d5via3bbkrv2"
+path="res://.godot/imported/treeBig1.png-34914471c739ab08fcbf0b55a82a7423.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/game/environment/newTiles.png"
-dest_files=["res://.godot/imported/newTiles.png-b8aea65f90ed26012e80d3b7437d0667.ctex"]
+source_file="res://assets/sprites/game/environment/tiles/treeBig1.png"
+dest_files=["res://.godot/imported/treeBig1.png-34914471c739ab08fcbf0b55a82a7423.ctex"]
 
 [params]
 

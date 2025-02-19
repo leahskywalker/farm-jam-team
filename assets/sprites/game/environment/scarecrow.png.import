@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cmmg4me82e5ta"
-path="res://.godot/imported/sacrificeGROUND.PNG-f619808c813a334917fff90e43984f36.ctex"
+uid="uid://bb2actxosh0au"
+path="res://.godot/imported/scarecrow.png-48664f13a3862e3481cc402c2be764ab.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/game/environment/sacrificeGROUND.PNG"
-dest_files=["res://.godot/imported/sacrificeGROUND.PNG-f619808c813a334917fff90e43984f36.ctex"]
+source_file="res://assets/sprites/game/environment/scarecrow.png"
+dest_files=["res://.godot/imported/scarecrow.png-48664f13a3862e3481cc402c2be764ab.ctex"]
 
 [params]
 

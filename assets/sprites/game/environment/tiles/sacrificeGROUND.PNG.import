@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b3uk6r5fxhsty"
-path="res://.godot/imported/intWALLS.png-829713bd7a93e5cc742c2beb77447f4c.ctex"
+uid="uid://cmmg4me82e5ta"
+path="res://.godot/imported/sacrificeGROUND.PNG-8d53df6ab75c6cf2d37888ce1ba5d509.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/game/environment/intWALLS.png"
-dest_files=["res://.godot/imported/intWALLS.png-829713bd7a93e5cc742c2beb77447f4c.ctex"]
+source_file="res://assets/sprites/game/environment/tiles/sacrificeGROUND.PNG"
+dest_files=["res://.godot/imported/sacrificeGROUND.PNG-8d53df6ab75c6cf2d37888ce1ba5d509.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://celm472k642r"
-path="res://.godot/imported/tilesetV2.png-0bcf6aa3e7677f3079dbbb1f9e8ec773.ctex"
+uid="uid://cwsqy8s73ayqo"
+path="res://.godot/imported/craftingTable.png-3689613865935520405453160bb3fad9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/game/environment/tilesetV2.png"
-dest_files=["res://.godot/imported/tilesetV2.png-0bcf6aa3e7677f3079dbbb1f9e8ec773.ctex"]
+source_file="res://assets/sprites/game/environment/tiles/craftingTable.png"
+dest_files=["res://.godot/imported/craftingTable.png-3689613865935520405453160bb3fad9.ctex"]
 
 [params]
 

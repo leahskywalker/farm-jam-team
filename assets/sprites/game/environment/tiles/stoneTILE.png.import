@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dis02pygfkh7w"
-path="res://.godot/imported/brownGROUND.png-b2bc355f1521bf4c1f76394d82ad94bd.ctex"
+uid="uid://87v0cnue8cw8"
+path="res://.godot/imported/stoneTILE.png-35c8d92d2ca1da4e7c3058c2c5066da5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/game/environment/brownGROUND.png"
-dest_files=["res://.godot/imported/brownGROUND.png-b2bc355f1521bf4c1f76394d82ad94bd.ctex"]
+source_file="res://assets/sprites/game/environment/tiles/stoneTILE.png"
+dest_files=["res://.godot/imported/stoneTILE.png-35c8d92d2ca1da4e7c3058c2c5066da5.ctex"]
 
 [params]
 
