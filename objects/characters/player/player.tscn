@@ -5,7 +5,7 @@
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_g6vp6"]
 radius = 244.0
-height = 956.0
+height = 774.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_umh3m"]
 size = Vector2(1012, 1115)
@@ -19,7 +19,7 @@ script = ExtResource("1_dyoa4")
 [node name="CharacterSETUP" parent="." instance=ExtResource("3_1e2t2")]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(1, -478)
+position = Vector2(1, -425)
 shape = SubResource("CapsuleShape2D_g6vp6")
 
 [node name="DialogInteractionArea" type="Area2D" parent="."]
