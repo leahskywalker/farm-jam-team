@@ -1,10 +1,11 @@
+res://objects/ui/character creator
+res://objects/ui
+res://autoloads
 res://
 res://assets/sprites/game/environment
 res://assets/sprites/game/tools
 res://assets/sprites/game/characters
-res://autoloads
 res://objects/world/tilesets
-res://objects/ui
 res://objects/ui/inventory
 res://assets/json
 res://objects/world
