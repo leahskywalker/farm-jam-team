@@ -11,11 +11,8 @@ var mouth_sprites = preload("res://assets/sprites/game/characters/mouths.png")
 var mouth_hframes = 5
 
 # Facial Hair Sprite Sheet
-var facial_hair_sprites = {
-	"none" : null,
-	"01" : preload("res://assets/sprites/game/characters/mouthHair.png")
-}
-var facial_hair_hframes = 3
+var facial_hair_sprites = preload("res://assets/sprites/game/characters/mouthHair.png")
+var facial_hair_hframes = 4
 
 # Eye Sprite Sheet
 var eye_sprites = preload("res://assets/sprites/game/characters/eyes.png")
@@ -31,3 +28,7 @@ var selected_mouth = ""
 var selected_facial_hair = ""
 var selected_eyes = ""
 var selected_hair = ""
+# Selected Colors
+var selected_shirt_color = ""
+var selected_facial_hair_color = ""
+var selected_hair_color = ""

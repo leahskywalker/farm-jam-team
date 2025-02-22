@@ -1,6 +1,7 @@
-[gd_scene load_steps=54 format=3 uid="uid://x2r2o34whalh"]
+[gd_scene load_steps=55 format=3 uid="uid://x2r2o34whalh"]
 
 [ext_resource type="Texture2D" uid="uid://ex13vhw4eptx" path="res://assets/sprites/ui/craftUI.PNG" id="1_5o5ar"]
+[ext_resource type="Script" path="res://objects/ui/character creator/character_creator.gd" id="2_id1cp"]
 [ext_resource type="Theme" uid="uid://bi4hjoxn8o77w" path="res://objects/ui/character creator/character_creator_theme.tres" id="2_ihh5v"]
 [ext_resource type="Texture2D" uid="uid://dnoywl86nyq5s" path="res://assets/sprites/game/characters/butt.png" id="2_rtooc"]
 [ext_resource type="Texture2D" uid="uid://d3r7uf8d00p2q" path="res://assets/sprites/game/characters/belt.png" id="3_5cov0"]
@@ -2967,6 +2968,7 @@ region = Rect2(136, 114, 240, 274)
 layout_mode = 3
 anchors_preset = 0
 theme = ExtResource("2_ihh5v")
+script = ExtResource("2_id1cp")
 
 [node name="NinePatchRect" type="NinePatchRect" parent="."]
 layout_mode = 0
@@ -3286,6 +3288,33 @@ theme_override_fonts/font = ExtResource("3_jbhop")
 theme_override_font_sizes/font_size = 98
 text = ">"
 
+[node name="Confirm" type="Button" parent="NinePatchRect/GridContainer"]
+custom_minimum_size = Vector2(650, 150)
+layout_mode = 2
+theme_type_variation = &"PanelButton"
+
+[node name="Label" type="Label" parent="NinePatchRect/GridContainer/Confirm"]
+layout_mode = 2
+offset_left = 186.329
+offset_top = 32.4904
+offset_right = 463.329
+offset_bottom = 117.49
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("3_jbhop")
+theme_override_font_sizes/font_size = 85
+text = "Confirm"
+vertical_alignment = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="NinePatchRect/GridContainer/Confirm"]
+layout_mode = 2
+offset_left = 624.905
+offset_top = 74.4904
+offset_right = 629.905
+offset_bottom = 74.4904
+size_flags_horizontal = 8
+size_flags_vertical = 4
+theme_override_constants/margin_right = 5
+
 [node name="Skeleton" type="Node2D" parent="."]
 position = Vector2(662, 1542)
 
@@ -3497,3 +3526,4 @@ offset = Vector2(0, -130)
 [connection signal="color_changed" from="NinePatchRect/GridContainer/Hair Color/MarginContainer/HairColorPickerButton" to="Skeleton/body/Head/head/Hair" method="_on_hair_color_picker_button_color_changed"]
 [connection signal="pressed" from="NinePatchRect/GridContainer/Eyes/MarginContainer/Left" to="Skeleton/body/Head/head/Eyes" method="_on_left_pressed"]
 [connection signal="pressed" from="NinePatchRect/GridContainer/Eyes/MarginContainer/Right" to="Skeleton/body/Head/head/Eyes" method="_on_right_pressed"]
+[connection signal="pressed" from="NinePatchRect/GridContainer/Confirm" to="." method="_on_confirm_pressed"]

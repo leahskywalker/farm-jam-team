@@ -25,31 +25,26 @@ func _ready() -> void:
 
 # Update Texture & Frame
 func update_sprite():
-	if current_facial_hair_index == 0:
-		facial_hair_sprite.texture = null
-		facial_hair_sprite.hframes = 1
-		facial_hair_sprite.frame = 0
-	else:
-		facial_hair_sprite.texture = CharacterCreation.facial_hair_sprites["01"]
-		facial_hair_sprite.hframes = CharacterCreation.facial_hair_hframes
-		facial_hair_sprite.frame = current_facial_hair_index - 1
+	facial_hair_sprite.texture = CharacterCreation.facial_hair_sprites
+	facial_hair_sprite.hframes = CharacterCreation.facial_hair_hframes
+	facial_hair_sprite.frame = current_facial_hair_index
 	
 	CharacterCreation.selected_facial_hair = current_facial_hair_index
 
-# Change Shirt Left
+# Change Facial Hair Left
 func _on_left_pressed() -> void:
 	if current_facial_hair_index == 0:
-		current_facial_hair_index = 2
+		current_facial_hair_index = CharacterCreation.facial_hair_hframes - 1
 	else:
-		current_facial_hair_index = (current_facial_hair_index - 1 + 3) % 3
+		current_facial_hair_index = (current_facial_hair_index - 1) % (CharacterCreation.facial_hair_hframes)
 	update_sprite()
 
-# Change Shirt Right
+# Change Facial Hair Right
 func _on_right_pressed() -> void:
-	current_facial_hair_index = (current_facial_hair_index + 1) % 3
+	current_facial_hair_index = (current_facial_hair_index + 1) % (CharacterCreation.facial_hair_hframes)
 	update_sprite()
 
-# Change Shirt Color
+# Change Facial Hair Color
 func _on_facial_hair_color_picker_button_color_changed(color: Color) -> void:
 	if facial_hair_sprite.material:
 		facial_hair_sprite.material.set_shader_parameter("newColor", color)
