@@ -1,3 +1,6 @@
+TextureButton
+GridContainer
+NinePatchRect
 CollisionShape2D
 StaticBody2D
 Node2D
@@ -7,8 +10,6 @@ ColorPickerButton
 Label
 Button
 PanelContainer
-GridContainer
 Node
-NinePatchRect
 Control
 GPUParticles2D

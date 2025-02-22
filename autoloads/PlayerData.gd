@@ -4,6 +4,7 @@ var Inventory: Inv = Inv.new()
 var holding_item: InvItem = null
 
 const InventorySize: int = 36
+var PlayerMoney: int = 100
 
 var PlayerNode: Node2D
 
