@@ -1,3 +1,5 @@
+CollisionShape2D
+StaticBody2D
 Node2D
 Sprite2D
 MarginContainer
@@ -9,6 +11,4 @@ GridContainer
 Node
 NinePatchRect
 Control
-CollisionShape2D
-StaticBody2D
 GPUParticles2D

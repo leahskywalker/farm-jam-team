@@ -1,9 +1,10 @@
 [gd_resource type="TileSet" load_steps=3 format=3 uid="uid://cjuxagv22qq78"]
 
-[ext_resource type="Texture2D" uid="uid://dj67c55hxt5d3" path="res://assets/sprites/game/environment/tiles/greenGROUND.png" id="1_r4iex"]
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_pm045"]
+load_path = "res://.godot/imported/greenGROUND.png-c87dd8c2fa454f17e368d414c39dcd9a.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_w4ma4"]
-texture = ExtResource("1_r4iex")
+texture = SubResource("CompressedTexture2D_pm045")
 texture_region_size = Vector2i(512, 512)
 0:0/0 = 0
 0:0/0/terrain_set = 0

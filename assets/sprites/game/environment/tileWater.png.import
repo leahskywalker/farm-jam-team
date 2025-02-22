@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://xkgoc7titv2y"
-path="res://.godot/imported/tilesetDUAL.png-39ef9d452970cc50e822646ca445f904.ctex"
+uid="uid://ljg45y0olvtr"
+path="res://.godot/imported/tileWater.png-58d0adc5772a1da222ab178f3af61017.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/game/environment/tiles/tilesetDUAL.png"
-dest_files=["res://.godot/imported/tilesetDUAL.png-39ef9d452970cc50e822646ca445f904.ctex"]
+source_file="res://assets/sprites/game/environment/tileWater.png"
+dest_files=["res://.godot/imported/tileWater.png-58d0adc5772a1da222ab178f3af61017.ctex"]
 
 [params]
 
