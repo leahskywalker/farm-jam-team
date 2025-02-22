@@ -1,4 +1,4 @@
-[gd_scene load_steps=79 format=4 uid="uid://bubfu2ss4ru2x"]
+[gd_scene load_steps=80 format=4 uid="uid://bubfu2ss4ru2x"]
 
 [ext_resource type="Texture2D" uid="uid://73dvtmidrosx" path="res://assets/sprites/game/environment/tileGrass.png" id="1_5so52"]
 [ext_resource type="Texture2D" uid="uid://b5ckipxfkbcfk" path="res://assets/sprites/game/environment/tiles/fencePosts.png" id="2_44s62"]
@@ -28,6 +28,7 @@
 [ext_resource type="Texture2D" uid="uid://b0itbrawo5cmw" path="res://assets/sprites/game/environment/forgeANIMATED.png" id="24_sa8kk"]
 [ext_resource type="Texture2D" uid="uid://w2f43bexwrpm" path="res://assets/sprites/game/environment/tiles/anvil.png" id="25_265dl"]
 [ext_resource type="Texture2D" uid="uid://r2fi8byr8yg" path="res://assets/sprites/game/environment/farmProps_0010_treeDEAD1.png" id="28_uml1y"]
+[ext_resource type="Script" path="res://objects/world/daylight_visual.gd" id="29_ibxnd"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_i8l4m"]
 load_path = "res://.godot/imported/newTiles.png-dfbb9ce5cb6010b691256e4ec6742cdb.ctex"
@@ -1039,3 +1040,6 @@ texture = ExtResource("28_uml1y")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="treesChoppable/deadTree/StaticBody2D"]
 shape = SubResource("CapsuleShape2D_khqly")
+
+[node name="DaylightVisual" type="CanvasModulate" parent="."]
+script = ExtResource("29_ibxnd")

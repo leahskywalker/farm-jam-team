@@ -1,12 +1,12 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1740246945
-character_setup.tscn::PackedScene::7104991931779310506::1740069617::0::1::::<><>::uid://bbtpexw27hdti::::res://assets/sprites/game/characters/shirts.png<>uid://dnoywl86nyq5s::::res://assets/sprites/game/characters/butt.png<>uid://d3r7uf8d00p2q::::res://assets/sprites/game/characters/belt.png<>uid://nvb08oeumena::::res://assets/sprites/game/characters/legF.png<>uid://b0icfy05fp8nn::::res://assets/sprites/game/characters/legB.png<>uid://du4v4nbu7ilmg::::res://assets/sprites/game/characters/basedHEAD.png<>uid://cyf4wsfeonyd2::::res://assets/sprites/game/characters/mouths.png<>uid://6r3o5a7ttau3::::res://assets/sprites/game/characters/mouthHair.png<>uid://dm843o100mua6::::res://assets/sprites/game/characters/eyes.png<>uid://clnru15xu7866::::res://assets/sprites/game/characters/hair.png<>uid://ck2cv4os3d5ly::::res://assets/sprites/game/characters/palm.png<>uid://b11jdda4j0yho::::res://assets/sprites/game/tools/toolAX.png<>uid://c6sqjf2stmtx3::::res://assets/sprites/game/tools/toolHOE.png<>uid://djyjnueurkdtw::::res://assets/sprites/game/tools/toolSHOVEL.png<>uid://dmomofpkp2wpv::::res://assets/sprites/game/tools/tool_0002_hammer.png<>uid://cwobyue24435o::::res://assets/sprites/game/tools/toolPICK.png<>uid://dxsl31et52fn1::::res://assets/sprites/game/characters/handFINGERS.png<>uid://coug41xpvnu47::::res://assets/sprites/game/characters/knuckles.png<>uid://cdkgb5km17nqg::::res://assets/sprites/game/tools/fertilizerBag.png<>uid://1hmpqqompweo::::res://assets/sprites/game/tools/toolSAW.png<>uid://dob8b2eulb81::::res://assets/sprites/game/characters/thumb.png<>uid://bcu78b4i1jhg0::::res://assets/sprites/game/tools/toolWATERCAN.png
-exterior_world.tscn::PackedScene::3792602681843955733::1740239999::0::1::::<><>::uid://73dvtmidrosx::::res://assets/sprites/game/environment/tileGrass.png<>uid://b5ckipxfkbcfk::::res://assets/sprites/game/environment/tiles/fencePosts.png<>uid://bddsgdiaxmimw::::res://assets/sprites/game/environment/tiles/swampWater.png<>uid://ljg45y0olvtr::::res://assets/sprites/game/environment/tileWater.png<>uid://bxb7u3l4xvapp::::res://assets/sprites/game/environment/farmProps_0003_barrel1.png<>uid://bqv5sib60oal3::::res://assets/sprites/game/environment/farmProps_0002_barrelCLOSED.png<>uid://bixuj8s7ykhrg::::res://assets/sprites/game/environment/merchantWAGON.PNG<>uid://cvc48wxlcgo05::::res://assets/sprites/game/environment/beeHOUSE.PNG<>uid://cilmcg0kb1muo::::res://assets/sprites/game/environment/homeHOUSE.PNG<>uid://c6rb2hqf463uu::::res://assets/sprites/game/environment/birdHOUSE.PNG<>uid://dkffkg3ad3qbh::::res://assets/sprites/game/environment/farmProps_0011_well.png<>uid://0qa4yw78cgds::::res://assets/sprites/game/environment/choppingBLOCK.PNG<>uid://bglmna2y2o4km::::res://assets/sprites/game/environment/farmProps_0008_lampMERCHANT.png<>uid://1husc8j6vb40::::res://assets/sprites/game/plants/appleBERRYshroom.png<>uid://cui2xqucuwxnf::::res://assets/sprites/game/environment/compost.png<>uid://bb2actxosh0au::::res://assets/sprites/game/environment/scarecrow.png<>uid://doliiodbs6m53::::res://objects/characters/player/player.tscn<>uid://b1bf6ebg6hh5b::::res://assets/sprites/game/environment/tiles/treePine3.png<>uid://d3432fflcscxm::::res://assets/sprites/game/environment/tiles/treePine2.png<>uid://dwwbg0x3r1crj::::res://assets/sprites/game/environment/tiles/treePine1.png<>uid://dk1xbbn2kvyf3::::res://assets/sprites/game/environment/tiles/treeBig2.png<>uid://d5via3bbkrv2::::res://assets/sprites/game/environment/tiles/treeBig1.png<>uid://8hmnsqn3yqi4::::res://assets/sprites/game/environment/tiles/firePit.png<>uid://b8hilrc6mrl5c::::res://assets/sprites/game/environment/tiles/fireTexture.png<>uid://cwsqy8s73ayqo::::res://assets/sprites/game/environment/tiles/craftingTable.png<>uid://b0itbrawo5cmw::::res://assets/sprites/game/environment/forgeANIMATED.png<>uid://w2f43bexwrpm::::res://assets/sprites/game/environment/tiles/anvil.png<>uid://r2fi8byr8yg::::res://assets/sprites/game/environment/farmProps_0010_treeDEAD1.png
+::res://::1740253494
+character_setup.tscn::PackedScene::7104991931779310506::1740249227::0::1::::<><>::uid://bbtpexw27hdti::::res://assets/sprites/game/characters/shirts.png<>uid://dnoywl86nyq5s::::res://assets/sprites/game/characters/butt.png<>uid://d3r7uf8d00p2q::::res://assets/sprites/game/characters/belt.png<>uid://nvb08oeumena::::res://assets/sprites/game/characters/legF.png<>uid://b0icfy05fp8nn::::res://assets/sprites/game/characters/legB.png<>uid://du4v4nbu7ilmg::::res://assets/sprites/game/characters/basedHEAD.png<>uid://cyf4wsfeonyd2::::res://assets/sprites/game/characters/mouths.png<>uid://6r3o5a7ttau3::::res://assets/sprites/game/characters/mouthHair.png<>uid://dm843o100mua6::::res://assets/sprites/game/characters/eyes.png<>uid://clnru15xu7866::::res://assets/sprites/game/characters/hair.png<>uid://ck2cv4os3d5ly::::res://assets/sprites/game/characters/palm.png<>uid://b11jdda4j0yho::::res://assets/sprites/game/tools/toolAX.png<>uid://c6sqjf2stmtx3::::res://assets/sprites/game/tools/toolHOE.png<>uid://djyjnueurkdtw::::res://assets/sprites/game/tools/toolSHOVEL.png<>uid://dmomofpkp2wpv::::res://assets/sprites/game/tools/tool_0002_hammer.png<>uid://cwobyue24435o::::res://assets/sprites/game/tools/toolPICK.png<>uid://dxsl31et52fn1::::res://assets/sprites/game/characters/handFINGERS.png<>uid://coug41xpvnu47::::res://assets/sprites/game/characters/knuckles.png<>uid://cdkgb5km17nqg::::res://assets/sprites/game/tools/fertilizerBag.png<>uid://1hmpqqompweo::::res://assets/sprites/game/tools/toolSAW.png<>uid://dob8b2eulb81::::res://assets/sprites/game/characters/thumb.png<>uid://bcu78b4i1jhg0::::res://assets/sprites/game/tools/toolWATERCAN.png
+exterior_world.tscn::PackedScene::3792602681843955733::1740249227::0::1::::<><>::uid://73dvtmidrosx::::res://assets/sprites/game/environment/tileGrass.png<>uid://b5ckipxfkbcfk::::res://assets/sprites/game/environment/tiles/fencePosts.png<>uid://bddsgdiaxmimw::::res://assets/sprites/game/environment/tiles/swampWater.png<>uid://ljg45y0olvtr::::res://assets/sprites/game/environment/tileWater.png<>uid://bxb7u3l4xvapp::::res://assets/sprites/game/environment/farmProps_0003_barrel1.png<>uid://bqv5sib60oal3::::res://assets/sprites/game/environment/farmProps_0002_barrelCLOSED.png<>uid://bixuj8s7ykhrg::::res://assets/sprites/game/environment/merchantWAGON.PNG<>uid://cvc48wxlcgo05::::res://assets/sprites/game/environment/beeHOUSE.PNG<>uid://cilmcg0kb1muo::::res://assets/sprites/game/environment/homeHOUSE.PNG<>uid://c6rb2hqf463uu::::res://assets/sprites/game/environment/birdHOUSE.PNG<>uid://dkffkg3ad3qbh::::res://assets/sprites/game/environment/farmProps_0011_well.png<>uid://0qa4yw78cgds::::res://assets/sprites/game/environment/choppingBLOCK.PNG<>uid://bglmna2y2o4km::::res://assets/sprites/game/environment/farmProps_0008_lampMERCHANT.png<>uid://1husc8j6vb40::::res://assets/sprites/game/plants/appleBERRYshroom.png<>uid://cui2xqucuwxnf::::res://assets/sprites/game/environment/compost.png<>uid://bb2actxosh0au::::res://assets/sprites/game/environment/scarecrow.png<>uid://doliiodbs6m53::::res://objects/characters/player/player.tscn<>uid://b1bf6ebg6hh5b::::res://assets/sprites/game/environment/tiles/treePine3.png<>uid://d3432fflcscxm::::res://assets/sprites/game/environment/tiles/treePine2.png<>uid://dwwbg0x3r1crj::::res://assets/sprites/game/environment/tiles/treePine1.png<>uid://dk1xbbn2kvyf3::::res://assets/sprites/game/environment/tiles/treeBig2.png<>uid://d5via3bbkrv2::::res://assets/sprites/game/environment/tiles/treeBig1.png<>uid://8hmnsqn3yqi4::::res://assets/sprites/game/environment/tiles/firePit.png<>uid://b8hilrc6mrl5c::::res://assets/sprites/game/environment/tiles/fireTexture.png<>uid://cwsqy8s73ayqo::::res://assets/sprites/game/environment/tiles/craftingTable.png<>uid://b0itbrawo5cmw::::res://assets/sprites/game/environment/forgeANIMATED.png<>uid://w2f43bexwrpm::::res://assets/sprites/game/environment/tiles/anvil.png<>uid://r2fi8byr8yg::::res://assets/sprites/game/environment/farmProps_0010_treeDEAD1.png
 houseINTERIOR.tscn::PackedScene::448212525751630077::1740069617::0::1::::<><>::uid://87v0cnue8cw8::::res://assets/sprites/game/environment/tiles/stoneTILE.png<>uid://b3uk6r5fxhsty::::res://assets/sprites/game/environment/tiles/intWALLS.png<>uid://cow2p2eoc5rxk::::res://assets/sprites/game/environment/propsINTERIOR.png
 README.md::TextFile::-1::1738518083::0::1::::<><>::
 sacrifice.tscn::PackedScene::161844780300612338::1740069617::0::1::::<><>::uid://cmmg4me82e5ta::::res://assets/sprites/game/environment/tiles/sacrificeGROUND.PNG<>uid://2mo3mwhvk7rw::::res://assets/sprites/game/environment/tiles/sacrificeTREES.PNG<>uid://bjblxnuepoj16::::res://assets/sprites/game/environment/tiles/sacredTree.png
 ::res://addons/::1739131435
-::res://addons/kanban_tasks/::1740240054
+::res://addons/kanban_tasks/::1740246957
 icon.svg::CompressedTexture2D::2584192313033160869::1739131435::1740246957::1::::<><>::
 plugin.cfg::TextFile::-1::1739131435::0::1::::<><>::
 plugin.gd::GDScript::-1::1739131435::0::1::::<><>::
@@ -44,7 +44,7 @@ details.tscn::PackedScene::3948778088959725227::1739131435::0::1::::<><>::res://
 step_entry.gd::GDScript::-1::1739131435::0::1::::<>HBoxContainer<>::
 step_holder.gd::GDScript::-1::1739131435::0::1::::<>VBoxContainer<>::
 step_holder.tscn::PackedScene::8722415027818856523::1739131435::0::1::::<><>::res://addons/kanban_tasks/view/details/step_holder.gd
-::res://addons/kanban_tasks/view/documentation/::1740240054
+::res://addons/kanban_tasks/view/documentation/::1740246957
 1.svg::CompressedTexture2D::1973766188787944111::1739131435::1740246957::1::::<><>::
 2.svg::CompressedTexture2D::2487100435207923230::1739131435::1740246957::1::::<><>::
 3.svg::CompressedTexture2D::2525364531538903352::1739131435::1740246957::1::::<><>::
@@ -74,13 +74,13 @@ autosize_label.gd::GDScript::-1::1739131436::0::1::::<>Label<>::
 task.gd::GDScript::-1::1739131436::0::1::::<>MarginContainer<>::
 task.tscn::PackedScene::5508831843714498441::1739131436::0::1::::<><>::res://addons/kanban_tasks/view/task/task.gd<>res://addons/kanban_tasks/edit_label/edit_label.gd<>res://addons/kanban_tasks/view/task/autosize_label.gd<>uid://bwi22eyrmeeet::::res://addons/kanban_tasks/view/details/details.tscn<>uid://dwjg5vyxx4g48::::res://addons/kanban_tasks/view/details/step_holder.tscn<>res://addons/kanban_tasks/expand_button/expand_button.gd
 ::res://assets/::1739716641
-::res://assets/fonts/::1740240047
+::res://assets/fonts/::1740246949
 Dudu_Calligraphy.ttf::FontFile::6523233154093390944::1738695594::1740246949::1::::<><>::
 Gothica-Bold.ttf::FontFile::1037199113879134913::1738695594::1740246949::1::::<><>::
 ZX Palm.ttf::FontFile::4701651461569063166::1739126345::1740246949::1::::<><>::
 ::res://assets/json/::1738518083
 world_dialog.json::JSON::-1::1738518083::0::1::::<><>::
-::res://assets/music/::1740240047
+::res://assets/music/::1740246949
 Barn_or_Village.mp3::AudioStreamMP3::3418519043863265197::1739716641::1740246949::1::::<><>::
 Haunted_House.mp3::AudioStreamMP3::8368537270405698475::1739716641::1740246949::1::::<><>::
 House.mp3::AudioStreamMP3::3889508546545589300::1739716641::1740246949::1::::<><>::
@@ -88,7 +88,7 @@ Magic_Altar.mp3::AudioStreamMP3::2741135172523353521::1739716641::1740246949::1:
 menu_loop.mp3::AudioStreamMP3::1269725702558319793::1739716641::1740246949::1::::<><>::
 Sacrifice Altar.mp3::AudioStreamMP3::2148686343342609903::1739716641::1740246949::1::::<><>::
 Sleep.mp3::AudioStreamMP3::4184649161565202332::1739716641::1740246949::1::::<><>::
-::res://assets/music/Day loop/::1740240047
+::res://assets/music/Day loop/::1740246949
 0-Dawn_intro.mp3::AudioStreamMP3::8088888790442763120::1739716641::1740246949::1::::<><>::
 1-Morning.mp3::AudioStreamMP3::2911371257228962632::1739716641::1740246949::1::::<><>::
 2-Day.mp3::AudioStreamMP3::4182019479626108057::1739716641::1740246949::1::::<><>::
@@ -97,7 +97,7 @@ Sleep.mp3::AudioStreamMP3::4184649161565202332::1739716641::1740246949::1::::<><
 5-Terror.mp3::AudioStreamMP3::503973822237876611::1739716641::1740246949::1::::<><>::
 ::res://assets/sprites/::1738695594
 ::res://assets/sprites/game/::1739210012
-::res://assets/sprites/game/characters/::1740240057
+::res://assets/sprites/game/characters/::1740246960
 baseBody.png::CompressedTexture2D::4028696314283605290::1739382350::1740246957::1::::<><>::
 basedHEAD.png::CompressedTexture2D::8624233408879177162::1739382350::1740246957::1::::<><>::
 belt.png::CompressedTexture2D::9161623068175862874::1739382350::1740246957::1::::<><>::
@@ -114,7 +114,7 @@ mouths.png::CompressedTexture2D::6469496537070727273::1739382350::1740246952::1:
 palm.png::CompressedTexture2D::5530628484443499678::1739382350::1740246952::1::::<><>::
 shirts.png::CompressedTexture2D::2496751846017934642::1740069615::1740246953::1::::<><>::
 thumb.png::CompressedTexture2D::239587562104534488::1739382350::1740246952::1::::<><>::
-::res://assets/sprites/game/environment/::1740240060
+::res://assets/sprites/game/environment/::1740246963
 beeHOUSE.PNG::CompressedTexture2D::6252756754829010712::1739210011::1740246962::1::::<><>::
 birdHOUSE.PNG::CompressedTexture2D::6983899268059924884::1739210011::1740246963::1::::<><>::
 choppingBLOCK.PNG::CompressedTexture2D::1787804219083226928::1739210011::1740246963::1::::<><>::
@@ -139,7 +139,7 @@ propsINTERIOR.png::CompressedTexture2D::5802569059570878252::1739382350::1740246
 scarecrow.png::CompressedTexture2D::2512352332413165520::1740069615::1740246959::1::::<><>::
 tileGrass.png::CompressedTexture2D::2304066243030495339::1740239999::1740246962::1::::<><>::
 tileWater.png::CompressedTexture2D::791074383715596867::1740239999::1740246962::1::::<><>::
-::res://assets/sprites/game/environment/tiles/::1740240061
+::res://assets/sprites/game/environment/tiles/::1740246964
 anvil.png::CompressedTexture2D::1600249604795371438::1740069615::1740246953::1::::<><>::
 brownGROUND.png::CompressedTexture2D::7759498566216486610::1740069615::1740246964::1::::<><>::
 craftingTable.png::CompressedTexture2D::6355170820502384974::1740069615::1740246953::1::::<><>::
@@ -159,13 +159,13 @@ treeBig2.png::CompressedTexture2D::7916222659539495438::1740069616::1740246962::
 treePine1.png::CompressedTexture2D::8748905703371716083::1740069616::1740246962::1::::<><>::
 treePine2.png::CompressedTexture2D::9186165190888782322::1740069617::1740246962::1::::<><>::
 treePine3.png::CompressedTexture2D::4213754152563415105::1740069617::1740246962::1::::<><>::
-::res://assets/sprites/game/plants/::1740240059
+::res://assets/sprites/game/plants/::1740246962
 appleBERRYshroom.png::CompressedTexture2D::1840607219489296623::1739382350::1740246960::1::::<><>::
 carrot_grow.png::CompressedTexture2D::3416927402737638767::1739210012::1740246960::1::::<><>::
 cropCycles.png::CompressedTexture2D::7215233904510224727::1739382350::1740246962::1::::<><>::
 crops.PNG::CompressedTexture2D::1080941014175780490::1738695594::1740246961::1::::<><>::
 soil_circles.png::CompressedTexture2D::3124584102251985304::1739210012::1740246950::1::::<><>::
-::res://assets/sprites/game/tools/::1740240048
+::res://assets/sprites/game/tools/::1740246951
 fertilizerBag.png::CompressedTexture2D::5004419355321192314::1739716641::1740246950::1::::<><>::
 toolAX.png::CompressedTexture2D::4265556409104825428::1739382350::1740246950::1::::<><>::
 toolHOE.png::CompressedTexture2D::6986842168937881862::1739382350::1740246950::1::::<><>::
@@ -176,13 +176,13 @@ toolSHOVEL.png::CompressedTexture2D::7841077435752734984::1739382350::1740246950
 toolTORCH.png::CompressedTexture2D::2600280125289540369::1739382350::1740246950::1::::<><>::
 toolWATERCAN.png::CompressedTexture2D::2570087898739018153::1739382350::1740246950::1::::<><>::
 tool_0002_hammer.png::CompressedTexture2D::8031183354584698163::1739382350::1740246950::1::::<><>::
-::res://assets/sprites/ui/::1740240054
+::res://assets/sprites/ui/::1740246956
 bookINVENTORY.png::CompressedTexture2D::8186769342028906890::1739210012::1740246952::1::::<><>::
 craftUI.PNG::CompressedTexture2D::329865821779261769::1739210012::1740246952::1::::<><>::
 farmGUIv2.png::CompressedTexture2D::6770082285021582309::1739210012::1740246956::1::::<><>::
 farm_gui.png::CompressedTexture2D::3396077717058385588::1738695594::1740246956::1::::<><>::
 farm_gui_v3.png::CompressedTexture2D::1511264740294823118::1739385353::1740246956::1::::<><>::
-::res://assets/sprites/ui/iconINVENTORY/::1740240050
+::res://assets/sprites/ui/iconINVENTORY/::1740246952
 fertilizer.png::CompressedTexture2D::6139132592198696872::1739716641::1740246950::1::::<><>::
 iconUI_0000_waterCAN.png::CompressedTexture2D::4089317953591742953::1739210012::1740246950::1::::<><>::
 iconUI_0001_hoe.png::CompressedTexture2D::7671780839202766657::1739210012::1740246950::1::::<><>::
@@ -242,20 +242,20 @@ PlayerData.gd::GDScript::-1::1740246924::0::1::::<>Node<>::
 signal_bus.gd::GDScript::-1::1738518083::0::1::::<>Node<>::
 ::res://objects/::1738518083
 ::res://objects/characters/::1738518083
-::res://objects/characters/player/::1740069617
+::res://objects/characters/player/::1740249227
 player.gd::GDScript::-1::1739731116::0::1::::Player<>CharacterBody2D<>::
-player.tscn::PackedScene::8165114779631823040::1740069617::0::1::::<><>::res://objects/characters/player/player.gd<>uid://c8hygc8618jne::::res://character_setup.tscn
+player.tscn::PackedScene::8165114779631823040::1740249227::0::1::::<><>::res://objects/characters/player/player.gd<>uid://c8hygc8618jne::::res://character_setup.tscn
 ::res://objects/ui/::1740240253
 dialog_player.gd::GDScript::-1::1738695594::0::1::::<>CanvasLayer<>::
 dialog_player.tscn::PackedScene::5092205455746761627::1739382369::0::1::::<><>::uid://bonc5y3ajkxo3::::res://assets/sprites/ui/farm_gui.png<>res://objects/ui/dialog_player.gd
 hotbar.gd::GDScript::-1::1739728332::0::1::::<>Control<>::
 hotbar_ui_slot.tscn::PackedScene::178577554861491559::1739732355::0::1::::<><>::uid://vsckr0tnt1c1::::res://assets/sprites/ui/farm_gui_v3.png<>res://objects/ui/inventory/inv_ui_slot.gd<>uid://bonc5y3ajkxo3::::res://assets/sprites/ui/farm_gui.png
 tools_panel.tscn::PackedScene::2053036768296611846::1739732355::0::1::::<><>::uid://bonc5y3ajkxo3::::res://assets/sprites/ui/farm_gui.png<>uid://c3pqjbvkiwos0::::res://assets/sprites/ui/farmGUIv2.png<>uid://vsckr0tnt1c1::::res://assets/sprites/ui/farm_gui_v3.png<>res://objects/ui/hotbar.gd<>uid://csre8b0glfnb::::res://objects/ui/hotbar_ui_slot.tscn
-::res://objects/ui/character creator/::1740246924
+::res://objects/ui/character creator/::1740252922
 character_creator.gd::GDScript::-1::1740246924::0::1::::<>Control<>::
-character_creator.tscn::PackedScene::1671162788275548725::1740246924::0::1::::<><>::uid://ex13vhw4eptx::::res://assets/sprites/ui/craftUI.PNG<>res://objects/ui/character creator/character_creator.gd<>uid://bi4hjoxn8o77w::::res://objects/ui/character creator/character_creator_theme.tres<>uid://dnoywl86nyq5s::::res://assets/sprites/game/characters/butt.png<>uid://d3r7uf8d00p2q::::res://assets/sprites/game/characters/belt.png<>uid://cy65xxytadbsa::::res://assets/fonts/Dudu_Calligraphy.ttf<>uid://nvb08oeumena::::res://assets/sprites/game/characters/legF.png<>uid://b0icfy05fp8nn::::res://assets/sprites/game/characters/legB.png<>uid://du4v4nbu7ilmg::::res://assets/sprites/game/characters/basedHEAD.png<>uid://cyf4wsfeonyd2::::res://assets/sprites/game/characters/mouths.png<>uid://6r3o5a7ttau3::::res://assets/sprites/game/characters/mouthHair.png<>res://objects/ui/character creator/head.gd<>uid://dm843o100mua6::::res://assets/sprites/game/characters/eyes.png<>res://objects/ui/character creator/mouth.gd<>uid://clnru15xu7866::::res://assets/sprites/game/characters/hair.png<>uid://ck2cv4os3d5ly::::res://assets/sprites/game/characters/palm.png<>uid://b11jdda4j0yho::::res://assets/sprites/game/tools/toolAX.png<>uid://c6sqjf2stmtx3::::res://assets/sprites/game/tools/toolHOE.png<>uid://djyjnueurkdtw::::res://assets/sprites/game/tools/toolSHOVEL.png<>res://objects/ui/character creator/facial_hair.gd<>uid://dmomofpkp2wpv::::res://assets/sprites/game/tools/tool_0002_hammer.png<>res://objects/ui/character creator/hair.gd<>uid://cwobyue24435o::::res://assets/sprites/game/tools/toolPICK.png<>res://objects/ui/character creator/eyes.gd<>uid://dxsl31et52fn1::::res://assets/sprites/game/characters/handFINGERS.png<>uid://coug41xpvnu47::::res://assets/sprites/game/characters/knuckles.png<>uid://cdkgb5km17nqg::::res://assets/sprites/game/tools/fertilizerBag.png<>uid://1hmpqqompweo::::res://assets/sprites/game/tools/toolSAW.png<>uid://dob8b2eulb81::::res://assets/sprites/game/characters/thumb.png<>uid://bcu78b4i1jhg0::::res://assets/sprites/game/tools/toolWATERCAN.png<>res://objects/ui/character creator/shirt.gd<>uid://bbtpexw27hdti::::res://assets/sprites/game/characters/shirts.png<>res://objects/ui/character creator/character_creator_shader.gdshader
-character_creator_shader.gdshader::Shader::-1::1740244623::0::1::::<><>::
-character_creator_theme.tres::Theme::3008240250252354486::1740246924::0::1::::<><>::uid://vsckr0tnt1c1::::res://assets/sprites/ui/farm_gui_v3.png
+character_creator.tscn::PackedScene::1671162788275548725::1740249226::0::1::::<><>::uid://ex13vhw4eptx::::res://assets/sprites/ui/craftUI.PNG<>res://objects/ui/character creator/character_creator.gd<>uid://bi4hjoxn8o77w::::res://objects/ui/character creator/character_creator_theme.tres<>uid://dnoywl86nyq5s::::res://assets/sprites/game/characters/butt.png<>uid://d3r7uf8d00p2q::::res://assets/sprites/game/characters/belt.png<>uid://cy65xxytadbsa::::res://assets/fonts/Dudu_Calligraphy.ttf<>uid://nvb08oeumena::::res://assets/sprites/game/characters/legF.png<>uid://b0icfy05fp8nn::::res://assets/sprites/game/characters/legB.png<>uid://du4v4nbu7ilmg::::res://assets/sprites/game/characters/basedHEAD.png<>uid://cyf4wsfeonyd2::::res://assets/sprites/game/characters/mouths.png<>uid://6r3o5a7ttau3::::res://assets/sprites/game/characters/mouthHair.png<>res://objects/ui/character creator/head.gd<>uid://dm843o100mua6::::res://assets/sprites/game/characters/eyes.png<>res://objects/ui/character creator/mouth.gd<>uid://clnru15xu7866::::res://assets/sprites/game/characters/hair.png<>uid://ck2cv4os3d5ly::::res://assets/sprites/game/characters/palm.png<>uid://b11jdda4j0yho::::res://assets/sprites/game/tools/toolAX.png<>uid://c6sqjf2stmtx3::::res://assets/sprites/game/tools/toolHOE.png<>uid://djyjnueurkdtw::::res://assets/sprites/game/tools/toolSHOVEL.png<>res://objects/ui/character creator/facial_hair.gd<>uid://dmomofpkp2wpv::::res://assets/sprites/game/tools/tool_0002_hammer.png<>res://objects/ui/character creator/hair.gd<>uid://cwobyue24435o::::res://assets/sprites/game/tools/toolPICK.png<>res://objects/ui/character creator/eyes.gd<>uid://dxsl31et52fn1::::res://assets/sprites/game/characters/handFINGERS.png<>uid://coug41xpvnu47::::res://assets/sprites/game/characters/knuckles.png<>uid://cdkgb5km17nqg::::res://assets/sprites/game/tools/fertilizerBag.png<>uid://1hmpqqompweo::::res://assets/sprites/game/tools/toolSAW.png<>uid://dob8b2eulb81::::res://assets/sprites/game/characters/thumb.png<>uid://bcu78b4i1jhg0::::res://assets/sprites/game/tools/toolWATERCAN.png<>res://objects/ui/character creator/shirt.gd<>uid://bbtpexw27hdti::::res://assets/sprites/game/characters/shirts.png<>res://objects/ui/character creator/character_creator_shader.gdshader
+character_creator_shader.gdshader::Shader::-1::1740252922::0::1::::<><>::
+character_creator_theme.tres::Theme::3008240250252354486::1740249226::0::1::::<><>::uid://vsckr0tnt1c1::::res://assets/sprites/ui/farm_gui_v3.png
 eyes.gd::GDScript::-1::1740069617::0::1::::<>Node2D<>::
 facial_hair.gd::GDScript::-1::1740246924::0::1::::<>Node2D<>::
 hair.gd::GDScript::-1::1740069617::0::1::::<>Node2D<>::
@@ -280,8 +280,8 @@ Axe.tres::Resource/InvItem::5587712262702247120::1739728968::0::1::::<><>::res:/
 carrot_item.tres::Resource/InvItem::5817059942764831936::1739731808::0::1::::<><>::res://objects/ui/inventory/inventory_item.gd<>uid://pnu68knud3e1::::res://assets/sprites/game/plants/crops.PNG
 Hoe.tres::Resource/InvItem::7628647937615663053::1739728634::0::1::::<><>::res://objects/ui/inventory/inventory_item.gd<>uid://b8en51cmqlw4i::::res://assets/sprites/game/tools/tools.PNG
 Pickaxe.tres::Resource/InvItem::3468199850143603318::1739729018::0::1::::<><>::res://objects/ui/inventory/inventory_item.gd<>uid://b8en51cmqlw4i::::res://assets/sprites/game/tools/tools.PNG
-::res://objects/ui/shop/::1740241001
-shop.tscn::PackedScene::3137318861469520184::1740241001::0::1::::<><>::res://objects/ui/shop/shop_item_display.gd
+::res://objects/ui/shop/::1740249226
+shop.tscn::PackedScene::3137318861469520184::1740249226::0::1::::<><>::res://objects/ui/shop/shop_item_display.gd
 shop_item_display.gd::GDScript::-1::1740241001::0::1::::<>Control<>::
 ::res://objects/world/::1740239999
 dialog_area.gd::GDScript::-1::1738695594::0::1::::<>Area2D<>::

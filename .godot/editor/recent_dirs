@@ -1,3 +1,4 @@
+res://objects/world
 res://objects/ui/shop
 res://objects/ui/character creator
 res://objects/ui
@@ -9,5 +10,4 @@ res://assets/sprites/game/characters
 res://objects/world/tilesets
 res://objects/ui/inventory
 res://assets/json
-res://objects/world
 res://objects

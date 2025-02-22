@@ -7,7 +7,7 @@ const MINUTES_PER_HOUR: int = 60
 const GAME_MINUTE_DURATION: float = TAU / MINUTES_PER_DAY
 
 # This Makes the Day ~ 9 Minutes and 20 Seconds Long
-var game_speed: float = 2.5
+var game_speed: float = 100.0
 
 # Initial Starting Time Variables
 var initial_day: int = 1
@@ -17,6 +17,7 @@ var initial_minute: int = 00
 # Initializing and Detecting Changes to Emit Signals
 var time: float = 0.0
 var current_minute: int = -1
+var day_progression: float = 0.0
 var current_day: int = 0
 
 signal game_time(time: float)
@@ -42,11 +43,13 @@ func set_initial_time() -> void:
 
 # Calculate Time Ticks to Emit
 func recalculate_time() -> void:
-	var total_minutes: int = int(time / GAME_MINUTE_DURATION)
-	var day: int = int(total_minutes / MINUTES_PER_DAY)
+	var total_minutes: int = floori(time / GAME_MINUTE_DURATION)
+	var day: int = floori(total_minutes / MINUTES_PER_DAY)
 	var current_day_minutes: int = total_minutes % MINUTES_PER_DAY
-	var hour: int = int(current_day_minutes / MINUTES_PER_HOUR)
-	var minute: int = int(current_day_minutes % MINUTES_PER_HOUR)
+	var hour: int = floori(current_day_minutes / MINUTES_PER_HOUR)
+	var minute: int = current_day_minutes % MINUTES_PER_HOUR
+	
+	day_progression = float(current_day_minutes)/MINUTES_PER_DAY
 	
 	if current_minute != minute:
 		current_minute = minute
