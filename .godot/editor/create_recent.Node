@@ -1,3 +1,5 @@
+AudioStreamPlayer
+Node
 CanvasModulate
 ColorRect
 CanvasLayer
@@ -10,5 +12,3 @@ CollisionShape2D
 StaticBody2D
 Node2D
 MarginContainer
-ColorPickerButton
-Label

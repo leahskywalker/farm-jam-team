@@ -1,8 +1,9 @@
-[gd_scene load_steps=11 format=4 uid="uid://gnd83agm1uc0"]
+[gd_scene load_steps=12 format=4 uid="uid://gnd83agm1uc0"]
 
 [ext_resource type="Texture2D" uid="uid://87v0cnue8cw8" path="res://assets/sprites/game/environment/tiles/stoneTILE.png" id="1_ltw7v"]
 [ext_resource type="Texture2D" uid="uid://b3uk6r5fxhsty" path="res://assets/sprites/game/environment/tiles/intWALLS.png" id="2_6y041"]
 [ext_resource type="Texture2D" uid="uid://cow2p2eoc5rxk" path="res://assets/sprites/game/environment/propsINTERIOR.png" id="3_lhg87"]
+[ext_resource type="AudioStream" uid="uid://bvodvw7gt6c3m" path="res://assets/music/House.mp3" id="4_y5642"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8u1cx"]
 texture = ExtResource("1_ltw7v")
@@ -161,3 +162,11 @@ rendering_quadrant_size = 256
 position = Vector2(-18.865, -20)
 tile_map_data = PackedByteArray("AAD9//3/AAAAAAAAAAD///3/AAACAAIAAAADAPz/AAACAAEAAAA=")
 tile_set = SubResource("TileSet_tcjf7")
+
+[node name="Audio" type="Node" parent="."]
+
+[node name="Music" type="AudioStreamPlayer" parent="Audio"]
+stream = ExtResource("4_y5642")
+autoplay = true
+bus = &"Music"
+parameters/looping = true
