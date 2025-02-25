@@ -86,7 +86,7 @@ func choose_music_clip():
 		#adapt the night music for darkness
 		if clip_index == 5:
 			if PlayerData.in_dark:
-				clip_index == 1
+				clip_index = 1
 				print("in dark")
 		
 		print("clip_index : "+str(clip_index))

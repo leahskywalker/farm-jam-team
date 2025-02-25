@@ -3105,5 +3105,4 @@ libraries = {
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Audio"]
 stream = ExtResource("23_ans7o")
-autoplay = true
 parameters/looping = true
