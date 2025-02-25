@@ -1,4 +1,20 @@
-[gd_resource type="AudioBusLayout" format=3 uid="uid://d0acqea0d4hb0"]
+[gd_resource type="AudioBusLayout" load_steps=3 format=3 uid="uid://d0acqea0d4hb0"]
+
+[sub_resource type="AudioEffectReverb" id="AudioEffectReverb_nw1ne"]
+resource_name = "Reverb"
+predelay_msec = 50.0
+predelay_feedback = 0.2
+room_size = 0.7
+damping = 0.65
+hipass = 0.4
+dry = 0.9
+wet = 0.1
+
+[sub_resource type="AudioEffectCompressor" id="AudioEffectCompressor_i5teh"]
+resource_name = "Compressor"
+threshold = -3.4
+ratio = 2.9
+gain = 1.0
 
 [resource]
 bus/1/name = &"SFX"
@@ -13,6 +29,10 @@ bus/2/mute = false
 bus/2/bypass_fx = false
 bus/2/volume_db = 0.0
 bus/2/send = &"Master"
+bus/2/effect/0/effect = SubResource("AudioEffectReverb_nw1ne")
+bus/2/effect/0/enabled = true
+bus/2/effect/1/effect = SubResource("AudioEffectCompressor_i5teh")
+bus/2/effect/1/enabled = true
 bus/3/name = &"New Bus"
 bus/3/solo = false
 bus/3/mute = false
