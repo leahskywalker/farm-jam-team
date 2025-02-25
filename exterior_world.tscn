@@ -29,7 +29,7 @@
 [ext_resource type="Texture2D" uid="uid://w2f43bexwrpm" path="res://assets/sprites/game/environment/tiles/anvil.png" id="25_265dl"]
 [ext_resource type="Texture2D" uid="uid://r2fi8byr8yg" path="res://assets/sprites/game/environment/farmProps_0010_treeDEAD1.png" id="28_uml1y"]
 [ext_resource type="Script" path="res://objects/world/daylight_visual.gd" id="29_ibxnd"]
-[ext_resource type="PackedScene" path="res://audio.tscn" id="30_deuuh"]
+[ext_resource type="PackedScene" uid="uid://bnv0jkvk0icbp" path="res://audio.tscn" id="30_deuuh"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_i8l4m"]
 

@@ -84,9 +84,12 @@ func choose_music_clip():
 			clip_index = clip_count - 1  # Play highest index clip below offset
 			
 		#adapt the night music for darkness
-		if clip_index == 4:
-			pass
+		if clip_index == 5:
+			if PlayerData.in_dark:
+				clip_index == 1
+				print("in dark")
 		
+		print("clip_index : "+str(clip_index))
 		#print("clip index : "+str(clip_index))
 		#print("playing : "+str(interactive_music.playing)+" position : "+str(interactive_music.get_playback_position()))
 		if last_index != clip_index:
