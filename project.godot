@@ -31,10 +31,6 @@ window/size/window_width_override=1920
 window/size/window_height_override=1080
 window/stretch/mode="canvas_items"
 
-[dotnet]
-
-project/assembly_name="Farm Jam Team"
-
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/kanban_tasks/plugin.cfg")
@@ -91,6 +87,7 @@ inventory={
 2d_physics/layer_1="World"
 2d_physics/layer_2="Dialog"
 2d_physics/layer_3="Collectables"
+2d_physics/layer_4="Player"
 
 [rendering]
 

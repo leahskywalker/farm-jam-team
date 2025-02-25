@@ -7,7 +7,7 @@ const MINUTES_PER_HOUR: int = 60
 const GAME_MINUTE_DURATION: float = TAU / MINUTES_PER_DAY
 
 # This Makes the Day ~ 9 Minutes and 20 Seconds Long
-var game_speed: float = 10.0
+var game_speed: float = 2.5
 
 # Initial Starting Time Variables
 var initial_day: int = 1
