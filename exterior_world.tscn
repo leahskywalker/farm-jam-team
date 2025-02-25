@@ -29,9 +29,10 @@
 [ext_resource type="Texture2D" uid="uid://w2f43bexwrpm" path="res://assets/sprites/game/environment/tiles/anvil.png" id="25_265dl"]
 [ext_resource type="Texture2D" uid="uid://r2fi8byr8yg" path="res://assets/sprites/game/environment/farmProps_0010_treeDEAD1.png" id="28_uml1y"]
 [ext_resource type="Script" path="res://objects/world/daylight_visual.gd" id="29_ibxnd"]
-[ext_resource type="PackedScene" uid="uid://bnv0jkvk0icbp" path="res://audio.tscn" id="30_deuuh"]
+[ext_resource type="PackedScene" uid="uid://cnqiqrlwv2sef" path="res://objects/world/lightsource/lamp.tscn" id="30_qcth8"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_i8l4m"]
+load_path = "res://.godot/imported/newTiles.png-dfbb9ce5cb6010b691256e4ec6742cdb.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tpiss"]
 texture = SubResource("CompressedTexture2D_i8l4m")
@@ -536,10 +537,8 @@ region = Rect2(110.5, 510.25, 301.5, 479.25)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_c2y2o"]
 size = Vector2(284.457, 426.686)
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_34cpl"]
-radius = 26.1927
-
 [sub_resource type="Gradient" id="Gradient_rnf67"]
+offsets = PackedFloat32Array(0, 0.674157)
 colors = PackedColorArray(0, 0, 0, 1, 1, 1, 1, 0.0666667)
 
 [sub_resource type="GradientTexture2D" id="GradientTexture2D_360ye"]
@@ -611,6 +610,9 @@ emission_curve = SubResource("CurveTexture_uc3mw")
 turbulence_enabled = true
 turbulence_noise_strength = 5.27
 turbulence_noise_speed_random = 1.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_34cpl"]
+radius = 26.1927
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sgyy0"]
 size = Vector2(152.158, 86.3598)
@@ -810,15 +812,12 @@ position = Vector2(1848, 1304)
 scale = Vector2(3.37357, 3.37357)
 texture = ExtResource("20_nps2a")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CraftingStations/FirePit"]
-shape = SubResource("CircleShape2D_34cpl")
-
 [node name="PointLight2D" type="PointLight2D" parent="CraftingStations/FirePit"]
-color = Color(1, 0.02, 0.0363331, 1)
+color = Color(1, 0.432833, 0.17, 1)
 energy = 4.14
 shadow_enabled = true
 texture = SubResource("GradientTexture2D_360ye")
-texture_scale = 1.27
+texture_scale = 4.0
 
 [node name="GPUParticles2D" type="GPUParticles2D" parent="CraftingStations/FirePit"]
 scale = Vector2(0.170271, 0.082222)
@@ -833,6 +832,12 @@ explosiveness = 0.02
 randomness = 0.64
 collision_base_size = 6.17
 trail_lifetime = 1.05
+
+[node name="StaticBody2D" type="StaticBody2D" parent="CraftingStations/FirePit"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CraftingStations/FirePit/StaticBody2D"]
+scale = Vector2(1, 1)
+shape = SubResource("CircleShape2D_34cpl")
 
 [node name="CraftingTable" type="Sprite2D" parent="CraftingStations"]
 position = Vector2(856, 780)
@@ -1044,4 +1049,4 @@ shape = SubResource("CapsuleShape2D_khqly")
 [node name="DaylightVisual" type="CanvasModulate" parent="."]
 script = ExtResource("29_ibxnd")
 
-[node name="Audio" parent="." instance=ExtResource("30_deuuh")]
+[node name="Lamp" parent="." instance=ExtResource("30_qcth8")]

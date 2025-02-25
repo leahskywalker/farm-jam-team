@@ -20,7 +20,6 @@ var current_minute: int = -1
 var day_progression: float = 0.0
 var current_day: int = 0
 
-signal game_day_progression(time: float)
 signal game_time(time: float)
 signal time_tick(day: int, hour: int, minute: int)
 signal time_tick_day(day: int)
@@ -33,7 +32,6 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	time += delta * game_speed * GAME_MINUTE_DURATION
 	game_time.emit(time)
-	game_day_progression.emit(day_progression)
 	
 	recalculate_time()
 
