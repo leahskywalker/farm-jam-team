@@ -693,36 +693,36 @@ clip_count = 6
 clip_0/name = &"Dawn"
 clip_0/stream = ExtResource("30_noh5f")
 clip_0/auto_advance = 1
-clip_0/next_clip = 1
-clip_1/name = &"Morning"
-clip_1/stream = ExtResource("31_3tkna")
+clip_0/next_clip = 2
+clip_1/name = &"Terror"
+clip_1/stream = ExtResource("35_7uijc")
 clip_1/auto_advance = 0
-clip_2/name = &"Day"
-clip_2/stream = ExtResource("32_5xu5s")
+clip_2/name = &"Morning"
+clip_2/stream = ExtResource("31_3tkna")
 clip_2/auto_advance = 0
-clip_3/name = &"Evening"
-clip_3/stream = ExtResource("33_kgk18")
+clip_3/name = &"Day"
+clip_3/stream = ExtResource("32_5xu5s")
 clip_3/auto_advance = 0
-clip_4/name = &"Night"
-clip_4/stream = ExtResource("34_3wawm")
+clip_4/name = &"Evening"
+clip_4/stream = ExtResource("33_kgk18")
 clip_4/auto_advance = 0
-clip_5/name = &"Terror"
-clip_5/stream = ExtResource("35_7uijc")
+clip_5/name = &"Night"
+clip_5/stream = ExtResource("34_3wawm")
 clip_5/auto_advance = 0
 _transitions = {
-Vector2i(0, 1): {
+Vector2i(0, 2): {
 "fade_beats": 1,
-"fade_mode": 3,
+"fade_mode": 0,
 "from_time": 0,
-"to_time": 0
+"to_time": 1
 },
 Vector2i(1, 0): {
 "fade_beats": 1,
-"fade_mode": 3,
+"fade_mode": 2,
 "from_time": 0,
-"to_time": 0
+"to_time": 1
 },
-Vector2i(1, 2): {
+Vector2i(1, 5): {
 "fade_beats": 1,
 "fade_mode": 3,
 "from_time": 0,
@@ -740,19 +740,19 @@ Vector2i(3, 4): {
 "from_time": 0,
 "to_time": 0
 },
-Vector2i(4, 0): {
-"fade_beats": 1,
-"fade_mode": 2,
-"from_time": 0,
-"to_time": 1
-},
 Vector2i(4, 5): {
 "fade_beats": 1,
 "fade_mode": 3,
 "from_time": 0,
 "to_time": 0
 },
-Vector2i(5, 4): {
+Vector2i(5, 0): {
+"fade_beats": 1,
+"fade_mode": 2,
+"from_time": 0,
+"to_time": 1
+},
+Vector2i(5, 1): {
 "fade_beats": 1,
 "fade_mode": 3,
 "from_time": 0,
@@ -1124,35 +1124,6 @@ script = ExtResource("29_ibxnd")
 
 [node name="Audio" type="Node" parent="."]
 script = ExtResource("30_cmb1u")
-
-[node name="Dawn" type="AudioStreamPlayer" parent="Audio"]
-stream = ExtResource("30_noh5f")
-bus = &"Music"
-
-[node name="Morning" type="AudioStreamPlayer" parent="Audio"]
-stream = ExtResource("31_3tkna")
-bus = &"Music"
-parameters/looping = true
-
-[node name="Day" type="AudioStreamPlayer" parent="Audio"]
-stream = ExtResource("32_5xu5s")
-bus = &"Music"
-parameters/looping = true
-
-[node name="Evening" type="AudioStreamPlayer" parent="Audio"]
-stream = ExtResource("33_kgk18")
-bus = &"Music"
-parameters/looping = true
-
-[node name="Night" type="AudioStreamPlayer" parent="Audio"]
-stream = ExtResource("34_3wawm")
-bus = &"Music"
-parameters/looping = true
-
-[node name="Terror" type="AudioStreamPlayer" parent="Audio"]
-stream = ExtResource("35_7uijc")
-bus = &"Music"
-parameters/looping = true
 
 [node name="music" type="AudioStreamPlayer" parent="Audio"]
 stream = SubResource("AudioStreamInteractive_6atai")
