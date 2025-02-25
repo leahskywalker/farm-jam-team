@@ -14,6 +14,6 @@ dest_files=["res://.godot/imported/Magic_Altar.mp3-a89721030ea5470f5ac84d9be9bb8
 
 loop=true
 loop_offset=0.0
-bpm=0.0
+bpm=90.0
 beat_count=0
 bar_beats=4

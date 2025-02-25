@@ -14,6 +14,6 @@ dest_files=["res://.godot/imported/House.mp3-5d1c86f897709e0590f3742346b75ab1.mp
 
 loop=true
 loop_offset=0.0
-bpm=0.0
+bpm=90.0
 beat_count=0
 bar_beats=4

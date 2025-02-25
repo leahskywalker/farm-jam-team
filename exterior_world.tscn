@@ -1,4 +1,4 @@
-[gd_scene load_steps=81 format=4 uid="uid://bubfu2ss4ru2x"]
+[gd_scene load_steps=82 format=4 uid="uid://bubfu2ss4ru2x"]
 
 [ext_resource type="Texture2D" uid="uid://73dvtmidrosx" path="res://assets/sprites/game/environment/tileGrass.png" id="1_5so52"]
 [ext_resource type="Texture2D" uid="uid://b5ckipxfkbcfk" path="res://assets/sprites/game/environment/tiles/fencePosts.png" id="2_44s62"]
@@ -30,9 +30,9 @@
 [ext_resource type="Texture2D" uid="uid://r2fi8byr8yg" path="res://assets/sprites/game/environment/farmProps_0010_treeDEAD1.png" id="28_uml1y"]
 [ext_resource type="Script" path="res://objects/world/daylight_visual.gd" id="29_ibxnd"]
 [ext_resource type="PackedScene" uid="uid://cnqiqrlwv2sef" path="res://objects/world/lightsource/lamp.tscn" id="30_qcth8"]
+[ext_resource type="PackedScene" uid="uid://bnv0jkvk0icbp" path="res://audio.tscn" id="31_btyn0"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_i8l4m"]
-load_path = "res://.godot/imported/newTiles.png-dfbb9ce5cb6010b691256e4ec6742cdb.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tpiss"]
 texture = SubResource("CompressedTexture2D_i8l4m")
@@ -836,7 +836,6 @@ trail_lifetime = 1.05
 [node name="StaticBody2D" type="StaticBody2D" parent="CraftingStations/FirePit"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CraftingStations/FirePit/StaticBody2D"]
-scale = Vector2(1, 1)
 shape = SubResource("CircleShape2D_34cpl")
 
 [node name="CraftingTable" type="Sprite2D" parent="CraftingStations"]
@@ -1050,3 +1049,5 @@ shape = SubResource("CapsuleShape2D_khqly")
 script = ExtResource("29_ibxnd")
 
 [node name="Lamp" parent="." instance=ExtResource("30_qcth8")]
+
+[node name="Audio" parent="." instance=ExtResource("31_btyn0")]
