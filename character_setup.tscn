@@ -1,4 +1,4 @@
-[gd_scene load_steps=40 format=3 uid="uid://c8hygc8618jne"]
+[gd_scene load_steps=39 format=3 uid="uid://c8hygc8618jne"]
 
 [ext_resource type="Texture2D" uid="uid://bbtpexw27hdti" path="res://assets/sprites/game/characters/shirts.png" id="1_xtril"]
 [ext_resource type="Texture2D" uid="uid://dnoywl86nyq5s" path="res://assets/sprites/game/characters/butt.png" id="2_j2k4e"]
@@ -22,7 +22,6 @@
 [ext_resource type="Texture2D" uid="uid://1hmpqqompweo" path="res://assets/sprites/game/tools/toolSAW.png" id="19_lisfl"]
 [ext_resource type="Texture2D" uid="uid://dob8b2eulb81" path="res://assets/sprites/game/characters/thumb.png" id="19_s27nr"]
 [ext_resource type="Texture2D" uid="uid://bcu78b4i1jhg0" path="res://assets/sprites/game/tools/toolWATERCAN.png" id="20_f57vx"]
-[ext_resource type="AudioStream" uid="uid://b0vctbyjgsiwa" path="res://assets/music/Sleep.mp3" id="23_ans7o"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_r5kd2"]
 atlas = ExtResource("1_xtril")
@@ -3100,9 +3099,3 @@ texture = ExtResource("20_f57vx")
 libraries = {
 "": SubResource("AnimationLibrary_b50nr")
 }
-
-[node name="Audio" type="Node" parent="."]
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Audio"]
-stream = ExtResource("23_ans7o")
-parameters/looping = true

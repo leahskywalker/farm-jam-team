@@ -1,4 +1,4 @@
-[gd_scene load_steps=53 format=3 uid="uid://x2r2o34whalh"]
+[gd_scene load_steps=54 format=3 uid="uid://x2r2o34whalh"]
 
 [ext_resource type="Texture2D" uid="uid://ex13vhw4eptx" path="res://assets/sprites/ui/craftUI.PNG" id="1_5o5ar"]
 [ext_resource type="Script" path="res://objects/ui/character creator/character_creator.gd" id="2_id1cp"]
@@ -33,6 +33,7 @@
 [ext_resource type="Script" path="res://objects/ui/character creator/shirt.gd" id="23_g8afo"]
 [ext_resource type="Texture2D" uid="uid://bbtpexw27hdti" path="res://assets/sprites/game/characters/shirts.png" id="24_32cgn"]
 [ext_resource type="Shader" path="res://objects/ui/character creator/character_creator_shader.gdshader" id="26_2jg1w"]
+[ext_resource type="AudioStream" uid="uid://box7rkvvawt7r" path="res://assets/music/Barn_or_Village.mp3" id="34_t33xc"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2f2p6"]
 atlas = ExtResource("1_5o5ar")
@@ -3507,6 +3508,13 @@ position = Vector2(-0.690002, -224)
 scale = Vector2(1, 0.963)
 texture = SubResource("AtlasTexture_ohd8o")
 offset = Vector2(0, -130)
+
+[node name="Node" type="Node" parent="."]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Node"]
+stream = ExtResource("34_t33xc")
+autoplay = true
+parameters/looping = true
 
 [connection signal="pressed" from="NinePatchRect/GridContainer/Shirt/MarginContainer/Left" to="Skeleton/body/Shirt" method="_on_left_pressed"]
 [connection signal="pressed" from="NinePatchRect/GridContainer/Shirt/MarginContainer/Right" to="Skeleton/body/Shirt" method="_on_right_pressed"]
