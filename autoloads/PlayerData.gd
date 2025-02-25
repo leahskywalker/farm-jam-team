@@ -16,6 +16,9 @@ var PlayerMoney: int = 100
 
 var PlayerNode: Node2D
 
+var DarkTimer: float = 15.0
+var in_dark: bool = false
+
 func _ready() -> void:
 	Inventory.insert(load("res://objects/ui/inventory/inventory items/Hoe.tres"))
 
@@ -37,3 +40,11 @@ func initialize_player() -> void:
 	# Hair and Color
 	hair.texture = CharacterCreation.hair_sprites[CharacterCreation.selected_hair]
 	hair.modulate = CharacterCreation.selected_hair_color
+
+func _process(delta):
+	if in_dark and DayAndNightCycleManager.day_progression > 0.7:
+		DarkTimer -= delta
+		if DarkTimer <= 0:
+			print("Stayed in dark for too long")
+	else:
+		DarkTimer = 15.0
