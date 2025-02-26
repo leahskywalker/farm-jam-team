@@ -1,4 +1,4 @@
-[gd_scene load_steps=38 format=3 uid="uid://c8hygc8618jne"]
+[gd_scene load_steps=37 format=3 uid="uid://c8hygc8618jne"]
 
 [ext_resource type="Texture2D" uid="uid://bbtpexw27hdti" path="res://assets/sprites/game/characters/shirts.png" id="1_xtril"]
 [ext_resource type="Texture2D" uid="uid://dnoywl86nyq5s" path="res://assets/sprites/game/characters/butt.png" id="2_j2k4e"]
@@ -22,10 +22,6 @@
 [ext_resource type="Texture2D" uid="uid://1hmpqqompweo" path="res://assets/sprites/game/tools/toolSAW.png" id="19_lisfl"]
 [ext_resource type="Texture2D" uid="uid://dob8b2eulb81" path="res://assets/sprites/game/characters/thumb.png" id="19_s27nr"]
 [ext_resource type="Texture2D" uid="uid://bcu78b4i1jhg0" path="res://assets/sprites/game/tools/toolWATERCAN.png" id="20_f57vx"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_5ltpi"]
-atlas = ExtResource("7_nyi0i")
-region = Rect2(161, 162, 95, 26)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4oya1"]
 atlas = ExtResource("8_tps3j")
@@ -2965,7 +2961,8 @@ offset = Vector2(0, -200)
 [node name="mouth" type="Sprite2D" parent="body/head"]
 z_index = 7
 position = Vector2(67, -64)
-texture = SubResource("AtlasTexture_5ltpi")
+texture = ExtResource("7_nyi0i")
+hframes = 5
 
 [node name="facialHAIR" type="Sprite2D" parent="body/head"]
 z_index = 8
