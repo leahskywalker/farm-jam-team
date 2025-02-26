@@ -1,4 +1,4 @@
-[gd_scene load_steps=91 format=4 uid="uid://bubfu2ss4ru2x"]
+[gd_scene load_steps=88 format=4 uid="uid://bubfu2ss4ru2x"]
 
 [ext_resource type="Texture2D" uid="uid://73dvtmidrosx" path="res://assets/sprites/game/environment/tileGrass.png" id="1_5so52"]
 [ext_resource type="Texture2D" uid="uid://b5ckipxfkbcfk" path="res://assets/sprites/game/environment/tiles/fencePosts.png" id="2_44s62"]
@@ -39,71 +39,6 @@
 [ext_resource type="Texture2D" uid="uid://bogwcf58hiqa4" path="res://assets/sprites/game/environment/props_0001_flowerBell1.png" id="37_dnr0m"]
 [ext_resource type="Texture2D" uid="uid://dl7qo2cv4o26i" path="res://assets/sprites/game/environment/props_0002_flowerBell2.png" id="38_jrvce"]
 [ext_resource type="Texture2D" uid="uid://dwxqlg3b8jykc" path="res://assets/sprites/game/environment/props_0000_reeds.png" id="39_hysnf"]
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_i8l4m"]
-
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tpiss"]
-texture = SubResource("CompressedTexture2D_i8l4m")
-texture_region_size = Vector2i(256, 256)
-1:4/0 = 0
-2:4/0 = 0
-3:4/0 = 0
-1:5/0 = 0
-1:6/0 = 0
-1:7/0 = 0
-3:7/0 = 0
-3:6/0 = 0
-3:5/0 = 0
-2:5/0 = 0
-5:4/0 = 0
-5:5/0 = 0
-5:6/0 = 0
-6:6/0 = 0
-7:6/0 = 0
-7:5/0 = 0
-7:4/0 = 0
-6:4/0 = 0
-3:2/0 = 0
-3:1/0 = 0
-4:1/0 = 0
-1:2/0 = 0
-0:2/0 = 0
-0:1/0 = 0
-0:0/0 = 0
-1:0/0 = 0
-2:0/0 = 0
-2:1/0 = 0
-2:2/0 = 0
-1:1/0 = 0
-4:2/0 = 0
-5:0/0 = 0
-6:0/0 = 0
-7:0/0 = 0
-8:0/0 = 0
-4:0/0 = 0
-3:0/0 = 0
-6:2/0 = 0
-5:1/0 = 0
-7:3/0 = 0
-7:2/0 = 0
-6:1/0 = 0
-7:1/0 = 0
-5:2/0 = 0
-5:3/0 = 0
-6:3/0 = 0
-4:4/0 = 0
-4:3/0 = 0
-3:3/0 = 0
-2:3/0 = 0
-1:3/0 = 0
-0:3/0 = 0
-0:4/0 = 0
-0:5/0 = 0
-0:6/0 = 0
-0:7/0 = 0
-4:7/0 = 0
-4:6/0 = 0
-4:5/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wwx4g"]
 texture = ExtResource("1_5so52")
@@ -250,9 +185,8 @@ texture_region_size = Vector2i(256, 256)
 
 [sub_resource type="TileSet" id="TileSet_mw0ld"]
 tile_size = Vector2i(256, 256)
-sources/0 = SubResource("TileSetAtlasSource_tpiss")
-sources/1 = SubResource("TileSetAtlasSource_wwx4g")
 sources/2 = SubResource("TileSetAtlasSource_r2575")
+sources/1 = SubResource("TileSetAtlasSource_wwx4g")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6t67r"]
 texture = ExtResource("2_djyni")
@@ -332,44 +266,6 @@ tile_size = Vector2i(256, 256)
 physics_layer_0/collision_layer = 1
 terrain_set_0/mode = 0
 sources/0 = SubResource("TileSetAtlasSource_l5ggc")
-
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dgl18"]
-texture = SubResource("CompressedTexture2D_i8l4m")
-texture_region_size = Vector2i(256, 256)
-0:0/0 = 0
-0:1/0 = 0
-1:1/0 = 0
-1:2/0 = 0
-2:2/0 = 0
-2:1/0 = 0
-2:0/0 = 0
-1:0/0 = 0
-0:2/0 = 0
-0:4/0 = 0
-1:4/0 = 0
-2:4/0 = 0
-3:4/0 = 0
-4:4/0 = 0
-4:3/0 = 0
-3:3/0 = 0
-2:3/0 = 0
-1:3/0 = 0
-0:3/0 = 0
-0:5/0 = 0
-0:6/0 = 0
-1:6/0 = 0
-1:7/0 = 0
-2:7/0 = 0
-3:7/0 = 0
-4:7/0 = 0
-4:6/0 = 0
-4:5/0 = 0
-3:5/0 = 0
-2:5/0 = 0
-1:5/0 = 0
-2:6/0 = 0
-3:6/0 = 0
-0:7/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vv8g2"]
 texture = ExtResource("1_5so52")
@@ -517,7 +413,6 @@ texture_region_size = Vector2i(256, 256)
 [sub_resource type="TileSet" id="TileSet_8nnex"]
 tile_size = Vector2i(256, 256)
 physics_layer_0/collision_layer = 1
-sources/0 = SubResource("TileSetAtlasSource_dgl18")
 sources/1 = SubResource("TileSetAtlasSource_vv8g2")
 sources/2 = SubResource("TileSetAtlasSource_ddwlx")
 
@@ -1254,6 +1149,7 @@ position = Vector2(8, 24)
 shape = SubResource("CircleShape2D_yuh77")
 
 [node name="DaylightVisual" type="CanvasModulate" parent="."]
+color = Color(0.0137783, 4.14526e-06, 0.110547, 1)
 script = ExtResource("29_ibxnd")
 
 [node name="Lamp" parent="." instance=ExtResource("30_qcth8")]

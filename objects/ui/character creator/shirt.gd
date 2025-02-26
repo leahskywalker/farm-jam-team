@@ -34,15 +34,12 @@ func update_sprite():
 
 # Change Shirt Left
 func _on_left_pressed() -> void:
-	if current_shirt_index == 0:
-		current_shirt_index = CharacterCreation.shirt_hframes - 1
-	else:
-		current_shirt_index = (current_shirt_index - 1) % (CharacterCreation.shirt_hframes)
+	current_shirt_index = wrapi(current_shirt_index-1, 0, CharacterCreation.shirt_hframes)
 	update_sprite()
 
 # Change Shirt Right
 func _on_right_pressed() -> void:
-	current_shirt_index = (current_shirt_index + 1) % (CharacterCreation.shirt_hframes)
+	current_shirt_index = wrapi(current_shirt_index+1, 0, CharacterCreation.shirt_hframes)
 	update_sprite()
 
 # Change Shirt Color

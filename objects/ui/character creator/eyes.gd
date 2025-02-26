@@ -20,10 +20,7 @@ func update_sprite():
 
 # Change Eyes Left
 func _on_left_pressed() -> void:
-	if current_eye_index == 0:
-		current_eye_index = CharacterCreation.eye_hframes - 1
-	else:
-		current_eye_index = (current_eye_index - 1) % (CharacterCreation.eye_hframes)
+	current_eye_index = wrapi(current_eye_index-1, 0, CharacterCreation.eye_hframes)
 	update_sprite()
 
 # Change Eyes Right

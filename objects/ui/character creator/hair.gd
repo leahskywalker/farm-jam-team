@@ -32,15 +32,12 @@ func update_sprite():
 
 # Change Hair Left
 func _on_left_pressed() -> void:
-	if current_hair_index == 0:
-		current_hair_index = CharacterCreation.hair_hframes - 1
-	else:
-		current_hair_index = (current_hair_index - 1) % (CharacterCreation.hair_hframes)
+	current_hair_index = wrapi(current_hair_index-1, 0, CharacterCreation.hair_hframes)
 	update_sprite()
 
 # Change Hair Right
 func _on_right_pressed() -> void:
-	current_hair_index = (current_hair_index + 1) % (CharacterCreation.hair_hframes)
+	current_hair_index = wrapi(current_hair_index+1, 0, CharacterCreation.hair_hframes)
 	update_sprite()
 
 # Change Hair Color

@@ -5,12 +5,20 @@ extends CharacterBody2D
 @onready var animplayer = $CharacterSETUP/body/AnimationPlayer
 @onready var spritenode = $CharacterSETUP
 
+@onready var shirt = $CharacterSETUP/body/shirt
+@onready var mouth = $CharacterSETUP/body/head/mouth
+@onready var eyes = $CharacterSETUP/body/head/eyes
+@onready var facial_hair = $CharacterSETUP/body/head/facialHAIR
+@onready var hair = $CharacterSETUP/body/head/hair
+
+
 @export var speed: float = 200
 
 var using_item: bool = false
 
 func _ready():
 	PlayerData.PlayerNode = self
+	PlayerData.initialize_player()
 
 func _physics_process(_delta: float) -> void:
 	var direction = Input.get_vector("walk_left","walk_right","walk_up","walk_down")

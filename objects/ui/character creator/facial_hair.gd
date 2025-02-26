@@ -33,15 +33,12 @@ func update_sprite():
 
 # Change Facial Hair Left
 func _on_left_pressed() -> void:
-	if current_facial_hair_index == 0:
-		current_facial_hair_index = CharacterCreation.facial_hair_hframes - 1
-	else:
-		current_facial_hair_index = (current_facial_hair_index - 1) % (CharacterCreation.facial_hair_hframes)
+	current_facial_hair_index = wrapi(current_facial_hair_index-1, 0, CharacterCreation.facial_hair_hframes)
 	update_sprite()
 
 # Change Facial Hair Right
 func _on_right_pressed() -> void:
-	current_facial_hair_index = (current_facial_hair_index + 1) % (CharacterCreation.facial_hair_hframes)
+	current_facial_hair_index = wrapi(current_facial_hair_index+1, 0, CharacterCreation.facial_hair_hframes)
 	update_sprite()
 
 # Change Facial Hair Color

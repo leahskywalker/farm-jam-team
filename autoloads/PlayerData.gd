@@ -7,12 +7,12 @@ const InventorySize: int = 36
 var PlayerMoney: int = 100
 
 # Node Ref
-@onready var shirt: Sprite2D = $Skeleton/body/Shirt/shirt
-@onready var head: Sprite2D = $Skeleton/body/Head/head
-@onready var mouth: Node2D = $Skeleton/body/Head/head/Mouth
-@onready var facial_hair: Node2D = $Skeleton/body/Head/head/FacialHair
-@onready var hair: Node2D = $Skeleton/body/Head/head/Hair
-@onready var eyes: Node2D = $Skeleton/body/Head/head/Eyes
+@onready var shirt: Sprite2D
+@onready var head: Sprite2D
+@onready var mouth: Node2D
+@onready var facial_hair: Node2D
+@onready var hair: Node2D
+@onready var eyes: Node2D
 
 var PlayerNode: Node2D
 
@@ -23,23 +23,32 @@ func _ready() -> void:
 	Inventory.insert(load("res://objects/ui/inventory/inventory items/Hoe.tres"))
 
 func initialize_player() -> void:
+	shirt = PlayerNode.shirt
 	# Shirt and Color
-	shirt.texture = CharacterCreation.shirt_sprites[CharacterCreation.selected_shirt]
+	shirt.frame = CharacterCreation.selected_shirt
 	shirt.modulate = CharacterCreation.selected_shirt_color
 	
 	# Mouth
-	mouth.texture = CharacterCreation.mouth_sprites[CharacterCreation.selected_mouth]
+	mouth = PlayerNode.mouth
 	
-	# Facial Hair and Color
-	facial_hair.texture = CharacterCreation.facial_hair_sprites[CharacterCreation.selected_facial_hair]
-	facial_hair.modulate = CharacterCreation.selected_facial_hair_color
+	mouth.frame = CharacterCreation.selected_mouth
 	
-	# Eyes
-	eyes.texture = CharacterCreation.eye_sprites[CharacterCreation.selected_eyes]
+	## Facial Hair and Color
+	facial_hair = PlayerNode.facial_hair
+
+	shirt.frame = CharacterCreation.selected_shirt
+	shirt.modulate = CharacterCreation.selected_shirt_color
 	
-	# Hair and Color
-	hair.texture = CharacterCreation.hair_sprites[CharacterCreation.selected_hair]
-	hair.modulate = CharacterCreation.selected_hair_color
+	## Eyes
+	eyes = PlayerNode.eyes
+	
+	eyes.frame = CharacterCreation.selected_mouth
+	
+	## Hair and Color
+	hair = PlayerNode.hair
+	
+	hair.frame = CharacterCreation.selected_shirt
+	hair.modulate = CharacterCreation.selected_shirt_color
 
 func _process(delta):
 	if in_dark and (DayAndNightCycleManager.day_progression > 0.7 or DayAndNightCycleManager.day_progression < 0.4):

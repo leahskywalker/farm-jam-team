@@ -23,12 +23,12 @@ var hair_sprites = preload("res://assets/sprites/game/characters/hair.png")
 var hair_hframes = 13
 
 # Selected Values
-var selected_shirt = ""
-var selected_mouth = ""
-var selected_facial_hair = ""
-var selected_eyes = ""
-var selected_hair = ""
+var selected_shirt: int = 0
+var selected_mouth: int = 0
+var selected_facial_hair: int = 0
+var selected_eyes: int = 0
+var selected_hair: int = 0
 # Selected Colors
-var selected_shirt_color = ""
-var selected_facial_hair_color = ""
-var selected_hair_color = ""
+var selected_shirt_color: Color = Color.WHITE
+var selected_facial_hair_color: Color = Color.WHITE
+var selected_hair_color: Color = Color.WHITE
