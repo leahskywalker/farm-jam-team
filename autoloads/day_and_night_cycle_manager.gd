@@ -6,6 +6,13 @@ const MINUTES_PER_DAY: int = 24 * 60
 const MINUTES_PER_HOUR: int = 60
 const GAME_MINUTE_DURATION: float = TAU / MINUTES_PER_DAY
 
+#defining dawn and dusk time in progression cycle
+const DAWN_TIME: float = 0.2
+const DUSK_TIME: float = 0.8
+
+#defining day_period as an int, 0=night, 1=morning, 2=day, 3=evening
+var day_period: int = 1
+
 # This Makes the Day ~ 9 Minutes and 20 Seconds Long
 var game_speed: float = 2.5
 
@@ -35,6 +42,7 @@ func _process(delta: float) -> void:
 	game_time.emit(time)
 	game_day_progression.emit(day_progression)
 	recalculate_time()
+	check_day_period()
 
 # Calculate Initial Starting Time
 func set_initial_time() -> void:
@@ -59,3 +67,14 @@ func recalculate_time() -> void:
 	if current_day != day:
 		current_day = day
 		time_tick_day.emit(day)
+
+func check_day_period() -> void:
+	if (day_progression < DAWN_TIME) or (day_progression > DUSK_TIME):
+		day_period = 0
+	elif (day_progression < (DUSK_TIME-DAWN_TIME)*0.3+DAWN_TIME):
+		day_period = 1
+	elif (day_progression > (DUSK_TIME-DAWN_TIME)*0.7+DAWN_TIME):
+		day_period = 3
+	else:
+		day_period = 2
+		
