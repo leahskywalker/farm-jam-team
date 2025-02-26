@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://c7dvklq05tkng"]
+[gd_scene load_steps=7 format=3 uid="uid://c7dvklq05tkng"]
 
 [ext_resource type="Texture2D" uid="uid://ex13vhw4eptx" path="res://assets/sprites/ui/craftUI.PNG" id="1_3li1w"]
 [ext_resource type="Theme" uid="uid://bi4hjoxn8o77w" path="res://objects/ui/character creator/character_creator_theme.tres" id="1_iw3x2"]
 [ext_resource type="FontFile" uid="uid://cy65xxytadbsa" path="res://assets/fonts/Dudu_Calligraphy.ttf" id="3_ktuln"]
 [ext_resource type="Script" path="res://objects/ui/play.gd" id="4_rk107"]
+[ext_resource type="AudioStream" uid="uid://sdcgxrq2u3qr" path="res://assets/music/menu_loop.mp3" id="5_nxpdu"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_orvh0"]
 atlas = ExtResource("1_3li1w")
@@ -65,3 +66,10 @@ theme_type_variation = &"PanelButton"
 theme_override_fonts/font = ExtResource("3_ktuln")
 theme_override_font_sizes/font_size = 100
 text = "Quit"
+
+[node name="Audio" type="Node" parent="."]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Audio"]
+stream = ExtResource("5_nxpdu")
+autoplay = true
+bus = &"Music"

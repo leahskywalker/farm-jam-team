@@ -3514,6 +3514,7 @@ offset = Vector2(0, -130)
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Node"]
 stream = ExtResource("34_t33xc")
 autoplay = true
+bus = &"Music"
 parameters/looping = true
 
 [connection signal="pressed" from="NinePatchRect/GridContainer/Shirt/MarginContainer/Left" to="Skeleton/body/Shirt" method="_on_left_pressed"]
