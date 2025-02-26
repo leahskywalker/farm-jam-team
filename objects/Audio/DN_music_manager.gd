@@ -75,10 +75,11 @@ func choose_music_clip():
 		# Determine which clip to play based on time_of_day after special clips have played
 		last_index = clip_index
 		var first_offset = special_clips.keys()[0] if special_clips.size() == 1 else special_clips.keys().min() if special_clips.size() > 0 else 0.0
-		var normal_clip_count = clip_count - special_clips.size()
+		var special_clip_count = special_clips.size()
+		var normal_clip_count = clip_count - special_clip_count
 		
 		if time_of_day >= first_offset:
-			clip_index = int((time_of_day - first_offset) * normal_clip_count) + 1
+			clip_index = int((time_of_day - first_offset) * normal_clip_count) + special_clip_count
 			clip_index = min(clip_index, clip_count - 1)
 		else:
 			clip_index = clip_count - 1  # Play highest index clip below offset
@@ -89,8 +90,7 @@ func choose_music_clip():
 				clip_index = 1
 				print("in dark")
 		
-		print("clip_index : "+str(clip_index))
-		#print("clip index : "+str(clip_index))
+		print("clip index : "+str(clip_index))
 		#print("playing : "+str(interactive_music.playing)+" position : "+str(interactive_music.get_playback_position()))
 		if last_index != clip_index:
 			switch_clip(clip_index)
@@ -104,7 +104,7 @@ func update_time(time):
 	
 func get_clip_length(clip_index: int) -> float:
 	var clip_length = music_stream.get_clip_stream(clip_index).get_length()
-	print("clip_lenght : "+str(clip_length))
+	#print("clip_lenght : "+str(clip_length))
 	return max(clip_length,5.0)  # Return duration in real seconds or default value
 	
 func _on_special_clip_finished():
