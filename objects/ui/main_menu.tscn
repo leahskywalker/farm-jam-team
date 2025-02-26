@@ -1,0 +1,67 @@
+[gd_scene load_steps=6 format=3 uid="uid://c7dvklq05tkng"]
+
+[ext_resource type="Texture2D" uid="uid://ex13vhw4eptx" path="res://assets/sprites/ui/craftUI.PNG" id="1_3li1w"]
+[ext_resource type="Theme" uid="uid://bi4hjoxn8o77w" path="res://objects/ui/character creator/character_creator_theme.tres" id="1_iw3x2"]
+[ext_resource type="FontFile" uid="uid://cy65xxytadbsa" path="res://assets/fonts/Dudu_Calligraphy.ttf" id="3_ktuln"]
+[ext_resource type="Script" path="res://objects/ui/play.gd" id="4_rk107"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_orvh0"]
+atlas = ExtResource("1_3li1w")
+
+[node name="Main Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_iw3x2")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("AtlasTexture_orvh0")
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="Play" type="Button" parent="CenterContainer/VBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(600, 175)
+layout_mode = 2
+theme_type_variation = &"PanelButton"
+theme_override_fonts/font = ExtResource("3_ktuln")
+theme_override_font_sizes/font_size = 100
+text = "Play"
+script = ExtResource("4_rk107")
+
+[node name="Settings" type="Button" parent="CenterContainer/VBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(600, 175)
+layout_mode = 2
+theme_type_variation = &"PanelButton"
+theme_override_fonts/font = ExtResource("3_ktuln")
+theme_override_font_sizes/font_size = 100
+text = "Settings"
+
+[node name="Quit" type="Button" parent="CenterContainer/VBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(600, 175)
+layout_mode = 2
+theme_type_variation = &"PanelButton"
+theme_override_fonts/font = ExtResource("3_ktuln")
+theme_override_font_sizes/font_size = 100
+text = "Quit"
