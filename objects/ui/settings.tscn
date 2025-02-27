@@ -1,0 +1,89 @@
+[gd_scene load_steps=9 format=3 uid="uid://d2qc5525wk6be"]
+
+[ext_resource type="Theme" uid="uid://bi4hjoxn8o77w" path="res://objects/ui/character creator/character_creator_theme.tres" id="1_h7iw2"]
+[ext_resource type="Texture2D" uid="uid://ex13vhw4eptx" path="res://assets/sprites/ui/craftUI.PNG" id="2_bm5nx"]
+[ext_resource type="FontFile" uid="uid://cy65xxytadbsa" path="res://assets/fonts/Dudu_Calligraphy.ttf" id="3_bk0b4"]
+[ext_resource type="Script" path="res://objects/ui/menu.gd" id="4_a8q17"]
+[ext_resource type="Script" path="res://objects/ui/music_volume.gd" id="5_kol07"]
+[ext_resource type="AudioStream" uid="uid://sdcgxrq2u3qr" path="res://assets/music/menu_loop.mp3" id="5_uyju3"]
+[ext_resource type="Script" path="res://objects/ui/sfx_volume.gd" id="6_ncth8"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_orvh0"]
+atlas = ExtResource("2_bm5nx")
+
+[node name="Settings" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_h7iw2")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("AtlasTexture_orvh0")
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="Menu" type="Button" parent="CenterContainer/VBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(600, 175)
+layout_mode = 2
+theme_type_variation = &"PanelButton"
+theme_override_fonts/font = ExtResource("3_bk0b4")
+theme_override_font_sizes/font_size = 100
+text = "Menu"
+script = ExtResource("4_a8q17")
+
+[node name="Music_label" type="Label" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 56
+text = "Music volume"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="Music_volume" type="SpinBox" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+update_on_text_changed = true
+custom_arrow_step = 5.0
+script = ExtResource("5_kol07")
+
+[node name="SFX_label" type="Label" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 56
+text = "SFX volume"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="SFX_volume" type="SpinBox" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+update_on_text_changed = true
+custom_arrow_step = 5.0
+script = ExtResource("6_ncth8")
+
+[node name="Audio" type="Node" parent="."]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Audio"]
+stream = ExtResource("5_uyju3")
+autoplay = true
+bus = &"Music"
+
+[connection signal="value_changed" from="CenterContainer/VBoxContainer/Music_volume" to="CenterContainer/VBoxContainer/Music_volume" method="_on_value_changed"]

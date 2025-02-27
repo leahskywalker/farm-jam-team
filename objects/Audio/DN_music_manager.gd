@@ -51,13 +51,13 @@ func choose_music_clip():
 		0:#adapt the night music for darkness
 			if PlayerData.in_dark:
 				clip_index = 1
-				print("in dark")
+				#print("in dark")
 			else:
 				clip_index = 5
 		_:
 			clip_index = 3
 		
-	print("clip index : "+str(clip_index))
+	#print("clip index : "+str(clip_index))
 
 	if last_index != clip_index:
 		switch_clip(clip_index)
@@ -67,7 +67,7 @@ func switch_clip(index):
 
 func update_time(time):
 	time_of_day = time
-	print("time is : "+str(time_of_day))
+	#print("time is : "+str(time_of_day))
 	
 func get_clip_length(clip_index: int) -> float:
 	var clip_length = music_stream.get_clip_stream(clip_index).get_length()
@@ -77,4 +77,4 @@ func get_clip_length(clip_index: int) -> float:
 	
 func update_day_period():
 	day_period = DayAndNightCycleManager.day_period
-	print("day_period : "+str(day_period))
+	#print("day_period : "+str(day_period))
