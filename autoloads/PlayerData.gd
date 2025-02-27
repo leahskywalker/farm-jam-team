@@ -51,7 +51,7 @@ func initialize_player() -> void:
 	hair.modulate = CharacterCreation.selected_shirt_color
 
 func _process(delta):
-	if in_dark and (DayAndNightCycleManager.day_progression > DayAndNightCycleManager.DUSK_TIME or DayAndNightCycleManager.day_progression < DayAndNightCycleManager.DAWN_TIME):
+	if in_dark and DayAndNightCycleManager.day_period == 0:
 		DarkTimer -= delta
 		if DarkTimer <= 0:
 			print("Stayed in dark for too long")
