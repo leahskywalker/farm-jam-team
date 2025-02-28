@@ -29,6 +29,7 @@ var selected_facial_hair: int = 0
 var selected_eyes: int = 0
 var selected_hair: int = 0
 # Selected Colors
-var selected_shirt_color: Color = Color.WHITE
-var selected_facial_hair_color: Color = Color.WHITE
-var selected_hair_color: Color = Color.WHITE
+var selected_shirt_color: Color = Color.SKY_BLUE
+var selected_facial_hair_color: Color = Color.SIENNA
+var selected_hair_color: Color = Color.SIENNA
+var selected_skin_color: Color = Color.MISTY_ROSE

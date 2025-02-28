@@ -22,3 +22,4 @@ func _ready() -> void:
 func _on_skin_color_picker_button_color_changed(color: Color) -> void:
 	if head_sprite.material:
 		head_sprite.material.set_shader_parameter("newColor", color)
+	CharacterCreation.selected_skin_color = color

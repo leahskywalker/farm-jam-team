@@ -46,3 +46,4 @@ func _on_right_pressed() -> void:
 func _on_shirt_color_picker_button_color_changed(color: Color) -> void:
 	if shirt_sprite.material:
 		shirt_sprite.material.set_shader_parameter("newColor", color)
+	CharacterCreation.selected_shirt_color = color

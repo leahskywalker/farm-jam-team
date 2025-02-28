@@ -1,8 +1,7 @@
-[gd_scene load_steps=10 format=3 uid="uid://doliiodbs6m53"]
+[gd_scene load_steps=9 format=3 uid="uid://doliiodbs6m53"]
 
 [ext_resource type="Script" path="res://objects/player.gd" id="1_dyoa4"]
 [ext_resource type="PackedScene" uid="uid://c8hygc8618jne" path="res://character_setup.tscn" id="3_1e2t2"]
-[ext_resource type="Texture2D" uid="uid://cyf4wsfeonyd2" path="res://assets/sprites/game/characters/mouths.png" id="3_pqxpl"]
 [ext_resource type="Texture2D" uid="uid://6r3o5a7ttau3" path="res://assets/sprites/game/characters/mouthHair.png" id="4_lot6d"]
 [ext_resource type="Texture2D" uid="uid://dm843o100mua6" path="res://assets/sprites/game/characters/eyes.png" id="5_o7q0b"]
 [ext_resource type="Texture2D" uid="uid://clnru15xu7866" path="res://assets/sprites/game/characters/hair.png" id="6_mfq53"]
@@ -22,10 +21,6 @@ collision_layer = 8
 script = ExtResource("1_dyoa4")
 
 [node name="CharacterSETUP" parent="." instance=ExtResource("3_1e2t2")]
-
-[node name="mouth" parent="CharacterSETUP/body/head" index="0"]
-texture = ExtResource("3_pqxpl")
-hframes = 5
 
 [node name="facialHAIR" parent="CharacterSETUP/body/head" index="1"]
 texture = ExtResource("4_lot6d")

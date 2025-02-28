@@ -39,7 +39,7 @@
 [ext_resource type="Texture2D" uid="uid://bogwcf58hiqa4" path="res://assets/sprites/game/environment/props_0001_flowerBell1.png" id="37_dnr0m"]
 [ext_resource type="Texture2D" uid="uid://dl7qo2cv4o26i" path="res://assets/sprites/game/environment/props_0002_flowerBell2.png" id="38_jrvce"]
 [ext_resource type="Texture2D" uid="uid://dwxqlg3b8jykc" path="res://assets/sprites/game/environment/props_0000_reeds.png" id="39_hysnf"]
-[ext_resource type="PackedScene" path="res://merchant.tscn" id="40_k3j6t"]
+[ext_resource type="PackedScene" uid="uid://c3x4ftwtbg382" path="res://merchant.tscn" id="40_k3j6t"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wwx4g"]
 texture = ExtResource("1_5so52")

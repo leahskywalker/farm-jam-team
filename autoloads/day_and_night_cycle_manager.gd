@@ -1,7 +1,7 @@
 # DayAndNightCycleManager.gd
 extends Node
 
-# Defining Minutes in Real Life, and Converting it to a Radian-Based ProgressionRate for Game Minutes
+# Defining Minutes in Real Life, and Converting it to a Radian-Based Progression Rate for Game Minutes
 const MINUTES_PER_DAY: int = 24 * 60
 const MINUTES_PER_HOUR: int = 60
 const GAME_MINUTE_DURATION: float = TAU / MINUTES_PER_DAY

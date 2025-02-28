@@ -44,3 +44,4 @@ func _on_right_pressed() -> void:
 func _on_hair_color_picker_button_color_changed(color: Color) -> void:
 	if hair_sprite.material:
 		hair_sprite.material.set_shader_parameter("newColor", color)
+	CharacterCreation.selected_hair_color = color

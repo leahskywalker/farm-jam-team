@@ -47,8 +47,13 @@ func initialize_player() -> void:
 	## Hair and Color
 	hair = PlayerNode.hair
 	
-	hair.frame = CharacterCreation.selected_shirt
-	hair.modulate = CharacterCreation.selected_shirt_color
+	hair.frame = CharacterCreation.selected_hair
+	hair.modulate = CharacterCreation.selected_hair_color
+	
+	# Skin Color
+	head = PlayerNode.head
+	
+	head.modulate = CharacterCreation.selected_skin_color
 
 func _process(delta):
 	if in_dark and DayAndNightCycleManager.day_period == 0:
