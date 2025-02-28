@@ -2970,14 +2970,14 @@ offset_bottom = 2160.0
 texture = SubResource("AtlasTexture_2f2p6")
 
 [node name="GridContainer" type="GridContainer" parent="NinePatchRect"]
-custom_minimum_size = Vector2(2000, 1082)
+custom_minimum_size = Vector2(1320, 573)
 layout_mode = 0
-offset_left = 1103.0
-offset_top = 573.0
-offset_right = 3103.0
-offset_bottom = 1655.0
-theme_override_constants/h_separation = 20
-theme_override_constants/v_separation = 20
+offset_left = 1584.0
+offset_top = 704.0
+offset_right = 2914.0
+offset_bottom = 1574.0
+theme_override_constants/h_separation = 30
+theme_override_constants/v_separation = 30
 columns = 2
 
 [node name="Shirt" type="PanelContainer" parent="NinePatchRect/GridContainer"]
@@ -3309,7 +3309,7 @@ size_flags_vertical = 4
 theme_override_constants/margin_right = 5
 
 [node name="Skeleton" type="Node2D" parent="."]
-position = Vector2(662, 1542)
+position = Vector2(1034, 1600)
 
 [node name="body" type="Node2D" parent="Skeleton"]
 

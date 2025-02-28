@@ -10,7 +10,7 @@ extends CharacterBody2D
 @onready var eyes = $CharacterSETUP/body/head/eyes
 @onready var facial_hair = $CharacterSETUP/body/head/facialHAIR
 @onready var hair = $CharacterSETUP/body/head/hair
-
+@onready var head = $CharacterSETUP/body/head
 
 @export var speed: float = 200
 
