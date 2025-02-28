@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cja0064xyla7j"
-path="res://.godot/imported/torchBazaar.PNG-603f6ee6ac007b40fc75f1adc01694ac.ctex"
+uid="uid://c22wy0qq8serc"
+path="res://.godot/imported/mainmenuIMG.png-0c3d550ebf82c8c7e03cfb8ba19a779e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/game/environment/torchBazaar.PNG"
-dest_files=["res://.godot/imported/torchBazaar.PNG-603f6ee6ac007b40fc75f1adc01694ac.ctex"]
+source_file="res://assets/sprites/ui/mainmenuIMG.png"
+dest_files=["res://.godot/imported/mainmenuIMG.png-0c3d550ebf82c8c7e03cfb8ba19a779e.ctex"]
 
 [params]
 
