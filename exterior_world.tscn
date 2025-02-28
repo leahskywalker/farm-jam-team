@@ -1196,7 +1196,7 @@ position = Vector2(8, 24)
 shape = SubResource("CircleShape2D_yuh77")
 
 [node name="DaylightVisual" type="CanvasModulate" parent="."]
-color = Color(0.0137783, 4.14526e-06, 0.110547, 1)
+color = Color(0, 0, 0, 1)
 script = ExtResource("29_ibxnd")
 
 [node name="Lamp" parent="." instance=ExtResource("30_qcth8")]
