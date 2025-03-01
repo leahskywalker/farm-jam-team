@@ -2,8 +2,7 @@ extends Button
 
 
 func _ready() -> void:
-	%Play.pressed.connect(press)
+	%Quit.pressed.connect(press)
 
 func press():
-	#get_tree().quit()
-	pass
+	get_tree().root.propagate_notification(NOTIFICATION_WM_CLOSE_REQUEST)

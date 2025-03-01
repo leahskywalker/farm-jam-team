@@ -7,7 +7,7 @@ extends Node
 # Time of day value (0.0 to 1.0)
 @export var time_of_day: float = 0.0
 
-var clip_index = 1
+var clip_index = 5
 var last_index = 1
 
 var day_period: int = 1
