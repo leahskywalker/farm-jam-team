@@ -81,7 +81,7 @@ ToolPanel/base_type = &"PanelContainer"
 ToolPanel/styles/panel = SubResource("StyleBoxTexture_ds3nw")
 
 [node name="HotbarUISlot" type="Button"]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(150, 150)
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -95,6 +95,7 @@ script = ExtResource("1_7pi0i")
 
 [node name="PanelContainer" type="PanelContainer" parent="."]
 self_modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(150, 150)
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0

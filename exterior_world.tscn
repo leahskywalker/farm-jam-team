@@ -1,4 +1,4 @@
-[gd_scene load_steps=89 format=4 uid="uid://bubfu2ss4ru2x"]
+[gd_scene load_steps=91 format=4 uid="uid://bubfu2ss4ru2x"]
 
 [ext_resource type="Texture2D" uid="uid://73dvtmidrosx" path="res://assets/sprites/game/environment/tileGrass.png" id="1_5so52"]
 [ext_resource type="Texture2D" uid="uid://b5ckipxfkbcfk" path="res://assets/sprites/game/environment/tiles/fencePosts.png" id="2_44s62"]
@@ -40,6 +40,8 @@
 [ext_resource type="Texture2D" uid="uid://dl7qo2cv4o26i" path="res://assets/sprites/game/environment/props_0002_flowerBell2.png" id="38_jrvce"]
 [ext_resource type="Texture2D" uid="uid://dwxqlg3b8jykc" path="res://assets/sprites/game/environment/props_0000_reeds.png" id="39_hysnf"]
 [ext_resource type="PackedScene" uid="uid://c3x4ftwtbg382" path="res://merchant.tscn" id="40_k3j6t"]
+[ext_resource type="PackedScene" uid="uid://l8d27dx5khp8" path="res://objects/houses/door.tscn" id="41_gc13f"]
+[ext_resource type="PackedScene" uid="uid://dg1raiasj5s8f" path="res://objects/ui/gui.tscn" id="42_mbtce"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wwx4g"]
 texture = ExtResource("1_5so52")
@@ -741,15 +743,6 @@ texture = ExtResource("14_r1ha4")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Scarecrow/StaticBody2D"]
 shape = SubResource("CapsuleShape2D_ul340")
 
-[node name="Player" parent="." instance=ExtResource("15_07ven")]
-position = Vector2(1320, 1336)
-scale = Vector2(0.370437, 0.370437)
-speed = 700.0
-
-[node name="Camera2D" type="Camera2D" parent="Player"]
-position = Vector2(-43.1924, -64.7883)
-scale = Vector2(2511.07, -892.866)
-
 [node name="CraftingStations" type="Node2D" parent="."]
 
 [node name="compost" type="Sprite2D" parent="CraftingStations"]
@@ -1196,6 +1189,7 @@ position = Vector2(8, 24)
 shape = SubResource("CircleShape2D_yuh77")
 
 [node name="DaylightVisual" type="CanvasModulate" parent="."]
+visible = false
 color = Color(0, 0, 0, 1)
 script = ExtResource("29_ibxnd")
 
@@ -1280,3 +1274,19 @@ texture = ExtResource("39_hysnf")
 
 [node name="merchant" parent="." instance=ExtResource("40_k3j6t")]
 position = Vector2(-3696, 4352)
+
+[node name="Door" parent="." instance=ExtResource("41_gc13f")]
+position = Vector2(1372, 619)
+target_scene = "res://houseINTERIOR.tscn"
+
+[node name="Player" parent="." instance=ExtResource("15_07ven")]
+position = Vector2(1290, 1219)
+scale = Vector2(0.3, 0.3)
+collision_mask = 2
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+visible = false
+
+[node name="GUI" parent="CanvasLayer" instance=ExtResource("42_mbtce")]

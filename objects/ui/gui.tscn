@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://dg1raiasj5s8f"]
+
+[ext_resource type="PackedScene" uid="uid://4irhli1wu67k" path="res://objects/ui/tools_panel.tscn" id="1_j2ceh"]
+[ext_resource type="PackedScene" uid="uid://l6pjf2oo8wrm" path="res://objects/ui/inventory/inv_ui.tscn" id="3_n342c"]
+
+[node name="GUI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ToolsPanel" parent="." instance=ExtResource("1_j2ceh")]
+layout_mode = 1
+offset_top = -164.0
+
+[node name="InvUI" parent="." instance=ExtResource("3_n342c")]
+layout_mode = 1
+grow_horizontal = 1
+grow_vertical = 1

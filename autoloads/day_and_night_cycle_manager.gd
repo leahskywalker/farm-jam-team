@@ -18,7 +18,7 @@ var game_speed: float = 2.5
 
 # Initial Starting Time Variables
 var initial_day: int = 1
-var initial_hour: int = 6
+var initial_hour: int = 06
 var initial_minute: int = 00
 
 # Initializing and Detecting Changes to Emit Signals

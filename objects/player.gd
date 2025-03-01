@@ -16,9 +16,12 @@ extends CharacterBody2D
 
 var using_item: bool = false
 
+signal interact
+
 func _ready():
 	PlayerData.PlayerNode = self
 	PlayerData.initialize_player()
+	add_to_group("player")
 
 func _physics_process(_delta: float) -> void:
 	var direction = Input.get_vector("walk_left","walk_right","walk_up","walk_down")
@@ -39,7 +42,7 @@ func _physics_process(_delta: float) -> void:
 	
 	move_and_slide()
 	
-	if Input.is_action_just_pressed("interact"):
+	if Input.is_action_just_pressed("hit"):
 		if PlayerData.holding_item.type == 1:
 			using_item = true
 			match PlayerData.holding_item.name:
@@ -54,3 +57,7 @@ func _physics_process(_delta: float) -> void:
 
 func collect(item: InvItem):
 	PlayerData.Inventory.insert(item)
+
+func _process(delta: float) -> void:
+	if Input.is_action_just_pressed("interact"):
+		emit_signal("interact")

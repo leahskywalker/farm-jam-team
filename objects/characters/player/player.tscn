@@ -17,7 +17,7 @@ size = Vector2(1012, 1115)
 size = Vector2(1013, 1116.5)
 
 [node name="Player" type="CharacterBody2D"]
-collision_layer = 8
+collision_mask = 6
 script = ExtResource("1_dyoa4")
 
 [node name="CharacterSETUP" parent="." instance=ExtResource("3_1e2t2")]
@@ -40,15 +40,13 @@ position = Vector2(1, -425)
 shape = SubResource("CapsuleShape2D_g6vp6")
 
 [node name="DialogInteractionArea" type="Area2D" parent="."]
-collision_layer = 2
-collision_mask = 0
+collision_mask = 6
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DialogInteractionArea"]
 position = Vector2(22, -560.5)
 shape = SubResource("RectangleShape2D_umh3m")
 
 [node name="ItemCollectionArea" type="Area2D" parent="."]
-collision_layer = 0
 collision_mask = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ItemCollectionArea"]
