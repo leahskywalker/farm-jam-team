@@ -14,7 +14,7 @@ const DUSK_TIME: float = 0.8
 var day_period: int = 1
 
 # This Makes the Day ~ 9 Minutes and 20 Seconds Long
-var game_speed: float = 10
+var game_speed: float = 2.5
 
 # Initial Starting Time Variables
 var initial_day: int = 1
