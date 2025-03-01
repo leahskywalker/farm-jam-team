@@ -1,4 +1,4 @@
-[gd_resource type="Theme" load_steps=8 format=3 uid="uid://bi4hjoxn8o77w"]
+[gd_resource type="Theme" load_steps=10 format=3 uid="uid://bi4hjoxn8o77w"]
 
 [ext_resource type="Texture2D" uid="uid://vsckr0tnt1c1" path="res://assets/sprites/ui/farm_gui_v3.png" id="1_28w02"]
 
@@ -20,6 +20,13 @@ texture_margin_top = 20.4904
 texture_margin_right = 20.095
 texture_margin_bottom = 20.095
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_3j8ot"]
+atlas = ExtResource("1_28w02")
+region = Rect2(1152, 1371, 768, 256)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_dnl86"]
+texture = SubResource("AtlasTexture_3j8ot")
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_wm200"]
 atlas = ExtResource("1_28w02")
 region = Rect2(1792, 2048, 256, 256)
@@ -36,5 +43,7 @@ ButtonBackground/base_type = &"Button"
 ButtonBackground/styles/normal = SubResource("StyleBoxTexture_dq05b")
 MenuLabel/base_type = &"PanelContainer"
 MenuLabel/styles/panel = SubResource("StyleBoxTexture_s5xta")
+MenuPanel/base_type = &"PanelContainer"
+MenuPanel/styles/panel = SubResource("StyleBoxTexture_dnl86")
 PanelButton/base_type = &"Button"
 PanelButton/styles/normal = SubResource("StyleBoxTexture_p7ur2")

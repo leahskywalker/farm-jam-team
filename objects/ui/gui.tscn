@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://dg1raiasj5s8f"]
+[gd_scene load_steps=4 format=3 uid="uid://dg1raiasj5s8f"]
 
 [ext_resource type="PackedScene" uid="uid://4irhli1wu67k" path="res://objects/ui/tools_panel.tscn" id="1_j2ceh"]
 [ext_resource type="PackedScene" uid="uid://l6pjf2oo8wrm" path="res://objects/ui/inventory/inv_ui.tscn" id="3_n342c"]
+[ext_resource type="PackedScene" uid="uid://dcepukycmyffv" path="res://objects/ui/day_and_night_panel.tscn" id="3_vdde3"]
 
 [node name="GUI" type="Control"]
 layout_mode = 3
@@ -19,3 +20,6 @@ offset_top = -164.0
 layout_mode = 1
 grow_horizontal = 1
 grow_vertical = 1
+
+[node name="DayAndNightPanel" parent="." instance=ExtResource("3_vdde3")]
+layout_mode = 1
