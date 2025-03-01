@@ -9,6 +9,7 @@
 [ext_resource type="AudioStream" uid="uid://cuf4a5kth4ccn" path="res://assets/music/Day loop/4-Night.mp3" id="7_b12cg"]
 
 [sub_resource type="AudioStreamInteractive" id="AudioStreamInteractive_6atai"]
+initial_clip = 5
 clip_count = 6
 clip_0/name = &"Dawn"
 clip_0/stream = ExtResource("2_c1v16")
@@ -31,7 +32,7 @@ clip_5/stream = ExtResource("7_b12cg")
 clip_5/auto_advance = 0
 _transitions = {
 Vector2i(0, -1): {
-"fade_beats": 1,
+"fade_beats": 0,
 "fade_mode": 0,
 "from_time": 0,
 "to_time": 1
