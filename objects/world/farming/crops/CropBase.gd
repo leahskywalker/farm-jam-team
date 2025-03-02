@@ -12,8 +12,8 @@ var player = null
 @export var type: StringName = &""
 
 ##Time (in seconds) to growth complete
-@export var MaxGrowTime: float = 10.0
-@export var GrowTime: float = 10.0:
+@export var MaxGrowTime: float = 1.0
+@export var GrowTime: float = 1.0:
 	set(value):
 		GrowTime = value
 		if GrowTime < MaxGrowTime*0.25:

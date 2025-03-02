@@ -78,3 +78,8 @@ func check_day_period() -> void:
 	else:
 		day_period = 2
 		
+func skip_to_time(skip_time: float) -> void:
+	if skip_time < time:
+		current_day += 1
+	time = skip_time
+	
