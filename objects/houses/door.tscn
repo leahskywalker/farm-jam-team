@@ -1,18 +1,24 @@
-[gd_scene load_steps=3 format=3 uid="uid://l8d27dx5khp8"]
+[gd_scene load_steps=4 format=3 uid="uid://l8d27dx5khp8"]
 
 [ext_resource type="Script" path="res://objects/houses/door.gd" id="1_bdtq1"]
+[ext_resource type="PackedScene" path="res://objects/ui/interactable_label_component.tscn" id="2_y26pv"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7jr7t"]
 size = Vector2(342, 534)
 
 [node name="Door" type="Area2D"]
-collision_layer = 2
 script = ExtResource("1_bdtq1")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 9)
 shape = SubResource("RectangleShape2D_7jr7t")
 debug_color = Color(0, 0.636531, 0.403724, 0.42)
+
+[node name="InteractableLabelComponent" parent="." instance=ExtResource("2_y26pv")]
+offset_left = -127.0
+offset_top = -519.0
+offset_right = 129.0
+offset_bottom = -263.0
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="body_exited" from="." to="." method="_on_body_exited"]

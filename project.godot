@@ -37,7 +37,7 @@ project/assembly_name="Farm Jam Team"
 
 [editor_plugins]
 
-enabled=PackedStringArray()
+enabled=PackedStringArray("res://addons/kanban_tasks/plugin.cfg")
 
 [file_customization]
 

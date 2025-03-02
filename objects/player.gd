@@ -15,6 +15,7 @@ extends CharacterBody2D
 @export var speed: float = 400
 
 var using_item: bool = false
+var in_bed_area = false
 
 signal interact
 
@@ -63,17 +64,12 @@ func _process(delta: float) -> void:
 		emit_signal("sleep")
 
 func _input(event: InputEvent) -> void:
+	if event.is_action_pressed("interact"):
+		emit_signal("interact")
+		
 	if event.is_action_pressed("sleep"):
 		go_to_sleep()
 
 func go_to_sleep() -> void:
-	#face_to_black()
-	#await get_tree().create_timer(2.0).timeout
 	DayAndNightCycleManager.skip_to_next_morning()
-	#fade_from_black()
 	print("You sleep until 6 AM the next day")
-
-#func fade_to_black(duration: float = 1.0) -> void:
-	#var tween = create_tween()
-	#tween.tween_property(fade_overlay, "modulate:a", 1.0, duration)
-	#await tween.finished

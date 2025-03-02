@@ -78,8 +78,14 @@ func check_day_period() -> void:
 	else:
 		day_period = 2
 		
-func skip_to_time(skip_time: float) -> void:
-	if skip_time < time:
-		current_day += 1
-	time = skip_time
+
+# Function to Skip to 6 AM the Next Day
+func skip_to_next_morning() -> void:
+	var total_minutes: int = floori(time / GAME_MINUTE_DURATION)
+	var current_day_minutes: int = total_minutes % MINUTES_PER_DAY
 	
+	var minutes_until_6am: int = (MINUTES_PER_DAY - current_day_minutes) + (6 * MINUTES_PER_HOUR)
+	
+	time += minutes_until_6am * GAME_MINUTE_DURATION
+	recalculate_time()
+	time_tick.emit(current_day, 6, 0)
