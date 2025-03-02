@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://lcyvqnugvh8d"
+path="res://.godot/imported/Exterior Night Ambience.mp3-e86a4543d560732b556c0034c6c4b755.mp3str"
+
+[deps]
+
+source_file="res://assets/Sounds/Ambiences/Exterior Night Ambience.mp3"
+dest_files=["res://.godot/imported/Exterior Night Ambience.mp3-e86a4543d560732b556c0034c6c4b755.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://6yoheq2nl76a"
+path="res://.godot/imported/Sacrifice Area Ambience.mp3-fccc493106dc25bce0b64deb325198a3.mp3str"
+
+[deps]
+
+source_file="res://assets/Sounds/Ambiences/Sacrifice Area Ambience.mp3"
+dest_files=["res://.godot/imported/Sacrifice Area Ambience.mp3-fccc493106dc25bce0b64deb325198a3.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
