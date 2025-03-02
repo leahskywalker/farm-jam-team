@@ -1,4 +1,4 @@
-[gd_scene load_steps=91 format=4 uid="uid://bubfu2ss4ru2x"]
+[gd_scene load_steps=95 format=4 uid="uid://bubfu2ss4ru2x"]
 
 [ext_resource type="Texture2D" uid="uid://73dvtmidrosx" path="res://assets/sprites/game/environment/tileGrass.png" id="1_5so52"]
 [ext_resource type="Texture2D" uid="uid://b5ckipxfkbcfk" path="res://assets/sprites/game/environment/tiles/fencePosts.png" id="2_44s62"]
@@ -639,6 +639,18 @@ height = 368.0
 [sub_resource type="CircleShape2D" id="CircleShape2D_yuh77"]
 radius = 149.452
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_61arh"]
+size = Vector2(27142, 723)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_su0ss"]
+size = Vector2(27142, 900)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ruxqw"]
+size = Vector2(1019, 11426.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pfycb"]
+size = Vector2(855, 11467)
+
 [node name="exteriorWorld" type="Node2D"]
 
 [node name="dirt" type="TileMapLayer" parent="."]
@@ -1278,12 +1290,40 @@ position = Vector2(-3696, 4352)
 position = Vector2(1372, 619)
 target_scene = "res://houseINTERIOR.tscn"
 
+[node name="WorldBorder" type="StaticBody2D" parent="."]
+collision_layer = 8
+
+[node name="Top" type="CollisionShape2D" parent="WorldBorder"]
+position = Vector2(-3397, -3481.5)
+shape = SubResource("RectangleShape2D_61arh")
+
+[node name="Bottom" type="CollisionShape2D" parent="WorldBorder"]
+position = Vector2(-3514, 7186)
+shape = SubResource("RectangleShape2D_su0ss")
+
+[node name="Left" type="CollisionShape2D" parent="WorldBorder"]
+position = Vector2(-14949.5, 1811.75)
+shape = SubResource("RectangleShape2D_ruxqw")
+
+[node name="Right" type="CollisionShape2D" parent="WorldBorder"]
+position = Vector2(6342.5, 1794.5)
+shape = SubResource("RectangleShape2D_pfycb")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(1290, 1219)
+scale = Vector2(0.3, 0.3)
+limit_left = -14441
+limit_top = -3121
+limit_right = 5912
+limit_bottom = 6737
+limit_smoothed = true
+
 [node name="Player" parent="." instance=ExtResource("15_07ven")]
 position = Vector2(1290, 1219)
 scale = Vector2(0.3, 0.3)
-collision_mask = 2
 
-[node name="Camera2D" type="Camera2D" parent="Player"]
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Player"]
+remote_path = NodePath("../../Camera2D")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 

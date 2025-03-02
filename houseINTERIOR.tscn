@@ -7,6 +7,7 @@
 [ext_resource type="AudioStream" uid="uid://cqd1iy750bbr0" path="res://assets/Sounds/Ambiences/Interior Farm Ambience.mp3" id="5_28uh3"]
 [ext_resource type="PackedScene" uid="uid://doliiodbs6m53" path="res://objects/characters/player/player.tscn" id="5_ycayg"]
 [ext_resource type="PackedScene" uid="uid://l8d27dx5khp8" path="res://objects/houses/door.tscn" id="6_q7kmw"]
+[ext_resource type="PackedScene" uid="uid://dg1raiasj5s8f" path="res://objects/ui/gui.tscn" id="7_odijy"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8u1cx"]
 texture = ExtResource("1_ltw7v")
@@ -196,3 +197,11 @@ scale = Vector2(0.3, 0.3)
 [node name="Door" parent="." instance=ExtResource("6_q7kmw")]
 position = Vector2(6, 674)
 target_scene = "res://exterior_world.tscn"
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="GUI" parent="CanvasLayer" instance=ExtResource("7_odijy")]
+offset_left = -1.0
+offset_top = -2.0
+offset_right = -1.0
+offset_bottom = -2.0
