@@ -7891,3 +7891,4 @@ parameters/looping = true
 [node name="Ambience" type="AudioStreamPlayer" parent="Audio"]
 stream = ExtResource("5_qem48")
 autoplay = true
+bus = &"Ambience"

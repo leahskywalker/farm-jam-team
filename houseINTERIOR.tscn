@@ -1,9 +1,10 @@
-[gd_scene load_steps=14 format=4 uid="uid://gnd83agm1uc0"]
+[gd_scene load_steps=15 format=4 uid="uid://gnd83agm1uc0"]
 
 [ext_resource type="Texture2D" uid="uid://87v0cnue8cw8" path="res://assets/sprites/game/environment/tiles/stoneTILE.png" id="1_ltw7v"]
 [ext_resource type="Texture2D" uid="uid://b3uk6r5fxhsty" path="res://assets/sprites/game/environment/tiles/intWALLS.png" id="2_6y041"]
 [ext_resource type="Texture2D" uid="uid://cow2p2eoc5rxk" path="res://assets/sprites/game/environment/propsINTERIOR.png" id="3_lhg87"]
 [ext_resource type="AudioStream" uid="uid://bvodvw7gt6c3m" path="res://assets/music/House.mp3" id="4_y5642"]
+[ext_resource type="AudioStream" uid="uid://cqd1iy750bbr0" path="res://assets/Sounds/Ambiences/Interior Farm Ambience.mp3" id="5_28uh3"]
 [ext_resource type="PackedScene" uid="uid://doliiodbs6m53" path="res://objects/characters/player/player.tscn" id="5_ycayg"]
 [ext_resource type="PackedScene" uid="uid://l8d27dx5khp8" path="res://objects/houses/door.tscn" id="6_q7kmw"]
 
@@ -181,6 +182,12 @@ stream = ExtResource("4_y5642")
 autoplay = true
 bus = &"Music"
 parameters/looping = true
+
+[node name="Ambience" type="AudioStreamPlayer" parent="Audio"]
+stream = ExtResource("5_28uh3")
+volume_db = 3.748
+autoplay = true
+bus = &"Ambience"
 
 [node name="Player" parent="." instance=ExtResource("5_ycayg")]
 position = Vector2(-2, 756)
