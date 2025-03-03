@@ -12,3 +12,4 @@ script = ExtResource("1_8wdec")
 name = "carrot"
 type = 0
 texture = SubResource("AtlasTexture_0p3px")
+Cost = 10
