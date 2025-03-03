@@ -2,8 +2,9 @@
 extends Node
 
 # Defining Minutes in Real Life, and Converting it to a Radian-Based Progression Rate for Game Minutes
-const MINUTES_PER_DAY: int = 24 * 60
 const MINUTES_PER_HOUR: int = 60
+const HOURS_PER_DAY: int = 24
+const MINUTES_PER_DAY: int = HOURS_PER_DAY * MINUTES_PER_HOUR
 const GAME_MINUTE_DURATION: float = TAU / MINUTES_PER_DAY
 
 #defining dawn and dusk time in progression cycle
@@ -109,3 +110,7 @@ func total_minutes(total_time: float) -> int:
 func day_minutes(minutes_count: int) -> int:
 	var current_day_minutes: int = minutes_count % MINUTES_PER_DAY
 	return current_day_minutes
+
+func days_passed_since_start(minutes_count: int)-> float:
+	var current_days_passed: int = minutes_count / MINUTES_PER_DAY
+	return current_days_passed

@@ -11,8 +11,8 @@ var player = null
 ##Type of Crop
 @export var type: StringName = &""
 
-##Time (in seconds) to growth complete
-@export var MaxGrowTime: float = 1.0
+##Time (in days) to growth complete
+@export var MaxGrowTime: float = 5.0
 @export var GrowTime: float = 1.0:
 	set(value):
 		GrowTime = value

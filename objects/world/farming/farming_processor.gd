@@ -3,12 +3,11 @@ extends Node2D
 @onready var croplayer: TileMapLayer = $Croplayer
 @onready var soil_layer: TileMapLayer = $SoilLayer
 
-var day_progress: float
-var last_progress: float
+var current_days: float
+var last_days: float
 
 func _ready():
-	#connect the time signal here (0.0f to 1.0f)
-	DayAndNightCycleManager.game_day_progression.connect(check_time)
+	pass
 
 func _unhandled_input(_event):
 	var pos = croplayer.local_to_map((
@@ -29,15 +28,16 @@ func _unhandled_input(_event):
 			
 
 func _process(_delta):
-	var time_passed = (day_progress-last_progress)
+	current_days = check_days()
+	var time_passed = (current_days-last_days)
 	for c in croplayer.get_children():
 		if c.GrowTime > 0:
 			c.GrowTime -= (time_passed)
-	last_progress = day_progress
+	last_days = current_days
 
 func till_ground(pos: Vector2i):
 	soil_layer.set_cell(pos, 0, Vector2i(0,0))
 
-func check_time(day_progression):
-	day_progress = day_progression
-	
+func check_days()-> float:
+	var days: float = DayAndNightCycleManager.days_passed_since_start(DayAndNightCycleManager.total_minutes(DayAndNightCycleManager.time))
+	return days
