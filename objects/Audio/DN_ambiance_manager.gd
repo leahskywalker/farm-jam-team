@@ -42,9 +42,9 @@ func choose_clip():
 	last_index = clip_index
 	
 	if day_period == 0: #night
-		clip_index = 1
-	else: #day
 		clip_index = 0
+	else: #day
+		clip_index = 1
 
 
 	if last_index != clip_index:
