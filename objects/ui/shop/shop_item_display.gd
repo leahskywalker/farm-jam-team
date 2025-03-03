@@ -14,9 +14,10 @@ extends Control
 
 func _ready():
 	for I in Items.keys():
+		if Items.get(I) == null: continue
 		var itemtex = Items.get(I).texture
 		var button = find_child("TextureButton"+str(I))
-		button.texture = itemtex
+		button.texture_normal = itemtex
 
 func buy_item(index: int) -> void:
 	var item_bought: InvItem = Items[index]

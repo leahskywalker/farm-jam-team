@@ -1,15 +1,11 @@
-[gd_resource type="Resource" script_class="InvItem" load_steps=4 format=3 uid="uid://co43elik1y3ya"]
+[gd_resource type="Resource" script_class="InvItem" load_steps=3 format=3 uid="uid://co43elik1y3ya"]
 
 [ext_resource type="Script" path="res://objects/ui/inventory/inventory_item.gd" id="1_8wdec"]
-[ext_resource type="Texture2D" uid="uid://pnu68knud3e1" path="res://assets/sprites/game/plants/crops.PNG" id="2_oee2x"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_0p3px"]
-atlas = ExtResource("2_oee2x")
-region = Rect2(29, 6, 206, 197)
+[ext_resource type="Texture2D" uid="uid://ba18e4p7mcye6" path="res://assets/sprites/ui/iconINVENTORY/iconUI_0039_carrot.png" id="2_lar0d"]
 
 [resource]
 script = ExtResource("1_8wdec")
 name = "carrot"
 type = 0
-texture = SubResource("AtlasTexture_0p3px")
+texture = ExtResource("2_lar0d")
 Cost = 10
