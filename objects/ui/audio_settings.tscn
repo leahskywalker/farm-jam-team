@@ -1,0 +1,37 @@
+[gd_scene load_steps=3 format=3 uid="uid://c4bth41a8fcb4"]
+
+[ext_resource type="Script" path="res://objects/ui/music_volume.gd" id="1_sfos4"]
+[ext_resource type="Script" path="res://objects/ui/sfx_volume.gd" id="2_6j2y0"]
+
+[node name="VBoxContainer" type="VBoxContainer"]
+theme_override_constants/separation = 20
+
+[node name="Music_label" type="Label" parent="."]
+layout_mode = 2
+theme_override_font_sizes/font_size = 56
+text = "Music volume"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="Music_volume" type="SpinBox" parent="."]
+layout_mode = 2
+alignment = 1
+update_on_text_changed = true
+custom_arrow_step = 5.0
+script = ExtResource("1_sfos4")
+
+[node name="SFX_label" type="Label" parent="."]
+layout_mode = 2
+theme_override_font_sizes/font_size = 56
+text = "SFX volume"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="SFX_volume" type="SpinBox" parent="."]
+layout_mode = 2
+alignment = 1
+update_on_text_changed = true
+custom_arrow_step = 5.0
+script = ExtResource("2_6j2y0")
+
+[connection signal="value_changed" from="Music_volume" to="Music_volume" method="_on_value_changed"]
