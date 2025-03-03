@@ -18,6 +18,7 @@ func _ready():
 		var itemtex = Items.get(I).texture
 		var button = find_child("TextureButton"+str(I))
 		button.texture_normal = itemtex
+		button.get_child(0).text = str(Items.get(I).Cost)
 
 func buy_item(index: int) -> void:
 	var item_bought: InvItem = Items[index]

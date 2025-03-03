@@ -6,9 +6,8 @@
 [ext_resource type="Texture2D" uid="uid://dm843o100mua6" path="res://assets/sprites/game/characters/eyes.png" id="5_o7q0b"]
 [ext_resource type="Texture2D" uid="uid://clnru15xu7866" path="res://assets/sprites/game/characters/hair.png" id="6_mfq53"]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_g6vp6"]
-radius = 244.0
-height = 774.0
+[sub_resource type="CircleShape2D" id="CircleShape2D_jujlk"]
+radius = 164.305
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_umh3m"]
 size = Vector2(1012, 1115)
@@ -36,8 +35,8 @@ hframes = 13
 frame = 5
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(1, -425)
-shape = SubResource("CapsuleShape2D_g6vp6")
+position = Vector2(1, -145)
+shape = SubResource("CircleShape2D_jujlk")
 
 [node name="DialogInteractionArea" type="Area2D" parent="."]
 collision_mask = 6

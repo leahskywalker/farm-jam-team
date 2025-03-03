@@ -1,8 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://bkx0gh4wf2ymy"]
+[gd_scene load_steps=3 format=3 uid="uid://bkx0gh4wf2ymy"]
 
 [ext_resource type="Script" path="res://objects/ui/shop/shop_item_display.gd" id="1_svycm"]
+[ext_resource type="Script" path="res://objects/ui/shop/money_display.gd" id="2_v0esx"]
 
 [node name="Shop" type="Control"]
+z_index = 1
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -28,6 +30,15 @@ script = ExtResource("1_svycm")
 [node name="TextureButton1" type="TextureButton" parent="NinePatchRect/GridContainer"]
 layout_mode = 2
 
+[node name="Label" type="Label" parent="NinePatchRect/GridContainer/TextureButton1"]
+layout_mode = 0
+offset_left = -4.0
+offset_top = -8.0
+offset_right = 36.0
+offset_bottom = 80.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 64
+
 [node name="TextureButton2" type="TextureButton" parent="NinePatchRect/GridContainer"]
 layout_mode = 2
 
@@ -51,6 +62,22 @@ layout_mode = 2
 
 [node name="TextureButton9" type="TextureButton" parent="NinePatchRect/GridContainer"]
 layout_mode = 2
+
+[node name="Label" type="Label" parent="NinePatchRect"]
+custom_minimum_size = Vector2(768, 256)
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -908.0
+offset_top = -256.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 96
+text = "Money:"
+script = ExtResource("2_v0esx")
 
 [connection signal="pressed" from="NinePatchRect/GridContainer/TextureButton1" to="NinePatchRect/GridContainer" method="buy_item" binds= [1]]
 [connection signal="pressed" from="NinePatchRect/GridContainer/TextureButton2" to="NinePatchRect/GridContainer" method="buy_item" binds= [2]]
