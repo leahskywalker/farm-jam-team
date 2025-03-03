@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://bnv0jkvk0icbp"]
+[gd_scene load_steps=13 format=3 uid="uid://bnv0jkvk0icbp"]
 
 [ext_resource type="Script" path="res://objects/Audio/DN_music_manager.gd" id="1_tfc2o"]
 [ext_resource type="AudioStream" uid="uid://dnik2070pa8gq" path="res://assets/music/Day loop/0-Dawn_intro.mp3" id="2_c1v16"]
@@ -8,6 +8,7 @@
 [ext_resource type="AudioStream" uid="uid://byq6sqk0kh673" path="res://assets/music/Day loop/3-Evening.mp3" id="6_efqdx"]
 [ext_resource type="AudioStream" uid="uid://cuf4a5kth4ccn" path="res://assets/music/Day loop/4-Night.mp3" id="7_b12cg"]
 [ext_resource type="AudioStream" uid="uid://lcyvqnugvh8d" path="res://assets/Sounds/Ambiences/Exterior Night Ambience.mp3" id="8_1fj0e"]
+[ext_resource type="Script" path="res://objects/Audio/DN_ambiance_manager.gd" id="8_hxadl"]
 [ext_resource type="AudioStream" uid="uid://d14dqoo5coyr1" path="res://assets/Sounds/Ambiences/Exterior Day Ambience.mp3" id="9_2pmro"]
 
 [sub_resource type="AudioStreamInteractive" id="AudioStreamInteractive_6atai"]
@@ -33,6 +34,12 @@ clip_5/name = &"Night"
 clip_5/stream = ExtResource("7_b12cg")
 clip_5/auto_advance = 0
 _transitions = {
+Vector2i(-1, -1): {
+"fade_beats": 4,
+"fade_mode": 3,
+"from_time": 0,
+"to_time": 0
+},
 Vector2i(0, -1): {
 "fade_beats": 0,
 "fade_mode": 0,
@@ -47,24 +54,6 @@ Vector2i(1, 0): {
 },
 Vector2i(1, 5): {
 "fade_beats": 8,
-"fade_mode": 3,
-"from_time": 0,
-"to_time": 0
-},
-Vector2i(2, 3): {
-"fade_beats": 1,
-"fade_mode": 3,
-"from_time": 0,
-"to_time": 0
-},
-Vector2i(3, 4): {
-"fade_beats": 1,
-"fade_mode": 3,
-"from_time": 0,
-"to_time": 0
-},
-Vector2i(4, 5): {
-"fade_beats": 1,
 "fade_mode": 3,
 "from_time": 0,
 "to_time": 0
@@ -87,26 +76,13 @@ Vector2i(5, 1): {
 clip_count = 2
 clip_0/name = &"Night"
 clip_0/stream = ExtResource("8_1fj0e")
-clip_0/auto_advance = 1
-clip_0/next_clip = 1
+clip_0/auto_advance = 0
 clip_1/name = &"Day"
 clip_1/stream = ExtResource("9_2pmro")
 clip_1/auto_advance = 0
 _transitions = {
-Vector2i(-1, 0): {
-"fade_beats": 1,
-"fade_mode": 4,
-"from_time": 0,
-"to_time": 0
-},
-Vector2i(0, 0): {
-"fade_beats": 1,
-"fade_mode": 4,
-"from_time": 0,
-"to_time": 0
-},
-Vector2i(1, 0): {
-"fade_beats": 1,
+Vector2i(-1, -1): {
+"fade_beats": 4,
 "fade_mode": 4,
 "from_time": 0,
 "to_time": 0
@@ -114,14 +90,18 @@ Vector2i(1, 0): {
 }
 
 [node name="Audio" type="Node"]
+
+[node name="music_manager" type="Node" parent="."]
 script = ExtResource("1_tfc2o")
 
-[node name="music" type="AudioStreamPlayer" parent="."]
+[node name="music" type="AudioStreamPlayer" parent="music_manager"]
 stream = SubResource("AudioStreamInteractive_6atai")
 autoplay = true
 bus = &"Music"
 
-[node name="Ambience" type="AudioStreamPlayer" parent="."]
+[node name="ambiance_manager" type="Node" parent="."]
+script = ExtResource("8_hxadl")
+
+[node name="ambience" type="AudioStreamPlayer" parent="ambiance_manager"]
 stream = SubResource("AudioStreamInteractive_b0qsu")
-autoplay = true
 bus = &"Ambience"

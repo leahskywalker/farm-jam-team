@@ -14,6 +14,6 @@ dest_files=["res://.godot/imported/Sacrifice Area Ambience.mp3-fccc493106dc25bce
 
 loop=true
 loop_offset=0.0
-bpm=0.0
+bpm=90.0
 beat_count=0
 bar_beats=4

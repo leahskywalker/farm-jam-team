@@ -7882,7 +7882,7 @@ shape = SubResource("CapsuleShape2D_dbr1j")
 
 [node name="Audio" type="Node" parent="."]
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Audio"]
+[node name="music" type="AudioStreamPlayer" parent="Audio"]
 stream = ExtResource("4_6vq34")
 autoplay = true
 bus = &"Music"
