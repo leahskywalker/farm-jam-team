@@ -18,6 +18,7 @@ var using_item: bool = false
 var in_bed_area = false
 
 signal interact
+signal sleep
 
 func _ready():
 	PlayerData.PlayerNode = self

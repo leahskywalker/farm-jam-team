@@ -46,15 +46,15 @@ func _process(delta: float) -> void:
 
 # Calculate Initial Starting Time
 func set_initial_time() -> void:
-	var initial_total_minutes = initial_day * MINUTES_PER_DAY + (initial_hour * MINUTES_PER_DAY) + initial_minute
+	var initial_total_minutes = (initial_day-1) * MINUTES_PER_DAY + (initial_hour * MINUTES_PER_HOUR) + initial_minute
 	
 	time = initial_total_minutes * GAME_MINUTE_DURATION
 
 # Calculate Time Ticks to Emit
 func recalculate_time() -> void:
-	var total_minutes: int = floori(time / GAME_MINUTE_DURATION)
+	var total_minutes: int = total_minutes(time)
 	var day: int = floori(total_minutes / MINUTES_PER_DAY)
-	var current_day_minutes: int = total_minutes % MINUTES_PER_DAY
+	var current_day_minutes: int = day_minutes(total_minutes)
 	var hour: int = floori(current_day_minutes / MINUTES_PER_HOUR)
 	var minute: int = current_day_minutes % MINUTES_PER_HOUR
 	
@@ -81,11 +81,31 @@ func check_day_period() -> void:
 
 # Function to Skip to 6 AM the Next Day
 func skip_to_next_morning() -> void:
-	var total_minutes: int = floori(time / GAME_MINUTE_DURATION)
-	var current_day_minutes: int = total_minutes % MINUTES_PER_DAY
+	var morning_def: float = DAWN_TIME
+	var morning_time: int = morning_def*MINUTES_PER_DAY
+	skip_to(morning_time)
 	
-	var minutes_until_6am: int = (MINUTES_PER_DAY - current_day_minutes) + (6 * MINUTES_PER_HOUR)
+func skip_to(skip_dest: float) -> void:
+	var total_minutes: int = total_minutes(time)
+	var current_day_minutes: int = day_minutes(total_minutes)
 	
-	time += minutes_until_6am * GAME_MINUTE_DURATION
+	var minutes_until_dest: int
+	if skip_dest < current_day_minutes:
+		minutes_until_dest = (MINUTES_PER_DAY - current_day_minutes) + (skip_dest)
+	else:
+		minutes_until_dest = (skip_dest - current_day_minutes) 
+		
+	print("skip_dest : "+str(skip_dest))
+	print("time : "+str(time)+ ", total_minutes : "+str(total_minutes))
+	print("current_day_minutes : "+str(current_day_minutes)+ ", minutes_until_dest : "+str(minutes_until_dest))
+		
+	time += minutes_until_dest * GAME_MINUTE_DURATION
 	recalculate_time()
-	time_tick.emit(current_day, 6, 0)
+	
+func total_minutes(total_time: float) -> int:
+	var total_minutes: int = floori(total_time / GAME_MINUTE_DURATION)
+	return total_minutes
+	
+func day_minutes(minutes_count: int) -> int:
+	var current_day_minutes: int = minutes_count % MINUTES_PER_DAY
+	return current_day_minutes
