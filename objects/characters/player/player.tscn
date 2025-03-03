@@ -17,7 +17,7 @@ size = Vector2(1012, 1115)
 size = Vector2(1013, 1116.5)
 
 [node name="Player" type="CharacterBody2D"]
-collision_mask = 14
+collision_mask = 15
 script = ExtResource("1_dyoa4")
 
 [node name="CharacterSETUP" parent="." instance=ExtResource("3_1e2t2")]
