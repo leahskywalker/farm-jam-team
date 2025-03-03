@@ -1,4 +1,4 @@
-[gd_scene load_steps=95 format=4 uid="uid://bubfu2ss4ru2x"]
+[gd_scene load_steps=101 format=4 uid="uid://bubfu2ss4ru2x"]
 
 [ext_resource type="Texture2D" uid="uid://73dvtmidrosx" path="res://assets/sprites/game/environment/tileGrass.png" id="1_5so52"]
 [ext_resource type="Texture2D" uid="uid://b5ckipxfkbcfk" path="res://assets/sprites/game/environment/tiles/fencePosts.png" id="2_44s62"]
@@ -40,8 +40,12 @@
 [ext_resource type="Texture2D" uid="uid://dl7qo2cv4o26i" path="res://assets/sprites/game/environment/props_0002_flowerBell2.png" id="38_jrvce"]
 [ext_resource type="Texture2D" uid="uid://dwxqlg3b8jykc" path="res://assets/sprites/game/environment/props_0000_reeds.png" id="39_hysnf"]
 [ext_resource type="PackedScene" uid="uid://c3x4ftwtbg382" path="res://merchant.tscn" id="40_k3j6t"]
+[ext_resource type="PackedScene" uid="uid://bo83e6benc7yx" path="res://objects/world/dialog_area.tscn" id="40_xvkn0"]
 [ext_resource type="PackedScene" uid="uid://l8d27dx5khp8" path="res://objects/houses/door.tscn" id="41_gc13f"]
+[ext_resource type="Script" path="res://objects/characters/shop_area.gd" id="41_xygfc"]
 [ext_resource type="PackedScene" uid="uid://dg1raiasj5s8f" path="res://objects/ui/gui.tscn" id="42_mbtce"]
+[ext_resource type="PackedScene" uid="uid://bkx0gh4wf2ymy" path="res://objects/ui/shop/shop.tscn" id="42_xfq20"]
+[ext_resource type="PackedScene" uid="uid://cesx46evp6dlr" path="res://objects/ui/dialog_player.tscn" id="44_ibali"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wwx4g"]
 texture = ExtResource("1_5so52")
@@ -639,6 +643,12 @@ height = 368.0
 [sub_resource type="CircleShape2D" id="CircleShape2D_yuh77"]
 radius = 149.452
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cle8t"]
+size = Vector2(469, 176)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4k7ce"]
+size = Vector2(653, 147)
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_61arh"]
 size = Vector2(27142, 723)
 
@@ -1201,6 +1211,7 @@ position = Vector2(8, 24)
 shape = SubResource("CircleShape2D_yuh77")
 
 [node name="DaylightVisual" type="CanvasModulate" parent="."]
+visible = false
 color = Color(0, 0, 0, 1)
 script = ExtResource("29_ibxnd")
 
@@ -1286,6 +1297,28 @@ texture = ExtResource("39_hysnf")
 [node name="merchant" parent="." instance=ExtResource("40_k3j6t")]
 position = Vector2(-3696, 4352)
 
+[node name="DialogArea" parent="merchant" instance=ExtResource("40_xvkn0")]
+collision_layer = 2
+collision_mask = 1
+text_key = "meet_merchant"
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="merchant/DialogArea"]
+position = Vector2(43.5, 74)
+shape = SubResource("RectangleShape2D_cle8t")
+
+[node name="Area2D" type="Area2D" parent="merchant"]
+collision_layer = 2
+script = ExtResource("41_xygfc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="merchant/Area2D"]
+position = Vector2(632.5, 110.5)
+shape = SubResource("RectangleShape2D_4k7ce")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="merchant/Area2D"]
+
+[node name="Shop" parent="merchant/Area2D/CanvasLayer" instance=ExtResource("42_xfq20")]
+visible = false
+
 [node name="Door" parent="." instance=ExtResource("41_gc13f")]
 position = Vector2(1372, 619)
 target_scene = "res://houseINTERIOR.tscn"
@@ -1328,3 +1361,6 @@ remote_path = NodePath("../../Camera2D")
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="GUI" parent="CanvasLayer" instance=ExtResource("42_mbtce")]
+
+[node name="DialogPlayer" parent="CanvasLayer" instance=ExtResource("44_ibali")]
+scene_text_file = "res://assets/json/world_dialog.json"

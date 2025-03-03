@@ -2,5 +2,9 @@
 	"test": [
 		"This is a green box.",
 		"Now what?"
+	],
+	"meet_merchant": [
+		"Welcome, welcome!",
+		"Please, buy something."
 	]
 }

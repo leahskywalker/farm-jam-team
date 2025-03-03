@@ -1,7 +1,7 @@
 extends Control
 
 @export var Items: Dictionary = {
-	1: null,
+	1: preload("res://objects/ui/inventory/inventory items/carrot_item.tres"),
 	2: null,
 	3: null,
 	4: null,
