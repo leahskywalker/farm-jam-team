@@ -1,9 +1,10 @@
-[gd_scene load_steps=8 format=3 uid="uid://d2qc5525wk6be"]
+[gd_scene load_steps=9 format=3 uid="uid://d2qc5525wk6be"]
 
 [ext_resource type="Theme" uid="uid://bi4hjoxn8o77w" path="res://objects/ui/character creator/character_creator_theme.tres" id="1_h7iw2"]
 [ext_resource type="Texture2D" uid="uid://ex13vhw4eptx" path="res://assets/sprites/ui/craftUI.PNG" id="2_bm5nx"]
 [ext_resource type="FontFile" uid="uid://cy65xxytadbsa" path="res://assets/fonts/Dudu_Calligraphy.ttf" id="3_bk0b4"]
 [ext_resource type="Script" path="res://objects/ui/menu.gd" id="4_a8q17"]
+[ext_resource type="AudioStream" uid="uid://vs44abk4lt25" path="res://assets/Sounds/SFX/Button Click 2.wav" id="5_34fwr"]
 [ext_resource type="PackedScene" uid="uid://c4bth41a8fcb4" path="res://objects/ui/audio_settings.tscn" id="5_kfqyv"]
 [ext_resource type="AudioStream" uid="uid://sdcgxrq2u3qr" path="res://assets/music/menu_loop.mp3" id="5_uyju3"]
 
@@ -49,6 +50,10 @@ theme_override_fonts/font = ExtResource("3_bk0b4")
 theme_override_font_sizes/font_size = 100
 text = "Menu"
 script = ExtResource("4_a8q17")
+
+[node name="ButtonSFX" type="AudioStreamPlayer" parent="CenterContainer/VBoxContainer/Menu"]
+stream = ExtResource("5_34fwr")
+bus = &"SFX"
 
 [node name="AudioSettings" parent="CenterContainer/VBoxContainer" instance=ExtResource("5_kfqyv")]
 layout_mode = 2
