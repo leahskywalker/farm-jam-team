@@ -47,7 +47,7 @@ shader_parameter/precision = null
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_hcxno"]
 atlas = ExtResource("7_bmgny")
-region = Rect2(161, 162, 95, 26)
+region = Rect2(-2.38, -0.799988, 1290.67, 262.973)
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_illt7"]
 shader = ExtResource("26_2jg1w")
@@ -3348,14 +3348,17 @@ texture = ExtResource("6_4o5me")
 offset = Vector2(0, -200)
 
 [node name="Mouth" type="Node2D" parent="Skeleton/body/Head/head"]
+position = Vector2(-55, -20)
 script = ExtResource("10_3vrik")
 
 [node name="mouth" type="Sprite2D" parent="Skeleton/body/Head/head/Mouth"]
 z_index = 7
 position = Vector2(67, -64)
 texture = SubResource("AtlasTexture_hcxno")
+hframes = 5
 
 [node name="FacialHair" type="Node2D" parent="Skeleton/body/Head/head"]
+position = Vector2(0, -35)
 script = ExtResource("15_c5dqb")
 
 [node name="facialHAIR" type="Sprite2D" parent="Skeleton/body/Head/head/FacialHair"]
@@ -3367,7 +3370,7 @@ hframes = 4
 frame = 3
 
 [node name="Hair" type="Node2D" parent="Skeleton/body/Head/head"]
-position = Vector2(-34, -179)
+position = Vector2(-78, -176)
 script = ExtResource("16_aoapx")
 
 [node name="hair" type="Sprite2D" parent="Skeleton/body/Head/head/Hair"]

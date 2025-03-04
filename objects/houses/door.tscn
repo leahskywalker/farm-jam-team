@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://l8d27dx5khp8"]
 
 [ext_resource type="Script" path="res://objects/houses/door.gd" id="1_bdtq1"]
-[ext_resource type="PackedScene" path="res://objects/ui/interactable_label_component.tscn" id="2_y26pv"]
+[ext_resource type="PackedScene" uid="uid://coyv67d3ij" path="res://objects/ui/interactable_label_component.tscn" id="2_y26pv"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7jr7t"]
 size = Vector2(342, 534)
